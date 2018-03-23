@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <title>Rob French - Square Dance Caller</title>
+  </head>
+
+  <body style="min-height: 250ex">
+    {% load static %}
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-4">
+            <img class="img-fluid rounded" src="{% static "calling/rob-caller.jpg" %}" alt="Rob's face"/>
+          </div>
+          <div class="col-5">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="display-4">Rob French</h1>
+                <h3>Square Dance Caller</h3>
+                <p class="lead">Rob calls Mainstream thru C-4 in the San Francisco Bay Area and travels throughout the U.S., Canada, Europe, and Japan. He is available for dances, weekends, and conventions. Fully edited tapes are available for sale.
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <p><b>Contact:</b><br>
+                  Robert French<br>
+                  1712 Kimberly Dr<br>
+                  Sunnyvale, CA 94087<br>
+                  <a href="mailto:caller@rfrench.org">caller@rfrench.org</a><br>
+                  (408) 802-2635
+                </p>
+              </div>
+              <div class="col-6">
+                <p><b>Tape ordering:</b><br>
+                  <a href="http://www.krubow.com/Recordings/frenchsmithdances.html">Keith Rubow</a><br>
+                  762 W. Bridwell St.<br>
+                  Glendora, CA 91741<br>
+                  <a href="mailto:keith@krubow.com">keith@krubow.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        {% for year in years %}
+          <li class="nav-item">
+            <a class="nav-link {% if year == current_year %}active{% endif %}" id="Y{{year}}-tab" data-toggle="tab" href="#Y{{year}}" role="tab" aria-controls="home" aria-selected="true">{{year}}</a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        {% for year in years %}
+        <div class="tab-pane fade {% if year == current_year %}show active{% endif %}" id="Y{{year}}" role="tabpanel" aria-labelledby="{{year}}-tab">
+          <h2 class="text-center">Upcoming Events - {{year}}</h2>
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+              <table class="table table-striped table-sm">
+                <thead>
+                  <th scope="col">Date(s)</th>
+                  <th scope="col">Level(s)</th>
+                  <th scope="col">Event</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Other caller(s)</th>
+                </thead>
+                <tbody>
+                  {% for gig in gigs.all %}
+                    {% if gig.year == year %}
+                      <tr>
+                        <td>{{gig.pretty_date}}</td>
+                        <td>{{gig.pretty_level}}</td>
+                        {% if gig.link != '' %}
+                          <td><a href="{{gig.link}}">{{gig.title}}</a></td>
+                        {% else %}
+                          <td>{{gig.title}}</td>
+                        {% endif %}
+                        <td>{{gig.location}}</td>
+                        <td>{{gig.callers}}</td>
+                      </tr>
+                    {% endif %}
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>
