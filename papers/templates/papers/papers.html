@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <title>Rob French - Research Papers and Patents</title>
+  </head>
+
+  <body>
+    {% load static %}
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-2">
+            <img class="img-fluid rounded" src="{% static "papers/rob-papers.jpg" %}" alt="Rob's face"/>
+          </div>
+          <div class="col-7">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="display-4">Rob French</h1>
+                <h3>Research Papers and Issued Patents</h3>
+                <p class="lead">Rob is a Research Assistant at the SETI Institute in Mountain View, CA where he performs research on the outer planets of our solar system and is deeply involved in the archiving of NASA mission data.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    {% for category in categories %}
+      <div class='text-center'>
+        <br>
+        <h1>{{ category }}</h1>
+      </div>
+      <br>
+      {% for category2, sub_categories in sub_categories.items %}
+        {% if category == category2 %}
+          {% for sub_category in sub_categories %}
+            <h2>{{ sub_category }}</h2>
+            <ul>
+              {% for papers_key, papers in papers.items %}
+                {% if papers_key.0 == category and papers_key.1 == sub_category %}
+                  {% for paper in papers %}
+                    <br>
+                    <li>
+                      {% if paper.full_text_link %}
+                        <a target="_blank" href="{{ paper.full_text_link }}"><b>{{paper.title}}</b></a>
+                      {% else %}
+                        <b>{{paper.title}}</b>
+                      {% endif %}
+                      ({{ paper.doc_type }})
+                      {% if paper.citation %}
+                        [{{ paper.year }}, {{ paper.citation }}]
+                      {% else %}
+                        [{{ paper.year }}]
+                      {% endif %}
+                      {% if paper.journal_link %}
+                        [<a target="_blank" href="{{ paper.journal_link }}">Journal Article</a>]
+                      {% endif %}
+                      {% if paper.abstract_link %}
+                        [<a target="_blank" href="{{ paper.abstract_link }}">Abstract</a>]
+                      {% endif %}
+                      {% if paper.ADS_link %}
+                        [<a target="_blank" href="{{ paper.ADS_link }}">ADS</a>]
+                      {% endif %}
+                      {% if paper.arXiv_link %}
+                        [<a target="_blank" href="{{ paper.arXiv_link }}">arXiv</a>]
+                      {% endif %}
+                      <br>
+                      {% if paper.authors %}
+                        {{ paper.authors }}<br>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>

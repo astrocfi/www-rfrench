@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import path
 
 import calling.views
+import papers.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('calling/', calling.views.calling),
-    path('calling/index.html', calling.views.calling)
+    path('calling/index.html', calling.views.calling),
+    path('papers/', papers.views.papers),
+    path('papers/index.html', papers.views.papers),
 ]
