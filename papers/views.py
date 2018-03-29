@@ -15,6 +15,14 @@ def papers(request):
             papers = (Paper.objects.filter(sub_category=sub_category).
                       order_by('display_order'))
             paper_list = list(papers)
+            for paper in papers:
+                if (paper.full_text_link and
+                    paper.full_text_link.find('rfrench.org') != -1):
+                    paper.full_text_link = (paper.full_text_link.
+                            replace('http://rfrench.org/papers', '/papers'))
+                    paper.static_content = True
+                else:
+                    paper.static_content = False
             if len(paper_list) > 0:
                 sub_category_dict[category.name].append(sub_category.name)
                 category_used = True

@@ -1,0 +1,6954 @@
+%!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Do not edit this prologue file; edit tex.pro instead!
+/TeXDict 200 dict def
+TeXDict begin
+/Resolution 300 def
+/Inch{Resolution mul}def
+/Mtrx matrix def
+/a4const 340 def
+/usletterconst 310 def
+/a4{}def
+/letter{}def
+/note{}def
+/legal{}def
+/@a4
+{a4 initmatrix
+72 Resolution div dup neg scale
+270 -3215 translate
+Mtrx currentmatrix pop
+}def
+/@letter
+{letter initmatrix
+72 Resolution div dup neg scale
+usletterconst -3005 translate
+Mtrx currentmatrix pop
+}def
+/@note
+{note initmatrix
+72 Resolution div dup neg scale
+usletterconst -3005 translate
+Mtrx currentmatrix pop
+}def
+/@landscape
+{letter initmatrix
+72 Resolution div dup neg scale
+Mtrx currentmatrix 0 0.0 put
+Mtrx 1 -1.0 put
+Mtrx 2 1.0 put
+Mtrx 3 0.0 put
+Mtrx  setmatrix
+300 usletterconst  translate
+Mtrx currentmatrix pop
+}def
+/@legal
+{legal initmatrix
+72 Resolution div dup neg scale
+295 -3880 translate
+Mtrx currentmatrix pop
+}def
+/@manualfeed
+{statusdict /manualfeed true put
+}def
+/@copies
+{/#copies exch def
+}def
+/@restore /restore load def
+/restore
+{vmstatus pop
+dup @VMused lt{pop @VMused}if
+exch pop exch @restore /@VMused exch def
+}def
+/@pri
+{
+( ) print
+(                                       ) cvs print
+}def
+/@FontMatrix [1 0 0 -1 0 0] def
+/@FontBBox [0 0 1 1] def
+/@faceup{statusdict /setoutputtray known
+{statusdict begin end}if} def
+/@newfont
+{/newname exch def
+newname 7 dict def
+newname load begin
+/FontType 3 def
+/FontMatrix @FontMatrix def
+/FontBBox @FontBBox def
+/BitMaps 128 array def
+/BuildChar{CharBuilder}def
+/Encoding 256 array def
+0 1 255 {Encoding exch /.undef put}for
+end
+newname newname load definefont pop
+}def
+/ch-image{ch-data 0 get}def
+/ch-width{ch-data 1 get}def
+/ch-height{ch-data 2 get}def
+/ch-xoff{ch-data 3 get}def
+/ch-yoff{ch-data 4 get}def
+/ch-tfmw{ch-data 5 get}def
+/CharBuilder
+{save 3 1 roll exch /BitMaps get exch get /ch-data exch def
+ch-data null ne
+{ch-tfmw 0 ch-xoff neg ch-yoff neg ch-width ch-xoff sub ch-height ch-yoff sub
+setcachedevice
+ch-width ch-height true [1 0  0 1  ch-xoff ch-yoff]
+{ch-image}imagemask
+}if
+restore
+}def
+/@sf
+{dup
+/FontName known
+{dup /FontName get tempstring cvs (SmallCaps) search
+{/smallcaps true def pop pop pop}
+{/smallcaps false def pop}
+ifelse
+}
+{/smallcaps false def}
+ifelse
+setfont
+}def
+/@dc
+{/ch-code exch def
+dup 0 get
+length 2 lt
+{pop [ <00> 1 1 0 0 8.00 ]}
+if
+/ch-data exch def
+currentfont /BitMaps get ch-code ch-data put
+currentfont /Encoding get ch-code
+dup (   ) cvs cvn
+put
+}def
+/@pc
+{pop
+/ch-data exch def
+currentpoint translate
+ch-width ch-height true [1 0 0 -1 ch-xoff ch-yoff]
+{ch-image}imagemask
+}def
+/@bop0
+{pop
+}def
+/@bop1
+{pop
+erasepage initgraphics
+Mtrx setmatrix
+/SaveImage save def
+}def
+/@eop
+{showpage
+SaveImage restore
+}def
+/@start
+{@letter
+vmstatus pop /@VMused exch def pop
+}def
+/@end
+{(VM used: ) print @VMused @pri
+(. Unused: ) print vmstatus @VMused sub @pri pop pop
+(\n) print flush
+end
+}def
+/p
+{moveto
+}def
+/r
+{0 rmoveto
+}def
+/s
+{smallcaps {SmallCapShow}{show} ifelse
+}def
+/c
+{c-string exch 0 exch put
+c-string s
+}def
+/c-string ( ) def
+/ru
+{/dy exch neg def
+/dx exch def
+/x currentpoint /y exch def def
+newpath x y moveto
+dx 0 rlineto
+0 dy rlineto
+dx neg 0 rlineto
+closepath fill
+x y moveto
+}def
+/@SpecialDefaults
+{/hs 8.5 Inch def
+/vs 11 Inch def
+/ho 0 def
+/vo 0 def
+/hsc 1 def
+/vsc 1 def
+/CLIP false def
+}def
+/@hsize{/hs exch def /CLIP true def}def
+/@vsize{/vs exch def /CLIP true def}def
+/@hoffset{/ho exch def}def
+/@voffset{/vo exch def}def
+/@hscale{/hsc exch def}def
+/@vscale{/vsc exch def}def
+/@setclipper
+{hsc vsc scale
+CLIP
+{newpath 0 0 moveto hs 0 rlineto 0 vs rlineto hs neg 0 rlineto closepath clip}
+if
+}def
+/@beginspecial
+{gsave /SpecialSave save def
+currentpoint transform initgraphics itransform translate
+@SpecialDefaults
+/showpage{}def
+}def
+/@setspecial
+{
+MacDrwgs
+{md begin /pxt ho def /pyt vo neg def end}
+{ho vo translate @setclipper}
+ifelse
+}def
+/@endspecial
+{SpecialSave restore
+grestore
+}def
+/ReEncodeForTeX
+{/newfontname exch def
+/basefontname exch def
+/TeXstr 30 string def
+/basefontdict basefontname findfont def
+/newfont basefontdict maxlength dict def
+basefontdict
+{exch dup /FID ne
+{dup /Encoding eq
+{exch dup length array copy
+newfont 3 1 roll put}
+{exch newfont 3 1 roll put}
+ifelse
+}
+{pop pop}
+ifelse
+}forall
+basefontname TeXstr cvs (Dingbat) search
+{pop pop pop}
+{pop
+/TeXvec basefontname TeXstr cvs (Courier) search
+{pop pop pop TeXcourvec}
+{pop TeXnormalvec}
+ifelse def
+TeXvec aload pop
+TeXvec length 2 idiv
+{newfont /Encoding get 3 1 roll put}
+repeat
+}
+ifelse
+newfontname newfont definefont pop
+}def
+/TeXnormalvec
+[ 8#014 /fi 8#015 /fl 8#020 /dotlessi 8#022 /grave 8#023 /acute
+8#024 /caron 8#025 /breve 8#026 /macron 8#027 /ring 8#030 /cedilla
+8#031 /germandbls 8#032 /ae 8#033 /oe 8#034 /oslash 8#035 /AE
+8#036 /OE 8#037 /Oslash 8#042 /quotedblright 8#074 /exclamdown
+8#076 /questiondown 8#134 /quotedblleft 8#136 /circumflex
+8#137 /dotaccent 8#173 /endash 8#174 /emdash 8#175 /quotedbl
+8#176 /tilde 8#177 /dieresis ] def
+/TeXcourvec
+[ 8#016 /exclamdown 8#017 /questiondown 8#020 /dotlessi 8#022 /grave
+8#023 /acute 8#024 /caron 8#025 /breve 8#026 /macron 8#027 /ring
+8#030 /cedilla 8#031 /germandbls 8#032 /ae 8#033 /oe 8#034 /oslash
+8#035 /AE 8#036 /OE 8#037 /Oslash 8#074 /less 8#076 /greater
+8#134 /backslash 8#136 /circumflex 8#137 /underscore 8#173 /braceleft
+8#174 /bar 8#175 /braceright 8#176 /tilde 8#177 /dieresis ] def
+/TeXPSmakefont{
+/TeXsize exch def
+findfont 
+[ TeXsize 0 0 TeXsize neg 0 0 ] makefont
+}def
+/ObliqueFont{
+/ObliqueAngle exch def
+/ObliqueBaseName exch def
+/ObliqueFontName exch def
+/ObliqueTransform [1 0 ObliqueAngle sin ObliqueAngle cos div 1 0 0] def
+/basefontdict ObliqueBaseName findfont ObliqueTransform makefont def
+/newfont basefontdict maxlength dict def
+basefontdict
+{exch dup /FID ne
+{dup /Encoding eq
+{exch dup length array copy
+newfont 3 1 roll put}
+{exch newfont 3 1 roll put}
+ifelse
+}
+{pop pop}
+ifelse
+}forall
+newfont /FontName ObliqueFontName put
+ObliqueFontName newfont definefont
+pop
+}def
+/Times-Oblique /Times-Roman 15.5 ObliqueFont
+/Times-BoldOblique /Times-Bold 15 ObliqueFont
+/Times-ItalicUnslanted /Times-Italic -15.15 ObliqueFont
+/SmallCapsFont{
+/SmallCapsBaseName exch def
+/SmallCapsFontName exch def
+/basefontdict SmallCapsBaseName findfont def
+/newfont basefontdict maxlength dict def
+basefontdict
+{exch dup /FID ne
+{dup /Encoding eq
+{exch dup length array copy
+newfont 3 1 roll put}
+{exch newfont 3 1 roll put}
+ifelse
+}
+{pop pop}
+ifelse
+}forall
+newfont /FontName SmallCapsFontName put
+SmallCapsFontName newfont definefont
+pop
+}def
+/Times-SmallCaps /Times-Roman SmallCapsFont
+FontDirectory /Palatino-Roman known
+{
+/Palatino-Oblique /Palatino-Roman 10 ObliqueFont
+/Palatino-BoldOblique /Palatino-Bold 10 ObliqueFont
+/Palatino-SmallCaps /Palatino-Roman SmallCapsFont
+}if
+FontDirectory /NewCenturySchlbk-Roman known
+{
+/NewCenturySchlbk-Oblique /NewCenturySchlbk-Roman 16 ObliqueFont
+/NewCenturySchlbk-ItalicUnslanted /NewCenturySchlbk-Italic -16 ObliqueFont
+/NewCenturySchlbk-SmallCaps /NewCenturySchlbk-Roman SmallCapsFont
+}if
+/SmallCapShow{
+/achar (A) def
+/xfac 0.8 def
+/yfac 0.8 def
+/xrec 1 xfac div def
+/yrec 1 yfac div def
+{dup dup
+8#141 ge exch 8#172 le and 
+{8#40 sub achar exch 0 exch put achar
+xfac yfac scale show xrec yrec scale}
+{achar exch 0 exch put achar show}
+ifelse
+}forall
+}def
+/tempstring 100 string def
+/MacDrwgs false def
+/@MacSetUp
+{userdict /md known
+{userdict /md get type /dicttype eq
+{/MacDrwgs true def
+md begin
+/psu
+/psu load
+{/letter {}def
+/note{}def
+/legal{}def
+statusdict /waittimeout 300 put
+/page{pop}def
+/pyt vo neg def
+/pxt ho def
+}
+concatprocs
+def
+/od
+/od load
+{@setclipper}
+concatprocs
+def
+end}
+if}
+if
+}def
+/concatprocs
+{/p2 exch cvlit def
+/p1 exch cvlit def
+/p p1 length p2 length add array def
+p 0 p1 putinterval
+p p1 length p2 putinterval
+p cvx
+}def
+end
+statusdict /waittimeout 300 put
+TeXDict begin
+@start
+%%Title: pandr.dvi
+%%Creator: dvi2ps
+%%EndProlog
+1 @bop0
+/Times-Roman /t-rom.510 ReEncodeForTeX /t-rom.510 /t-rom.510 70.568701 TeXPSmakefont def
+/Times-Roman /t-rom.360 ReEncodeForTeX /t-rom.360 /t-rom.360 49.813200 TeXPSmakefont def
+/Times-Bold /t-bol.420 ReEncodeForTeX /t-bol.420 /t-bol.420 58.115401 TeXPSmakefont def
+/Times-Italic /t-ita.300 ReEncodeForTeX /t-ita.300 /t-ita.300 41.511000 TeXPSmakefont def
+/Times-Roman /t-rom.300 ReEncodeForTeX /t-rom.300 /t-rom.300 41.511000 TeXPSmakefont def
+1 @bop1
+t-rom.510 @sf
+9 224 p 65 c
+18 r (Simple) s
+17 r (Placement) s
+19 r (and) s
+19 r (Routing) s
+18 r (Algorithm) s
+17 r (for) s
+19 r 97 c
+18 r 84 c
+-4 r (wo-Dimensional) s
+454 315 p (Computational) s
+18 r (Origami) s
+18 r (Architecture) s
+t-rom.360 @sf
+805 436 p (Robert) s
+13 r (S.) s
+12 r (French) s
+841 533 p (April) s
+12 r (5,) s
+13 r (1989) s
+t-bol.420 @sf
+0 689 p (Abstract) s
+t-ita.300 @sf
+0 814 p (Computati) s
+-1 r (onal) s
+5 r (origami) s
+t-rom.300 @sf
+7 r (is) s
+8 r 97 c
+9 r (parallel-processing) s
+7 r (concept) s
+9 r (in) s
+0 864 p (which) s
+14 r 97 c
+14 r (regular) s
+14 r (array) s
+14 r (of) s
+14 r (processors) s
+14 r (can) s
+15 r (be) s
+14 r (folded) s
+13 r (along) s
+0 914 p (any) s
+16 r (dimension) s
+15 r (so) s
+15 r (that) s
+16 r (it) s
+15 r (can) s
+16 r (be) s
+16 r (simulated) s
+15 r (by) s
+16 r 97 c
+16 r (smaller) s
+0 964 p (number) s
+7 r (of) s
+8 r (processors.) s
+13 r (The) s
+8 r (problem) s
+7 r (of) s
+7 r (assigning) s
+7 r (functions) s
+0 1014 p (to) s
+14 r (each) s
+15 r (of) s
+14 r (the) s
+14 r (processors) s
+14 r (is) s
+14 r (very) s
+14 r (much) s
+15 r (like) s
+13 r (the) s
+14 r (general-) s
+0 1063 p (ized) s
+10 r (electrical) s
+10 r (circuit) s
+9 r (layout) s
+8 r (problem.) s
+14 r (This) s
+9 r (paper) s
+10 r (presents) s
+0 1113 p 97 c
+10 r (simple,) s
+10 r (polynomial) s
+8 r (time) s
+10 r (algorithm) s
+8 r (for) s
+10 r (placing) s
+9 r (and) s
+10 r (rout-) s
+0 1163 p (ing) s
+8 r (functions) s
+8 r (in) s
+8 r (an) s
+9 r (origami) s
+8 r (architecture.) s
+14 r (Empirical) s
+9 r (results) s
+0 1213 p (are) s
+11 r (analyzed) s
+11 r (and) s
+10 r (optimizations) s
+9 r (suggested.) s
+t-bol.420 @sf
+0 1398 p 49 c
+58 r (Intr) s
+(oduction) s
+t-ita.300 @sf
+0 1524 p (Computati) s
+-1 r (onal) s
+14 r (origami) s
+t-rom.300 @sf
+15 r (is) s
+16 r 97 c
+17 r (parallel-processing) s
+15 r (concept) s
+0 1574 p (developed) s
+11 r (by) s
+11 r (Alan) s
+11 r (Huang) s
+11 r 91 c
+55 c
+44 c
+12 r 56 c
+44 c
+12 r 57 c
+-1 r (].) s
+18 r (An) s
+11 r (origami) s
+11 r (machine) s
+0 1623 p (consists) s
+10 r (of) s
+10 r 97 c
+11 r (regular) s
+11 r (array) s
+10 r (of) s
+11 r (processors) s
+10 r (superimposed) s
+11 r (on) s
+0 1673 p 97 c
+15 r (tessellable) s
+14 r (mosaic) s
+15 r (architecture) s
+14 r 91 c
+49 c
+-1 r 49 c
+-2 r (].) s
+26 r (The) s
+15 r (array) s
+14 r (can) s
+15 r (be) s
+0 1723 p (arbitrarily) s
+13 r 96 c
+-2 r (`fold) s
+-1 r (ed') s
+-3 r 39 c
+13 r (along) s
+14 r (any) s
+15 r (of) s
+14 r (its) s
+14 r (dimensions) s
+14 r (so) s
+15 r (that) s
+0 1773 p (it) s
+15 r (can) s
+17 r (be) s
+16 r (simulated) s
+15 r (by) s
+16 r 97 c
+16 r (smaller) s
+16 r (number) s
+16 r (of) s
+16 r (processors.) s
+0 1823 p (The) s
+11 r (latency) s
+10 r (and) s
+10 r (throughput) s
+7 r (of) s
+10 r (the) s
+10 r (system) s
+11 r (can) s
+10 r (be) s
+11 r (adjusted) s
+0 1872 p (by) s
+9 r (folding) s
+7 r (the) s
+9 r (array) s
+9 r (widthwise) s
+8 r (or) s
+9 r (depthwise,) s
+9 r (respectively) s
+-2 r 46 c
+0 1922 p (The) s
+12 r (folding) s
+9 r (of) s
+10 r (an) s
+11 r (origami) s
+11 r (array) s
+11 r (is) s
+11 r (transparent) s
+10 r (to) s
+10 r (the) s
+11 r (soft-) s
+0 1972 p (ware) s
+11 r (running) s
+9 r (on) s
+10 r (it.) s
+14 r (Information) s
+9 r (about) s
+10 r (the) s
+10 r (construction) s
+9 r (of) s
+0 2022 p (an) s
+11 r (origami) s
+9 r (machine) s
+11 r (can) s
+11 r (be) s
+11 r (found) s
+9 r (in) s
+10 r 91 c
+51 c
+-1 r (].) s
+42 2102 p 65 c
+11 r (sample) s
+12 r (origami) s
+11 r (array) s
+12 r (is) s
+12 r (shown) s
+11 r (in) s
+11 r 174 c
+(gure) s
+11 r (1.) s
+18 r (This) s
+11 r (is) s
+12 r 97 c
+0 2151 p (two-dimensional) s
+10 r (array) s
+12 r (of) s
+11 r (processors) s
+13 r (with) s
+10 r (each) s
+13 r (processor) s
+0 2201 p (having) s
+10 r (two) s
+10 r (inputs) s
+9 r (and) s
+11 r (two) s
+11 r (outputs.) s
+14 r (The) s
+11 r (outputs) s
+9 r (of) s
+11 r 97 c
+11 r (pro-) s
+0 2251 p (cessor) s
+13 r (are) s
+13 r (staggered) s
+13 r (with) s
+11 r (the) s
+13 r (inputs) s
+11 r (of) s
+12 r (the) s
+12 r (processors) s
+13 r (on) s
+0 2301 p (the) s
+7 r (next) s
+7 r (row) s
+7 r (so) s
+8 r (that) s
+6 r (signals) s
+7 r (can) s
+8 r (be) s
+8 r (distribut) s
+-1 r (ed) s
+6 r (as) s
+8 r (necessary) s
+-2 r 46 c
+0 2351 p (Each) s
+10 r (processor) s
+10 r (contains) s
+9 r (no) s
+9 r (state) s
+9 r (and) s
+10 r (performs) s
+9 r (one) s
+10 r (simple) s
+0 2401 p (operation) s
+9 r (per) s
+11 r (cycle.) s
+16 r (Each) s
+11 r (can) s
+11 r (take) s
+11 r (on) s
+10 r (one) s
+11 r (of) s
+10 r 97 c
+11 r (number) s
+11 r (of) s
+0 2450 p t-ita.300 @sf
+175 c
+(avors) s
+t-rom.300 @sf
+44 c
+13 r (or) s
+12 r (operations) s
+11 r (that) s
+12 r (can) s
+13 r (be) s
+12 r (performed.) s
+20 r (All) s
+11 r (proces-) s
+0 2500 p (sors) s
+11 r (have) s
+12 r (the) s
+10 r (same) s
+13 r (selection) s
+11 r (of) s
+10 r 175 c
+(avors.) s
+17 r (Thus,) s
+12 r (an) s
+11 r (origami) s
+0 2550 p (array) s
+10 r (is) s
+9 r (programmed) s
+10 r (simply) s
+9 r (by) s
+9 r (selecting) s
+9 r 97 c
+11 r 175 c
+(avor) s
+9 r (for) s
+9 r (each) s
+0 2600 p (of) s
+11 r (the) s
+11 r (processors.) s
+17 r (The) s
+12 r (processors) s
+11 r (in) s
+11 r (an) s
+12 r (origami) s
+10 r (array) s
+12 r (are) s
+996 689 p (called) s
+t-ita.300 @sf
+17 r (nodes) s
+t-rom.300 @sf
+46 c
+33 r (Note) s
+16 r (that) s
+16 r (data) s
+17 r (always) s
+17 r 175 c
+(ows) s
+17 r 96 c
+-2 r (`down) s
+-1 r 39 c
+-3 r 39 c
+15 r (an) s
+996 739 p (origami) s
+9 r (array) s
+-2 r 44 c
+11 r (and) s
+10 r (never) s
+10 r (up) s
+10 r (or) s
+10 r (directly) s
+9 r (sideways.) s
+1037 818 p (While) s
+13 r (there) s
+14 r (are) s
+14 r (many) s
+14 r (dif) s
+(ferent) s
+11 r (interconnection) s
+12 r (strate-) s
+996 868 p (gies) s
+10 r (that) s
+9 r (can) s
+10 r (be) s
+10 r (used,) s
+11 r (and) s
+10 r (the) s
+9 r (origami) s
+9 r (concept) s
+10 r (can) s
+11 r (be) s
+10 r (eas-) s
+996 918 p (ily) s
+12 r (extended) s
+14 r (to) s
+12 r (more) s
+14 r (than) s
+13 r (two) s
+13 r (dimensions,) s
+14 r (we) s
+14 r (will) s
+12 r (only) s
+996 968 p (treat) s
+12 r (this) s
+11 r (simpli) s
+174 c
+(ed) s
+11 r (model) s
+12 r (here.) s
+21 r (Information) s
+10 r (about) s
+12 r (other) s
+996 1018 p (architectures) s
+10 r (can) s
+11 r (be) s
+11 r (found) s
+9 r (in) s
+10 r 91 c
+49 c
+-1 r 49 c
+-2 r (].) s
+1023 1876 p @beginspecial
+-36.000000 @hoffset
+-36.000000 @voffset
+@setspecial
+%!
+systemdict/currentpacking known{currentpacking true setpacking}if
+/LW{save statusdict/product get(LaserWriter)anchorsearch
+exch pop{length 0 eq{1}{2}ifelse}{0}ifelse exch restore}bind def
+/LW+{LW 2 eq}bind def
+/ok{systemdict/statusdict known dup{LW 0 gt and}if}bind def
+/md 250 dict def md begin
+/av 66 def
+/T true def/F false def/mtx matrix def/s75 75 string def/s8 8 string def/s1 ( ) def/pxs 1 def/pys 1 def
+1 0 mtx defaultmatrix dtransform exch atan/pa exch def/nlw .24 def/ppr [-32 -29.52 762 582.48] def
+/pgs 1 def/por true def/xb 500 array def/so true def/fillflag false def/pnm 1 def/fmv true def
+/sfl false def/ma 0 def/invertflag false def/xflip false def/yflip false def/noflips true def/scaleby96 false def/fNote true def/fBitStretch true def
+/fg (Rvd\001\001\000\000\177) def
+/bdf{bind def}bind def
+/xdf{exch def}bdf
+/xl{neg exch neg translate}bdf
+/fp{pnsh 0 ne pnsv 0 ne and}bdf
+/nop{}bdf/lnop[/nop load]cvx bdf
+/vrb[
+{fp{gsave 1 setlinewidth pnsh pnsv scale stroke grestore}if newpath}bind
+/eofill load
+dup
+/newpath load
+2 index
+dup
+{clip newpath}bind
+{}bind
+dup
+2 copy
+]def
+currentscreen/spf xdf/rot xdf/freq xdf
+/doop{vrb exch get exec}bdf
+/psu{/fNote xdf/fBitStretch xdf/scaleby96 xdf/yflip xdf/xflip xdf/invertflag xdf xflip yflip or{/noflips false def}if
+/pgs xdf 2 index .72 mul exch div/pys xdf div .72 mul/pxs xdf ppr astore pop/por xdf sn and/so xdf}bdf
+/txpose{fNote{smalls}{bigs}ifelse pgs get exec pxs pys scale ppr aload pop por{noflips{pop exch neg exch translate pop 1 -1 scale}if
+xflip yflip and{pop exch neg exch translate 180 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg translate}if 
+xflip yflip not and{pop exch neg exch translate pop 180 rotate ppr 3 get ppr 1 get neg sub neg 0 translate}if yflip xflip not and{ppr 1 get neg ppr 0 get neg translate}if}
+{noflips{translate pop pop 270 rotate 1 -1 scale}if xflip yflip and{translate pop pop 90 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg translate}if
+xflip yflip not and{translate pop pop 90 rotate ppr 3 get ppr 1 get neg sub neg 0 translate}if yflip xflip not and{translate pop pop 270 rotate ppr 2 get ppr 0 get neg sub neg 0 exch translate}if}ifelse
+statusdict begin waittimeout 300 lt{/waittimeout 300 def}if end scaleby96{ppr aload pop 4 -1 roll add 2 div 3 1 roll add 2 div 2 copy translate .96 dup scale neg exch neg exch translate}if}bdf
+/fr{4 copy ppr aload pop 3 -1 roll add 3 1 roll exch add 6 2 roll 3 -1 roll
+sub 3 1 roll exch sub 3 -1 roll exch div 3 1 roll div exch scale pop pop xl}bdf
+/obl{{0.212557 mul}{pop 0}ifelse}bdf
+/sfd{ps fg 5 -1 roll get mul 100 div 0 ps 5 -1 roll obl ps neg 0 0 6a astore makefont setfont}bdf
+/fnt{findfont sfd}bdf
+/bt{sa 3 1 roll 3 index and put}bdf
+/sa(\000\000\000\000\000\000\000\000\000\000)def
+/fs{0 1 bt 1 2 bt 2 4 bt 3 8 bt 4 16 bt 5 32 bt 6 64 bt 7 128 bt sa exch 8 exch put}bdf
+/mx1 matrix def
+/mx2 matrix def
+/mx3 matrix def
+/bu{currentpoint currentgray currentlinewidth currentlinecap currentlinejoin currentdash exch aload length
+fg 5 sfl{1}{0}ifelse put pnsv pnsh
+2t aload pop 3a aload pop mx2 aload pop mx1 aload pop mtx currentmatrix aload pop
+mx3 aload pop ps pm restore/ps xdf mx3 astore pop}bdf
+/bn{/pm save def mx3 setmatrix newpath 0 0 moveto ct dup 39 get 0 exch getinterval cvx exec
+mtx astore setmatrix mx1 astore pop mx2 astore pop 3a astore pop
+2t astore pop/pnsh xdf/pnsv xdf gw
+/sfl fg 5 get 0 ne def array astore exch setdash setlinejoin setlinecap
+setlinewidth setgray moveto}bdf
+/fc{save vmstatus exch sub 50000 lt
+{(%%[|0|]%%)=print flush}if pop restore}bdf
+/tc{32768 div add 3 1 roll 32768 div add 2t astore pop}bdf
+/3a [0 0 0] def
+/2t 2 array def
+/tp{3a astore pop}bdf
+/tt{mx2 currentmatrix pop currentpoint 2 copy 2t aload pop qa 2 copy translate 3a aload pop exch dup 0 eq
+{pop}{1 eq{-1 1}{1 -1}ifelse scale}ifelse rotate pop neg exch neg exch translate moveto}bdf
+/te{mx2 setmatrix}bdf
+/th{3 -1 roll div 3 1 roll exch div 2 copy mx1 scale pop scale/sfl true def}bdf
+/tu{1 1 mx1 itransform scale/sfl false def}bdf
+/ts{1 1 mx1 transform scale/sfl true def}bdf
+/fz{/ps xdf}bdf
+/dv{dup 0 ne{div}{pop}ifelse}bdf
+/pop4{pop pop pop pop}bdf
+/it{sfl{mx1 itransform}if}bdf
+/gm{exch it moveto}bdf/rm{it rmoveto}bdf
+/lm{currentpoint sfl{mx1 transform}if exch pop sub 0 exch it rmoveto}bdf
+/fm{statusdict/manualfeed known}bdf
+/se{statusdict exch/manualfeed exch put}bdf
+/mf{dup/ma exch def 0 gt{fm se/t1 5 st ok ma 1 gt and{/t2 0 st/t3 0 st
+statusdict/manualfeedtimeout 3600 put
+}if}if}bdf
+/jn{/statusdict where exch pop{statusdict exch /jobname exch put}if}bdf
+/pen{pnm mul/pnsh xdf pnm mul/pnsv xdf pnsh setlinewidth}bdf
+/min{2 copy gt{exch}if pop}bdf
+/max{2 copy lt{exch}if pop}bdf
+/dh{fg 6 1 put array astore exch pop exch pop exch setdash}bdf
+/ih[currentdash]def
+/rh{fg 6 0 put ih aload pop setdash}bdf
+/dl{gsave nlw pys div setlinewidth 0 setgray}bdf
+/dlin{exch currentpoint currentlinewidth 2 div dup
+translate newpath moveto lineto currentpoint stroke grestore moveto}bdf
+/lin{fg 6 get 0 ne{exch lineto currentpoint 0 doop moveto}
+{exch currentpoint/pnlv xdf/pnlh xdf gsave newpath/@1 xdf/@2 xdf fp{pnlh @2 lt{pnlv @1 ge
+{pnlh pnlv moveto @2 @1 lineto pnsh 0 rlineto
+0 pnsv rlineto pnlh pnsh add pnlv pnsv add lineto pnsh neg 0 rlineto}
+{pnlh pnlv moveto pnsh 0 rlineto @2 pnsh add @1 lineto 0 pnsv rlineto
+pnsh neg 0 rlineto pnlh pnlv pnsv add lineto}ifelse}{pnlv @1 gt
+{@2 @1 moveto pnsh 0 rlineto pnlh pnsh add pnlv lineto 0 pnsv rlineto
+pnsh neg 0 rlineto @2 @1 pnsv add lineto}{pnlh pnlv moveto pnsh 0 rlineto
+0 pnsv rlineto @2 pnsh add @1 pnsv add lineto pnsh neg 0 rlineto
+0 pnsv neg rlineto}ifelse}ifelse
+closepath fill}if @2 @1 grestore moveto}ifelse}bdf
+/gw{/pnm fg 3 get fg 4 get div def}bdf
+/lw{fg exch 4 exch put fg exch 3 exch put gw pnsv pnsh pen}bdf
+/barc{/@1 xdf/@2 xdf/@3 xdf/@4 xdf/@5 xdf
+/@6 xdf/@7 xdf/@8 xdf gsave
+@5 @7 add 2 div @6 @8 add 2 div translate newpath 0 0 moveto
+@5 @7 sub @6 @8 sub mtx currentmatrix pop scale @1{newpath}if
+0 0 0.5 @4 @3 arc @4 @3 sub abs 360 ge{closepath}if
+mtx setmatrix @2 doop grestore}bdf
+/ar{dup 0 eq barc}bdf
+/ov{0 exch 360 exch true barc}bdf
+/rc{/@t xdf currentpoint 6 2 roll newpath 4 copy 4 2 roll exch moveto
+6 -1 roll lineto lineto lineto closepath @t doop moveto}bdf
+/mup{dup pnsh 2 div le exch pnsv 2 div le or}bdf
+/rr{/@1 xdf 2. div/@2 xdf 2. div/@3 xdf
+/@4 xdf/@5 xdf/@6 xdf/@7 xdf
+@7 @5 eq @6 @4 eq @2 mup or or{@7 @6 @5 @4 @1 rc}
+{@4 @6 sub 2. div dup @2 lt{/@2 xdf}{pop}ifelse
+@5 @7 sub 2. div dup @2 lt{/@2 xdf}{pop}ifelse
+@1 0 eq{/@2 @2 pnsh 2 div 2 copy gt{sub def}{0 pop4}ifelse}if
+currentpoint newpath
+@4 @6 add 2. div @7 moveto
+@4 @7 @4 @5 @2 arcto pop4
+@4 @5 @6 @5 @2 arcto pop4
+@6 @5 @6 @7 @2 arcto pop4
+@6 @7 @4 @7 @2 arcto pop4
+closepath @1 doop moveto}ifelse}bdf
+/pr{gsave newpath/pl{exch moveto/pl{exch lineto}def}def}bdf
+/pl{exch lineto}bdf
+/ep{dup 0 eq{{moveto}{exch lin}{}{(%%[|1|]%%)= flush}pathforall
+pop grestore}{doop grestore}ifelse currentpoint newpath moveto}bdf
+/gr{64. div setgray}bdf
+/pat{s8 copy pop 9.375 pa por not{90 add}if{1 add 4 mul cvi s8 exch get exch 1 add 4 mul cvi 7 sub bitshift 1 and}setscreen gr}bdf
+/sg{freq rot/spf load setscreen gr}bdf
+/dc{transform round .5 sub exch round .5 sub exch itransform}bdf
+/sn{userdict/smooth4 known}bdf
+/x8{3 bitshift}bdf
+/x4{2 bitshift}bdf
+/d4{-2 bitshift}bdf
+/d8{-3 bitshift}bdf
+/rb{15 add -4 bitshift 1 bitshift}bdf
+/db{/@7 save def/@1 xdf/@2 xdf/@3 xdf/@4 xdf/@5 xdf/@6 @5 @3 4 add mul def
+dc translate scale/xdbit 1 1 idtransform abs/ydbit exch def abs def{0 0 1 ydbit add 1 10 rc clip}if
+@1 0 eq @1 4 eq or{1 setgray ydbit 0 1 ydbit add 1 2 rc}if
+@1 3 eq @1 7 eq or{1}{0}ifelse setgray/@9 @1 0 eq @1 1 eq @1 3 eq or or invertflag xor def/@13 @6 def
+@2 fBitStretch or{/@10 @4 x4 def/@11 @3 x4 def/@12 @10 rb def/@13 @12 @11 mul def/@15 1 1 dtransform abs/calcY 1 index def round cvi/@14 exch def
+abs/calcX 1 index def round cvi scaleby96 not{1 add}if def/@16 @15 rb def/@17 @16 @14 mul def}if
+sn @13 60000 lt and @2 fBitStretch or and{mtx currentmatrix dup 1 get exch 2 get 0. eq exch 0. eq and @17 60000 lt and fBitStretch and{@16 3 bitshift @14 @9 [calcX 0 0 calcY 0 0]{@17 string @13 string
+currentfile @6 string readhexstring pop 1 index @4 @3 @5 @12 @2 smooth4
+@10 @11 @12 dup string 5 index @15 @14 @16 dup string stretch}imagemask}{@12 x8 @11 @9 [@10 0 0 @11 0 0]{@13 string
+currentfile @6 string readhexstring pop 1 index @4 @3 @5 @12 @2 smooth4}imagemask}ifelse}{@5 3 bitshift @3 4 add @9 [@4 0 0 @3 0 2]{currentfile @6 string readhexstring pop}imagemask}ifelse
+@7 restore}bdf
+/multibit{/mbdeep exch def/mbY exch def/mbX exch def
+save mbX mbY mbdeep[mbX 0 0 mbY 0 0]{currentfile picstr readhexstring pop}image
+restore}bdf
+/wd 16 dict def
+/mfont 14 dict def
+/mdf{mfont wcheck not{/mfont 14 dict def}if mfont begin xdf end}bdf
+/cf{{1 index/FID ne{def}{pop pop}ifelse}forall}bdf/rf{/@1 exch def/@2 exch def
+FontDirectory @2 known{cleartomark pop}{findfont dup begin dup length @1 add dict begin
+cf{/Encoding macvec def}{Encoding dup length array copy/Encoding exch def
+counttomark 2 idiv{Encoding 3 1 roll put}repeat}ifelse
+pop
+exec currentdict end end @2 exch definefont pop}ifelse}bdf
+/bmbc{exch begin wd begin
+/cr xdf
+save
+CharTable cr 6 mul 6 getinterval{}forall
+/bitheight xdf/bitwidth xdf
+.96 div/width xdf
+Gkernmax add/XOffset xdf Gdescent add/YOffset xdf/rowbytes xdf
+rowbytes 255 eq{0 0 0 0 0 0 setcachedevice}
+{Gnormsize dup scale
+width 0 XOffset YOffset bitwidth XOffset add bitheight YOffset add
+setcachedevice
+rowbytes 0 ne{
+XOffset YOffset translate newpath 0 0 moveto
+bitwidth bitheight scale
+sn{
+/xSmt bitwidth x4 def
+/ySmt bitheight x4 def
+/rSmt xSmt rb def
+rSmt x8 ySmt true
+[xSmt 0 0 ySmt neg 0 ySmt]
+{rSmt ySmt mul string CharData cr get
+1 index bitwidth bitheight rowbytes rSmt so smooth4}
+}{rowbytes 3 bitshift bitheight 4 add true
+[bitwidth 0 0 bitheight neg 0 bitheight 2 add]
+{CharData cr get}
+}ifelse
+imagemask
+}if
+}ifelse
+restore
+end end
+}bdf
+/bb{.96 exch div/Gnormsize mdf 2 index
+/Gkernmax mdf 1 index/Gdescent mdf
+3 index div 4 1 roll
+2 index div 1. 5 2 roll
+exch div 4 1 roll
+4 array astore/FontBBox mdf
+}bdf
+/cdf{mfont/CharData get 3 1 roll put}bdf
+/bf{
+mfont begin
+/FontType 3 def
+/FontMatrix [1 0 0 1 0 0] def
+/Encoding macvec def
+/BuildChar/bmbc load def
+end
+mfont definefont pop
+}bdf
+/wi LW 1 eq{{gsave 0 0 0 0 0 0 0 0 moveto lineto lineto lineto closepath clip stringwidth grestore}bind}{/stringwidth load}ifelse def
+/aps{0 get 124 eq}bdf
+/xc{s75 cvs dup}bdf
+/xp{put cvn}bdf
+/scs{xc 3 67 put dup 0 95 xp}bdf
+/sos{xc 3 79 xp}bdf
+/sbs{xc 1 66 xp}bdf
+/sis{xc 2 73 xp}bdf
+/sob{xc 2 79 xp}bdf
+/sss{xc 4 83 xp}bdf
+/dd{exch 1 index add 3 1 roll add exch}bdf
+/smc{moveto dup show}bdf
+/kwn{FontDirectory 1 index known{findfont exch pop}}bdf
+/gl{1 currentgray sub setgray}bdf
+/mm{/mfont 10 dict def mfont begin
+/FontMatrix [1 0 0 1 0 0] def
+/FontType 3 def
+/Encoding macvec def
+/df 4 index findfont def
+/FontBBox [0 0 1 1] def
+/xda xdf/mbc xdf
+/BuildChar{wd begin/cr xdf/fd xdf/cs s1 dup 0 cr put def fd/mbc get exec end}def
+exec end mfont definefont}bdf
+/ac{dup scs kwn{exch findfont dup length 1 add dict begin{1 index/FID ne 2 index/UniqueID ne and{def}{pop pop}ifelse}forall
+fmv{/Encoding macvec def}if/StrokeWidth nlw 1000 mul pys div ps div dup 12 lt{pop 12}if def
+/PaintType 2 def currentdict end definefont}ifelse}bdf
+/mb{dup sbs kwn{exch{pop}{bbc}{}mm}ifelse sfd}bdf
+/mo{dup sos kwn{exch{pop}{boc}{}mm}ifelse sfd}bdf
+/ms{dup sss kwn{exch{pop}{bsc}{}mm}ifelse sfd}bdf
+/ou{dup sos kwn{exch dup ac pop{scs findfont /df2 xdf}{aoc}{}mm}ifelse sfd}bdf
+/su{dup sss kwn{exch dup ac pop{scs findfont /df2 xdf}{asc}{}mm}ifelse sfd}bdf
+/ao{/fmv true def ou}bdf/as{/fmv true def su}bdf
+/vo{/fmv false def ou}bdf/vs{/fmv false def su}bdf
+/bbc{/da .03 def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch da add exch}if grestore setcharwidth
+cs 0 0 smc da 0 smc da da smc 0 da moveto show}bdf
+/boc{/da 1 ps div def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch da add exch}if grestore setcharwidth
+cs 0 0 smc da 0 smc da da smc 0 da smc gl da 2. div dup moveto show}bdf
+/bsc{/da 1 ps div def
+/ds .05 def/da2 da 2. div def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch ds add da2 add exch}if grestore setcharwidth
+cs ds da2 add .01 add 0 smc 0 ds da2 sub translate 0 0 smc
+da 0 smc da da smc 0 da smc gl da 2. div dup moveto show}bdf
+/aoc{fd/df get setfont
+gsave cs wi grestore setcharwidth
+gl cs 0 0 smc fd/df2 get setfont gl 0 0 moveto show}bdf
+/asc{/da .05 def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch da add exch}if grestore setcharwidth
+cs da .01 add 0 smc 0 da translate gl 0 0 smc gl fd/df2 get setfont 0 0 moveto show}bdf
+/st{1000 mul usertime add dup 2147483647 gt{2147483647 sub}if def}bdf
+/the{usertime sub dup 0 lt exch -2147483648 gt and}bdf
+/6a 6 array def
+/2a 2 array def
+/3q 3 array def
+/qs{3 -1 roll sub exch 3 -1 roll sub exch}bdf
+/qa{3 -1 roll add exch 3 -1 roll add exch}bdf
+/qm{3 -1 roll 1 index mul 3 1 roll mul}bdf
+/qn{6a exch get mul}bdf
+/qA .166667 def/qB .833333 def/qC .5 def
+/qx{6a astore pop
+qA 0 qn qB 2 qn add   qA 1 qn qB 3 qn add
+qB 2 qn qA 4 qn add   qB 3 qn qA 5 qn add
+qC 2 qn qC 4 qn add   qC 3 qn qC 5 qn add}bdf
+/qp{6 copy 12 -2 roll pop pop}bdf
+/qc{exch qp qx curveto}bdf
+/qi{{exch 4 copy 2a astore aload pop qa .5 qm newpath moveto}{exch 2 copy 6 -2 roll 2 qm qs 4 2 roll}ifelse}bdf
+/qq{{qc 2a aload pop qx curveto}{exch 4 copy qs qa qx curveto}ifelse}bdf
+/pt{currentpoint newpath moveto}bdf
+/qf{/fillflag true def}bdf
+/ec{1 and 0 ne{0 doop}if grestore currentpoint newpath moveto/fillflag false def}bdf
+/eu{currentpoint fp{0 ep}{grestore newpath}ifelse moveto/fillflag false def}bdf
+/bp{currentpoint newpath 2 copy moveto}bdf
+/ef{gsave fillflag{gsave eofill grestore}if}bdf
+/sm{0 exch{@1 eq{1 add}if}forall}bdf
+/lshow{4 1 roll exch/@1 exch def{1 index wi pop sub 1 index sm dv 0 @1 4 -1 roll widthshow}{1 index wi pop sub
+1 index dup sm 10 mul exch length 1 sub add dv dup 10. mul 0 @1 4 -1 roll 0 6 -1 roll awidthshow}ifelse}bdf
+/setTxMode{sa 9 2 index put 3 eq{1}{0}ifelse setgray}bdf
+/SwToSym{{}mark false/Symbol/Symbol 0 rf 0 sa 6 get 0 ne{pop 1}{sa 7 get 0 eq{pop 2}if}ifelse
+sa 1 get 0 ne/Symbol
+sa 4 get 0 ne{vs}{sa 3 get 0 ne{vo}{fnt}ifelse}ifelse}bdf
+/mc{0 3 1 roll transform neg exch pop}bdf
+/ul{dup 0 ne sa 2 get 0 ne and{gsave 0 0
+/UnderlinePosition kif{mc}{ps -10 div}ifelse/UnderlineThickness kif{mc}{ps 15 div}ifelse
+abs setlinewidth neg rmoveto
+sa 4 get 0 ne{gsave currentlinewidth 2. div dup rmoveto currentpoint newpath moveto
+2 copy rlineto stroke grestore}if
+sa 3 get sa 4 get or 0 ne{gsave gl 2 copy rlineto stroke grestore rlineto strokepath nlw pys div setlinewidth}{rlineto}ifelse
+stroke grestore}{pop}ifelse}bdf
+/sgt{2 copy known{get true}{pop pop false}ifelse}bdf
+/kif{currentfont dup/FontMatrix get exch/FontInfo sgt{true}{currentfont/df sgt
+{dup/FontInfo sgt{3 1 roll/FontMatrix get mtx concatmatrix exch true}{pop pop pop false}
+ifelse}{pop pop false}ifelse}ifelse{3 -1 roll sgt{exch true}{pop false}ifelse}{false}ifelse}bdf
+/blank/Times-Roman findfont/CharStrings get/space get def
+/macvec 256 array def
+/NUL/SOH/STX/ETX/EOT/ENQ/ACK/BEL/BS/HT/LF/VT/FF/CR/SO/SI
+/DLE/DC1/DC2/DC3/DC4/NAK/SYN/ETB/CAN/EM/SUB/ESC/FS/GS/RS/US
+macvec 0 32 getinterval astore pop
+macvec 32/Times-Roman findfont/Encoding get
+32 96 getinterval putinterval macvec dup 39/quotesingle put 96/grave put
+/Adieresis/Aring/Ccedilla/Eacute/Ntilde/Odieresis/Udieresis/aacute
+/agrave/acircumflex/adieresis/atilde/aring/ccedilla/eacute/egrave
+/ecircumflex/edieresis/iacute/igrave/icircumflex/idieresis/ntilde/oacute
+/ograve/ocircumflex/odieresis/otilde/uacute/ugrave/ucircumflex/udieresis
+/dagger/degree/cent/sterling/section/bullet/paragraph/germandbls
+/registered/copyright/trademark/acute/dieresis/notequal/AE/Oslash
+/infinity/plusminus/lessequal/greaterequal/yen/mu/partialdiff/summation
+/product/pi/integral/ordfeminine/ordmasculine/Omega/ae/oslash
+/questiondown/exclamdown/logicalnot/radical/florin/approxequal/Delta/guillemotleft
+/guillemotright/ellipsis/blank/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright/divide/lozenge
+/ydieresis/Ydieresis/fraction/currency/guilsinglleft/guilsinglright/fi/fl
+/daggerdbl/periodcentered/quotesinglbase/quotedblbase/perthousand/Acircumflex/Ecircumflex/Aacute
+/Edieresis/Egrave/Iacute/Icircumflex/Idieresis/Igrave/Oacute/Ocircumflex
+/apple/Ograve/Uacute/Ucircumflex/Ugrave/dotlessi/circumflex/tilde
+/macron/breve/dotaccent/ring/cedilla/hungarumlaut/ogonek/caron
+macvec 128 128 getinterval astore pop
+{}mark true/Courier/Courier 0 rf
+{/Metrics 21 dict begin/zero 600 def/one 600 def/two 600 def/three 600 def/four 600 def/five 600 def/six 600 def/seven 600 def/eight 600 def
+/nine 600 def/comma 600 def/period 600 def/dollar 600 def/numbersign 600 def/percent 600 def/plus 600 def/hyphen 600 def/E 600 def/parenleft 600 def/parenright 600 def/space 600 def
+currentdict end def currentdict/UniqueID known{/UniqueID 16#800000 def}if/FontBBox FontBBox 4 array astore def}mark true/Helvetica/Seattle 1 rf
+/oldsettransfer/settransfer load def
+/concatprocs{/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx}def
+/settransfer{currenttransfer concatprocs oldsettransfer}def
+/PaintBlack{{1 exch sub}settransfer gsave newpath clippath 1 setgray fill grestore}def
+/od{(Rvd\001\001\000\000\177) fg copy pop txpose
+1 0 mtx defaultmatrix dtransform exch atan/pa exch def
+newpath clippath mark
+{transform{itransform moveto}}{transform{itransform lineto}}
+{6 -2 roll transform 6 -2 roll transform 6 -2 roll transform
+{itransform 6 2 roll itransform 6 2 roll itransform 6 2 roll curveto}}
+{{closepath}}pathforall newpath counttomark array astore/gc xdf pop ct 39 0 put
+10 fz 0 fs 2 F/Courier fnt invertflag{PaintBlack}if}bdf
+/cd{}bdf
+/op{/sfl false def/pm save def}bdf
+/cp{not{userdict/#copies 0 put}if ma 0 gt{{t1 the{exit}if}loop}if{copypage}{showpage}ifelse pm restore}bdf
+/px{0 3 1 roll tp tt}bdf
+/psb{/us save def}bdf
+/pse{us restore}bdf
+/ct 40 string def
+/nc{currentpoint initclip newpath gc{dup type dup/arraytype eq exch/packedarraytype eq or{exec}if}
+forall clip newpath moveto}def
+/kp{ct 0 2 index length 2 index 39 2 index put getinterval copy cvx exec mx3 currentmatrix pop}bdf
+end
+md begin/bigs[lnop lnop/legal load userdict/a4 known{/a4 load}{lnop}ifelse lnop lnop lnop lnop lnop]def
+/smalls[lnop userdict/note known{/note load}{dup}ifelse lnop userdict/a4small known{/a4small load}{lnop}ifelse 2 index lnop lnop lnop lnop ]def end
+md begin
+
+T T -130 -125 3170 2425 100 300 300 1 F F F F T T psu
+(freply MacScrelt; document: sample-array-Layer#1)jn
+0 mf
+od
+op
+0 0 xl
+1 1 pen
+0 0 gm
+(nc 0 0 3040 2300 6 rc)kp
+0 setlinecap
+currentscreen
+3 1 roll pop pop 45 45 3 -1 roll setscreen
+48 gr
+2288 150 2363 263 112.5 112.5 1 rr
+4 4 pen
+0 gr
+2288 150 2363 263 115 115 0 rr
+48 gr
+2438 38 2513 150 111 111 1 rr
+0 gr
+2438 38 2513 150 115 115 0 rr
+48 gr
+2438 263 2513 375 111 111 1 rr
+0 gr
+2438 263 2513 375 115 115 0 rr
+48 gr
+2288 375 2363 488 111 111 1 rr
+0 gr
+2288 375 2363 488 115 115 0 rr
+48 gr
+2288 600 2363 713 111 111 1 rr
+0 gr
+2288 600 2363 713 115 115 0 rr
+48 gr
+2438 488 2513 600 111 111 1 rr
+0 gr
+2438 488 2513 600 115 115 0 rr
+48 gr
+2438 713 2513 825 111 111 1 rr
+0 gr
+2438 713 2513 825 115 115 0 rr
+48 gr
+2288 825 2363 938 111 111 1 rr
+0 gr
+2288 825 2363 938 115 115 0 rr
+48 gr
+2588 150 2663 263 111 111 1 rr
+0 gr
+2588 150 2663 263 115 115 0 rr
+48 gr
+2588 375 2663 488 111 111 1 rr
+0 gr
+2588 375 2663 488 115 115 0 rr
+48 gr
+2588 600 2663 713 111 111 1 rr
+0 gr
+2588 600 2663 713 115 115 0 rr
+48 gr
+2588 825 2663 938 111 111 1 rr
+0 gr
+2588 825 2663 938 115 115 0 rr
+48 gr
+2738 38 2813 150 111 111 1 rr
+0 gr
+2738 38 2813 150 115 115 0 rr
+48 gr
+2738 263 2813 375 111 111 1 rr
+0 gr
+2738 263 2813 375 115 115 0 rr
+48 gr
+2738 488 2813 600 111 111 1 rr
+0 gr
+2738 488 2813 600 115 115 0 rr
+48 gr
+2738 713 2813 825 111 111 1 rr
+0 gr
+2738 713 2813 825 115 115 0 rr
+48 gr
+2888 150 2963 263 111 111 1 rr
+0 gr
+2888 150 2963 263 115 115 0 rr
+48 gr
+2888 375 2963 488 111 111 1 rr
+0 gr
+2888 375 2963 488 115 115 0 rr
+48 gr
+2888 600 2963 713 111 111 1 rr
+0 gr
+2888 600 2963 713 115 115 0 rr
+48 gr
+2888 825 2963 938 111 111 1 rr
+0 gr
+2888 825 2963 938 115 115 0 rr
+2361 186 gm
+2436 111 lin
+2361 223 gm
+2436 298 lin
+2361 411 gm
+2436 336 lin
+2361 636 gm
+2436 561 lin
+2361 673 gm
+2436 748 lin
+2361 861 gm
+2436 786 lin
+2361 448 gm
+2436 523 lin
+2398 36 gm
+2436 73 lin
+2361 898 gm
+2398 936 lin
+2511 298 gm
+2586 223 lin
+2511 336 gm
+2586 411 lin
+2511 523 gm
+2586 448 lin
+2511 748 gm
+2586 673 lin
+2511 786 gm
+2586 861 lin
+2548 936 gm
+2586 898 lin
+2511 561 gm
+2586 636 lin
+2511 111 gm
+2586 186 lin
+2511 73 gm
+2548 36 lin
+2661 186 gm
+2736 111 lin
+2661 223 gm
+2736 298 lin
+2661 411 gm
+2736 336 lin
+2661 636 gm
+2736 561 lin
+2661 673 gm
+2736 748 lin
+2661 861 gm
+2736 786 lin
+2661 448 gm
+2736 523 lin
+2698 36 gm
+2736 73 lin
+2661 898 gm
+2698 936 lin
+2811 298 gm
+2886 223 lin
+2811 336 gm
+2886 411 lin
+2811 523 gm
+2886 448 lin
+2811 748 gm
+2886 673 lin
+2811 786 gm
+2886 861 lin
+2848 936 gm
+2886 898 lin
+2811 561 gm
+2886 636 lin
+2811 111 gm
+2886 186 lin
+2811 73 gm
+2848 36 lin
+2248 261 gm
+2286 223 lin
+2248 148 gm
+2286 186 lin
+2248 486 gm
+2286 448 lin
+2248 373 gm
+2286 411 lin
+2248 711 gm
+2286 673 lin
+2248 598 gm
+2286 636 lin
+2248 936 gm
+2286 898 lin
+2248 823 gm
+2286 861 lin
+2961 411 gm
+2998 373 lin
+2961 448 gm
+2998 486 lin
+2961 636 gm
+2998 598 lin
+2961 861 gm
+2998 823 lin
+2961 898 gm
+2998 936 lin
+2961 673 gm
+2998 711 lin
+2961 223 gm
+2998 261 lin
+2961 186 gm
+2998 148 lin
+F T cp
+cd
+end
+@endspecial
+1045 2008 p (Figure) s
+10 r (1:) s
+13 r 65 c
+11 r (sample) s
+11 r (two-dimensional) s
+8 r (origami) s
+9 r (array) s
+-2 r 46 c
+1037 2121 p (It) s
+13 r (is) s
+13 r (easy) s
+14 r (to) s
+12 r (see) s
+14 r (that) s
+13 r (any) s
+13 r (logical) s
+12 r (function) s
+11 r (can) s
+14 r (be) s
+14 r (com-) s
+996 2171 p (puted) s
+13 r (with) s
+13 r (an) s
+14 r (appropriate) s
+14 r (array) s
+14 r (of) s
+14 r (nodes.) s
+25 r (For) s
+14 r (example,) s
+996 2221 p (the) s
+8 r (array) s
+9 r (illustrated) s
+7 r (in) s
+8 r 174 c
+(gure) s
+9 r 50 c
+9 r (takes) s
+9 r (six) s
+8 r (inputs,) s
+8 r (performs) s
+9 r 97 c
+996 2271 p (logical) s
+10 r (AND) s
+11 r (on) s
+11 r (them,) s
+12 r (and) s
+12 r (produces) s
+11 r 97 c
+12 r (single) s
+10 r (output.) s
+15 r (The) s
+996 2321 p (array) s
+16 r (illustrated) s
+14 r (in) s
+15 r 174 c
+(gure) s
+16 r 51 c
+15 r (implements) s
+16 r 97 c
+16 r (4-bit) s
+14 r (by) s
+16 r (4-bit) s
+996 2371 p (adder) s
+11 r (using) s
+11 r (half-adders) s
+11 r (\(HA\),) s
+11 r (OR) s
+12 r (gates,) s
+12 r (and) s
+11 r (routing) s
+10 r (ele-) s
+996 2420 p (ments) s
+10 r (\(an) s
+10 r (HA) s
+9 r (element) s
+11 r (produces) s
+9 r (the) s
+10 r (sum) s
+10 r (on) s
+10 r (its) s
+9 r (left) s
+9 r (output) s
+996 2470 p (and) s
+10 r (the) s
+10 r (carry) s
+11 r (on) s
+10 r (its) s
+9 r (right) s
+9 r (output\).) s
+1037 2550 p (The) s
+10 r (primary) s
+9 r (problem) s
+9 r (with) s
+8 r (an) s
+10 r (origami) s
+8 r (system) s
+10 r (is) s
+9 r (assign-) s
+996 2600 p (ing) s
+7 r (functions) s
+7 r (to) s
+8 r (each) s
+9 r (of) s
+8 r (the) s
+8 r (nodes) s
+8 r (so) s
+8 r (that) s
+8 r 97 c
+9 r (task) s
+8 r (can) s
+9 r (be) s
+8 r (per-) s
+965 2724 p 49 c
+@eop
+2 @bop0
+/cmr7.300 @newfont
+cmr7.300 @sf
+[<7FE07FE00E000E000E000E000E000E000E000E000E000E000E000E000E00EE00FE001E000600> 11 19 -2 0 17] 49 @dc
+/cmmi10.300 @newfont
+cmmi10.300 @sf
+[<387C007CFE00E7C300F3C180FBC0C0FBC0C079E04039E00001E00001E00000F38000F7C0C0F7C060F3C060F9C038F8C01FEF
+  C0078780> 18 18 -2 0 24] 120 @dc
+[<1F80003FE00078F0007C38007C3C003C1E00001E00000F0003EF0007FF000F1F800F07800E07800E07800F03C00F03C00F03
+  C00F03C00781E00781E0C3C1E063C1E063C0F033C0F01F80F00F0060> 20 26 -1 8 20] 121 @dc
+[<1803C03C07F01E0F381E0F181E078C1E078C0F07840F03C00F03C00F03C00781E00781E0C781E0C7C1E063C1E067F1E03F3F
+  C01E0F80> 22 18 -1 0 25] 110 @dc
+/cmr6.300 @newfont
+cmr6.300 @sf
+[<FF80FF801C001C001C001C001C001C001C001C001C001C009C00FC007C000C00> 9 16 -2 0 15] 49 @dc
+/Times-Roman /t-rom.240 ReEncodeForTeX /t-rom.240 /t-rom.240 33.208800 TeXPSmakefont def
+2 @bop1
+140 691 p @beginspecial
+-36.000000 @hoffset
+-36.000000 @voffset
+@setspecial
+%!
+systemdict/currentpacking known{currentpacking true setpacking}if
+/LW{save statusdict/product get(LaserWriter)anchorsearch
+exch pop{length 0 eq{1}{2}ifelse}{0}ifelse exch restore}bind def
+/LW+{LW 2 eq}bind def
+/ok{systemdict/statusdict known dup{LW 0 gt and}if}bind def
+/md 250 dict def md begin
+/av 66 def
+/T true def/F false def/mtx matrix def/s75 75 string def/s8 8 string def/s1 ( ) def/pxs 1 def/pys 1 def
+1 0 mtx defaultmatrix dtransform exch atan/pa exch def/nlw .24 def/ppr [-32 -29.52 762 582.48] def
+/pgs 1 def/por true def/xb 500 array def/so true def/fillflag false def/pnm 1 def/fmv true def
+/sfl false def/ma 0 def/invertflag false def/xflip false def/yflip false def/noflips true def/scaleby96 false def/fNote true def/fBitStretch true def
+/fg (Rvd\001\001\000\000\177) def
+/bdf{bind def}bind def
+/xdf{exch def}bdf
+/xl{neg exch neg translate}bdf
+/fp{pnsh 0 ne pnsv 0 ne and}bdf
+/nop{}bdf/lnop[/nop load]cvx bdf
+/vrb[
+{fp{gsave 1 setlinewidth pnsh pnsv scale stroke grestore}if newpath}bind
+/eofill load
+dup
+/newpath load
+2 index
+dup
+{clip newpath}bind
+{}bind
+dup
+2 copy
+]def
+currentscreen/spf xdf/rot xdf/freq xdf
+/doop{vrb exch get exec}bdf
+/psu{/fNote xdf/fBitStretch xdf/scaleby96 xdf/yflip xdf/xflip xdf/invertflag xdf xflip yflip or{/noflips false def}if
+/pgs xdf 2 index .72 mul exch div/pys xdf div .72 mul/pxs xdf ppr astore pop/por xdf sn and/so xdf}bdf
+/txpose{fNote{smalls}{bigs}ifelse pgs get exec pxs pys scale ppr aload pop por{noflips{pop exch neg exch translate pop 1 -1 scale}if
+xflip yflip and{pop exch neg exch translate 180 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg translate}if 
+xflip yflip not and{pop exch neg exch translate pop 180 rotate ppr 3 get ppr 1 get neg sub neg 0 translate}if yflip xflip not and{ppr 1 get neg ppr 0 get neg translate}if}
+{noflips{translate pop pop 270 rotate 1 -1 scale}if xflip yflip and{translate pop pop 90 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg translate}if
+xflip yflip not and{translate pop pop 90 rotate ppr 3 get ppr 1 get neg sub neg 0 translate}if yflip xflip not and{translate pop pop 270 rotate ppr 2 get ppr 0 get neg sub neg 0 exch translate}if}ifelse
+statusdict begin waittimeout 300 lt{/waittimeout 300 def}if end scaleby96{ppr aload pop 4 -1 roll add 2 div 3 1 roll add 2 div 2 copy translate .96 dup scale neg exch neg exch translate}if}bdf
+/fr{4 copy ppr aload pop 3 -1 roll add 3 1 roll exch add 6 2 roll 3 -1 roll
+sub 3 1 roll exch sub 3 -1 roll exch div 3 1 roll div exch scale pop pop xl}bdf
+/obl{{0.212557 mul}{pop 0}ifelse}bdf
+/sfd{ps fg 5 -1 roll get mul 100 div 0 ps 5 -1 roll obl ps neg 0 0 6a astore makefont setfont}bdf
+/fnt{findfont sfd}bdf
+/bt{sa 3 1 roll 3 index and put}bdf
+/sa(\000\000\000\000\000\000\000\000\000\000)def
+/fs{0 1 bt 1 2 bt 2 4 bt 3 8 bt 4 16 bt 5 32 bt 6 64 bt 7 128 bt sa exch 8 exch put}bdf
+/mx1 matrix def
+/mx2 matrix def
+/mx3 matrix def
+/bu{currentpoint currentgray currentlinewidth currentlinecap currentlinejoin currentdash exch aload length
+fg 5 sfl{1}{0}ifelse put pnsv pnsh
+2t aload pop 3a aload pop mx2 aload pop mx1 aload pop mtx currentmatrix aload pop
+mx3 aload pop ps pm restore/ps xdf mx3 astore pop}bdf
+/bn{/pm save def mx3 setmatrix newpath 0 0 moveto ct dup 39 get 0 exch getinterval cvx exec
+mtx astore setmatrix mx1 astore pop mx2 astore pop 3a astore pop
+2t astore pop/pnsh xdf/pnsv xdf gw
+/sfl fg 5 get 0 ne def array astore exch setdash setlinejoin setlinecap
+setlinewidth setgray moveto}bdf
+/fc{save vmstatus exch sub 50000 lt
+{(%%[|0|]%%)=print flush}if pop restore}bdf
+/tc{32768 div add 3 1 roll 32768 div add 2t astore pop}bdf
+/3a [0 0 0] def
+/2t 2 array def
+/tp{3a astore pop}bdf
+/tt{mx2 currentmatrix pop currentpoint 2 copy 2t aload pop qa 2 copy translate 3a aload pop exch dup 0 eq
+{pop}{1 eq{-1 1}{1 -1}ifelse scale}ifelse rotate pop neg exch neg exch translate moveto}bdf
+/te{mx2 setmatrix}bdf
+/th{3 -1 roll div 3 1 roll exch div 2 copy mx1 scale pop scale/sfl true def}bdf
+/tu{1 1 mx1 itransform scale/sfl false def}bdf
+/ts{1 1 mx1 transform scale/sfl true def}bdf
+/fz{/ps xdf}bdf
+/dv{dup 0 ne{div}{pop}ifelse}bdf
+/pop4{pop pop pop pop}bdf
+/it{sfl{mx1 itransform}if}bdf
+/gm{exch it moveto}bdf/rm{it rmoveto}bdf
+/lm{currentpoint sfl{mx1 transform}if exch pop sub 0 exch it rmoveto}bdf
+/fm{statusdict/manualfeed known}bdf
+/se{statusdict exch/manualfeed exch put}bdf
+/mf{dup/ma exch def 0 gt{fm se/t1 5 st ok ma 1 gt and{/t2 0 st/t3 0 st
+statusdict/manualfeedtimeout 3600 put
+}if}if}bdf
+/jn{/statusdict where exch pop{statusdict exch /jobname exch put}if}bdf
+/pen{pnm mul/pnsh xdf pnm mul/pnsv xdf pnsh setlinewidth}bdf
+/min{2 copy gt{exch}if pop}bdf
+/max{2 copy lt{exch}if pop}bdf
+/dh{fg 6 1 put array astore exch pop exch pop exch setdash}bdf
+/ih[currentdash]def
+/rh{fg 6 0 put ih aload pop setdash}bdf
+/dl{gsave nlw pys div setlinewidth 0 setgray}bdf
+/dlin{exch currentpoint currentlinewidth 2 div dup
+translate newpath moveto lineto currentpoint stroke grestore moveto}bdf
+/lin{fg 6 get 0 ne{exch lineto currentpoint 0 doop moveto}
+{exch currentpoint/pnlv xdf/pnlh xdf gsave newpath/@1 xdf/@2 xdf fp{pnlh @2 lt{pnlv @1 ge
+{pnlh pnlv moveto @2 @1 lineto pnsh 0 rlineto
+0 pnsv rlineto pnlh pnsh add pnlv pnsv add lineto pnsh neg 0 rlineto}
+{pnlh pnlv moveto pnsh 0 rlineto @2 pnsh add @1 lineto 0 pnsv rlineto
+pnsh neg 0 rlineto pnlh pnlv pnsv add lineto}ifelse}{pnlv @1 gt
+{@2 @1 moveto pnsh 0 rlineto pnlh pnsh add pnlv lineto 0 pnsv rlineto
+pnsh neg 0 rlineto @2 @1 pnsv add lineto}{pnlh pnlv moveto pnsh 0 rlineto
+0 pnsv rlineto @2 pnsh add @1 pnsv add lineto pnsh neg 0 rlineto
+0 pnsv neg rlineto}ifelse}ifelse
+closepath fill}if @2 @1 grestore moveto}ifelse}bdf
+/gw{/pnm fg 3 get fg 4 get div def}bdf
+/lw{fg exch 4 exch put fg exch 3 exch put gw pnsv pnsh pen}bdf
+/barc{/@1 xdf/@2 xdf/@3 xdf/@4 xdf/@5 xdf
+/@6 xdf/@7 xdf/@8 xdf gsave
+@5 @7 add 2 div @6 @8 add 2 div translate newpath 0 0 moveto
+@5 @7 sub @6 @8 sub mtx currentmatrix pop scale @1{newpath}if
+0 0 0.5 @4 @3 arc @4 @3 sub abs 360 ge{closepath}if
+mtx setmatrix @2 doop grestore}bdf
+/ar{dup 0 eq barc}bdf
+/ov{0 exch 360 exch true barc}bdf
+/rc{/@t xdf currentpoint 6 2 roll newpath 4 copy 4 2 roll exch moveto
+6 -1 roll lineto lineto lineto closepath @t doop moveto}bdf
+/mup{dup pnsh 2 div le exch pnsv 2 div le or}bdf
+/rr{/@1 xdf 2. div/@2 xdf 2. div/@3 xdf
+/@4 xdf/@5 xdf/@6 xdf/@7 xdf
+@7 @5 eq @6 @4 eq @2 mup or or{@7 @6 @5 @4 @1 rc}
+{@4 @6 sub 2. div dup @2 lt{/@2 xdf}{pop}ifelse
+@5 @7 sub 2. div dup @2 lt{/@2 xdf}{pop}ifelse
+@1 0 eq{/@2 @2 pnsh 2 div 2 copy gt{sub def}{0 pop4}ifelse}if
+currentpoint newpath
+@4 @6 add 2. div @7 moveto
+@4 @7 @4 @5 @2 arcto pop4
+@4 @5 @6 @5 @2 arcto pop4
+@6 @5 @6 @7 @2 arcto pop4
+@6 @7 @4 @7 @2 arcto pop4
+closepath @1 doop moveto}ifelse}bdf
+/pr{gsave newpath/pl{exch moveto/pl{exch lineto}def}def}bdf
+/pl{exch lineto}bdf
+/ep{dup 0 eq{{moveto}{exch lin}{}{(%%[|1|]%%)= flush}pathforall
+pop grestore}{doop grestore}ifelse currentpoint newpath moveto}bdf
+/gr{64. div setgray}bdf
+/pat{s8 copy pop 9.375 pa por not{90 add}if{1 add 4 mul cvi s8 exch get exch 1 add 4 mul cvi 7 sub bitshift 1 and}setscreen gr}bdf
+/sg{freq rot/spf load setscreen gr}bdf
+/dc{transform round .5 sub exch round .5 sub exch itransform}bdf
+/sn{userdict/smooth4 known}bdf
+/x8{3 bitshift}bdf
+/x4{2 bitshift}bdf
+/d4{-2 bitshift}bdf
+/d8{-3 bitshift}bdf
+/rb{15 add -4 bitshift 1 bitshift}bdf
+/db{/@7 save def/@1 xdf/@2 xdf/@3 xdf/@4 xdf/@5 xdf/@6 @5 @3 4 add mul def
+dc translate scale/xdbit 1 1 idtransform abs/ydbit exch def abs def{0 0 1 ydbit add 1 10 rc clip}if
+@1 0 eq @1 4 eq or{1 setgray ydbit 0 1 ydbit add 1 2 rc}if
+@1 3 eq @1 7 eq or{1}{0}ifelse setgray/@9 @1 0 eq @1 1 eq @1 3 eq or or invertflag xor def/@13 @6 def
+@2 fBitStretch or{/@10 @4 x4 def/@11 @3 x4 def/@12 @10 rb def/@13 @12 @11 mul def/@15 1 1 dtransform abs/calcY 1 index def round cvi/@14 exch def
+abs/calcX 1 index def round cvi scaleby96 not{1 add}if def/@16 @15 rb def/@17 @16 @14 mul def}if
+sn @13 60000 lt and @2 fBitStretch or and{mtx currentmatrix dup 1 get exch 2 get 0. eq exch 0. eq and @17 60000 lt and fBitStretch and{@16 3 bitshift @14 @9 [calcX 0 0 calcY 0 0]{@17 string @13 string
+currentfile @6 string readhexstring pop 1 index @4 @3 @5 @12 @2 smooth4
+@10 @11 @12 dup string 5 index @15 @14 @16 dup string stretch}imagemask}{@12 x8 @11 @9 [@10 0 0 @11 0 0]{@13 string
+currentfile @6 string readhexstring pop 1 index @4 @3 @5 @12 @2 smooth4}imagemask}ifelse}{@5 3 bitshift @3 4 add @9 [@4 0 0 @3 0 2]{currentfile @6 string readhexstring pop}imagemask}ifelse
+@7 restore}bdf
+/multibit{/mbdeep exch def/mbY exch def/mbX exch def
+save mbX mbY mbdeep[mbX 0 0 mbY 0 0]{currentfile picstr readhexstring pop}image
+restore}bdf
+/wd 16 dict def
+/mfont 14 dict def
+/mdf{mfont wcheck not{/mfont 14 dict def}if mfont begin xdf end}bdf
+/cf{{1 index/FID ne{def}{pop pop}ifelse}forall}bdf/rf{/@1 exch def/@2 exch def
+FontDirectory @2 known{cleartomark pop}{findfont dup begin dup length @1 add dict begin
+cf{/Encoding macvec def}{Encoding dup length array copy/Encoding exch def
+counttomark 2 idiv{Encoding 3 1 roll put}repeat}ifelse
+pop
+exec currentdict end end @2 exch definefont pop}ifelse}bdf
+/bmbc{exch begin wd begin
+/cr xdf
+save
+CharTable cr 6 mul 6 getinterval{}forall
+/bitheight xdf/bitwidth xdf
+.96 div/width xdf
+Gkernmax add/XOffset xdf Gdescent add/YOffset xdf/rowbytes xdf
+rowbytes 255 eq{0 0 0 0 0 0 setcachedevice}
+{Gnormsize dup scale
+width 0 XOffset YOffset bitwidth XOffset add bitheight YOffset add
+setcachedevice
+rowbytes 0 ne{
+XOffset YOffset translate newpath 0 0 moveto
+bitwidth bitheight scale
+sn{
+/xSmt bitwidth x4 def
+/ySmt bitheight x4 def
+/rSmt xSmt rb def
+rSmt x8 ySmt true
+[xSmt 0 0 ySmt neg 0 ySmt]
+{rSmt ySmt mul string CharData cr get
+1 index bitwidth bitheight rowbytes rSmt so smooth4}
+}{rowbytes 3 bitshift bitheight 4 add true
+[bitwidth 0 0 bitheight neg 0 bitheight 2 add]
+{CharData cr get}
+}ifelse
+imagemask
+}if
+}ifelse
+restore
+end end
+}bdf
+/bb{.96 exch div/Gnormsize mdf 2 index
+/Gkernmax mdf 1 index/Gdescent mdf
+3 index div 4 1 roll
+2 index div 1. 5 2 roll
+exch div 4 1 roll
+4 array astore/FontBBox mdf
+}bdf
+/cdf{mfont/CharData get 3 1 roll put}bdf
+/bf{
+mfont begin
+/FontType 3 def
+/FontMatrix [1 0 0 1 0 0] def
+/Encoding macvec def
+/BuildChar/bmbc load def
+end
+mfont definefont pop
+}bdf
+/wi LW 1 eq{{gsave 0 0 0 0 0 0 0 0 moveto lineto lineto lineto closepath clip stringwidth grestore}bind}{/stringwidth load}ifelse def
+/aps{0 get 124 eq}bdf
+/xc{s75 cvs dup}bdf
+/xp{put cvn}bdf
+/scs{xc 3 67 put dup 0 95 xp}bdf
+/sos{xc 3 79 xp}bdf
+/sbs{xc 1 66 xp}bdf
+/sis{xc 2 73 xp}bdf
+/sob{xc 2 79 xp}bdf
+/sss{xc 4 83 xp}bdf
+/dd{exch 1 index add 3 1 roll add exch}bdf
+/smc{moveto dup show}bdf
+/kwn{FontDirectory 1 index known{findfont exch pop}}bdf
+/gl{1 currentgray sub setgray}bdf
+/mm{/mfont 10 dict def mfont begin
+/FontMatrix [1 0 0 1 0 0] def
+/FontType 3 def
+/Encoding macvec def
+/df 4 index findfont def
+/FontBBox [0 0 1 1] def
+/xda xdf/mbc xdf
+/BuildChar{wd begin/cr xdf/fd xdf/cs s1 dup 0 cr put def fd/mbc get exec end}def
+exec end mfont definefont}bdf
+/ac{dup scs kwn{exch findfont dup length 1 add dict begin{1 index/FID ne 2 index/UniqueID ne and{def}{pop pop}ifelse}forall
+fmv{/Encoding macvec def}if/StrokeWidth nlw 1000 mul pys div ps div dup 12 lt{pop 12}if def
+/PaintType 2 def currentdict end definefont}ifelse}bdf
+/mb{dup sbs kwn{exch{pop}{bbc}{}mm}ifelse sfd}bdf
+/mo{dup sos kwn{exch{pop}{boc}{}mm}ifelse sfd}bdf
+/ms{dup sss kwn{exch{pop}{bsc}{}mm}ifelse sfd}bdf
+/ou{dup sos kwn{exch dup ac pop{scs findfont /df2 xdf}{aoc}{}mm}ifelse sfd}bdf
+/su{dup sss kwn{exch dup ac pop{scs findfont /df2 xdf}{asc}{}mm}ifelse sfd}bdf
+/ao{/fmv true def ou}bdf/as{/fmv true def su}bdf
+/vo{/fmv false def ou}bdf/vs{/fmv false def su}bdf
+/bbc{/da .03 def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch da add exch}if grestore setcharwidth
+cs 0 0 smc da 0 smc da da smc 0 da moveto show}bdf
+/boc{/da 1 ps div def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch da add exch}if grestore setcharwidth
+cs 0 0 smc da 0 smc da da smc 0 da smc gl da 2. div dup moveto show}bdf
+/bsc{/da 1 ps div def
+/ds .05 def/da2 da 2. div def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch ds add da2 add exch}if grestore setcharwidth
+cs ds da2 add .01 add 0 smc 0 ds da2 sub translate 0 0 smc
+da 0 smc da da smc 0 da smc gl da 2. div dup moveto show}bdf
+/aoc{fd/df get setfont
+gsave cs wi grestore setcharwidth
+gl cs 0 0 smc fd/df2 get setfont gl 0 0 moveto show}bdf
+/asc{/da .05 def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch da add exch}if grestore setcharwidth
+cs da .01 add 0 smc 0 da translate gl 0 0 smc gl fd/df2 get setfont 0 0 moveto show}bdf
+/st{1000 mul usertime add dup 2147483647 gt{2147483647 sub}if def}bdf
+/the{usertime sub dup 0 lt exch -2147483648 gt and}bdf
+/6a 6 array def
+/2a 2 array def
+/3q 3 array def
+/qs{3 -1 roll sub exch 3 -1 roll sub exch}bdf
+/qa{3 -1 roll add exch 3 -1 roll add exch}bdf
+/qm{3 -1 roll 1 index mul 3 1 roll mul}bdf
+/qn{6a exch get mul}bdf
+/qA .166667 def/qB .833333 def/qC .5 def
+/qx{6a astore pop
+qA 0 qn qB 2 qn add   qA 1 qn qB 3 qn add
+qB 2 qn qA 4 qn add   qB 3 qn qA 5 qn add
+qC 2 qn qC 4 qn add   qC 3 qn qC 5 qn add}bdf
+/qp{6 copy 12 -2 roll pop pop}bdf
+/qc{exch qp qx curveto}bdf
+/qi{{exch 4 copy 2a astore aload pop qa .5 qm newpath moveto}{exch 2 copy 6 -2 roll 2 qm qs 4 2 roll}ifelse}bdf
+/qq{{qc 2a aload pop qx curveto}{exch 4 copy qs qa qx curveto}ifelse}bdf
+/pt{currentpoint newpath moveto}bdf
+/qf{/fillflag true def}bdf
+/ec{1 and 0 ne{0 doop}if grestore currentpoint newpath moveto/fillflag false def}bdf
+/eu{currentpoint fp{0 ep}{grestore newpath}ifelse moveto/fillflag false def}bdf
+/bp{currentpoint newpath 2 copy moveto}bdf
+/ef{gsave fillflag{gsave eofill grestore}if}bdf
+/sm{0 exch{@1 eq{1 add}if}forall}bdf
+/lshow{4 1 roll exch/@1 exch def{1 index wi pop sub 1 index sm dv 0 @1 4 -1 roll widthshow}{1 index wi pop sub
+1 index dup sm 10 mul exch length 1 sub add dv dup 10. mul 0 @1 4 -1 roll 0 6 -1 roll awidthshow}ifelse}bdf
+/setTxMode{sa 9 2 index put 3 eq{1}{0}ifelse setgray}bdf
+/SwToSym{{}mark false/Symbol/Symbol 0 rf 0 sa 6 get 0 ne{pop 1}{sa 7 get 0 eq{pop 2}if}ifelse
+sa 1 get 0 ne/Symbol
+sa 4 get 0 ne{vs}{sa 3 get 0 ne{vo}{fnt}ifelse}ifelse}bdf
+/mc{0 3 1 roll transform neg exch pop}bdf
+/ul{dup 0 ne sa 2 get 0 ne and{gsave 0 0
+/UnderlinePosition kif{mc}{ps -10 div}ifelse/UnderlineThickness kif{mc}{ps 15 div}ifelse
+abs setlinewidth neg rmoveto
+sa 4 get 0 ne{gsave currentlinewidth 2. div dup rmoveto currentpoint newpath moveto
+2 copy rlineto stroke grestore}if
+sa 3 get sa 4 get or 0 ne{gsave gl 2 copy rlineto stroke grestore rlineto strokepath nlw pys div setlinewidth}{rlineto}ifelse
+stroke grestore}{pop}ifelse}bdf
+/sgt{2 copy known{get true}{pop pop false}ifelse}bdf
+/kif{currentfont dup/FontMatrix get exch/FontInfo sgt{true}{currentfont/df sgt
+{dup/FontInfo sgt{3 1 roll/FontMatrix get mtx concatmatrix exch true}{pop pop pop false}
+ifelse}{pop pop false}ifelse}ifelse{3 -1 roll sgt{exch true}{pop false}ifelse}{false}ifelse}bdf
+/blank/Times-Roman findfont/CharStrings get/space get def
+/macvec 256 array def
+/NUL/SOH/STX/ETX/EOT/ENQ/ACK/BEL/BS/HT/LF/VT/FF/CR/SO/SI
+/DLE/DC1/DC2/DC3/DC4/NAK/SYN/ETB/CAN/EM/SUB/ESC/FS/GS/RS/US
+macvec 0 32 getinterval astore pop
+macvec 32/Times-Roman findfont/Encoding get
+32 96 getinterval putinterval macvec dup 39/quotesingle put 96/grave put
+/Adieresis/Aring/Ccedilla/Eacute/Ntilde/Odieresis/Udieresis/aacute
+/agrave/acircumflex/adieresis/atilde/aring/ccedilla/eacute/egrave
+/ecircumflex/edieresis/iacute/igrave/icircumflex/idieresis/ntilde/oacute
+/ograve/ocircumflex/odieresis/otilde/uacute/ugrave/ucircumflex/udieresis
+/dagger/degree/cent/sterling/section/bullet/paragraph/germandbls
+/registered/copyright/trademark/acute/dieresis/notequal/AE/Oslash
+/infinity/plusminus/lessequal/greaterequal/yen/mu/partialdiff/summation
+/product/pi/integral/ordfeminine/ordmasculine/Omega/ae/oslash
+/questiondown/exclamdown/logicalnot/radical/florin/approxequal/Delta/guillemotleft
+/guillemotright/ellipsis/blank/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright/divide/lozenge
+/ydieresis/Ydieresis/fraction/currency/guilsinglleft/guilsinglright/fi/fl
+/daggerdbl/periodcentered/quotesinglbase/quotedblbase/perthousand/Acircumflex/Ecircumflex/Aacute
+/Edieresis/Egrave/Iacute/Icircumflex/Idieresis/Igrave/Oacute/Ocircumflex
+/apple/Ograve/Uacute/Ucircumflex/Ugrave/dotlessi/circumflex/tilde
+/macron/breve/dotaccent/ring/cedilla/hungarumlaut/ogonek/caron
+macvec 128 128 getinterval astore pop
+{}mark true/Courier/Courier 0 rf
+{/Metrics 21 dict begin/zero 600 def/one 600 def/two 600 def/three 600 def/four 600 def/five 600 def/six 600 def/seven 600 def/eight 600 def
+/nine 600 def/comma 600 def/period 600 def/dollar 600 def/numbersign 600 def/percent 600 def/plus 600 def/hyphen 600 def/E 600 def/parenleft 600 def/parenright 600 def/space 600 def
+currentdict end def currentdict/UniqueID known{/UniqueID 16#800000 def}if/FontBBox FontBBox 4 array astore def}mark true/Helvetica/Seattle 1 rf
+/oldsettransfer/settransfer load def
+/concatprocs{/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx}def
+/settransfer{currenttransfer concatprocs oldsettransfer}def
+/PaintBlack{{1 exch sub}settransfer gsave newpath clippath 1 setgray fill grestore}def
+/od{(Rvd\001\001\000\000\177) fg copy pop txpose
+1 0 mtx defaultmatrix dtransform exch atan/pa exch def
+newpath clippath mark
+{transform{itransform moveto}}{transform{itransform lineto}}
+{6 -2 roll transform 6 -2 roll transform 6 -2 roll transform
+{itransform 6 2 roll itransform 6 2 roll itransform 6 2 roll curveto}}
+{{closepath}}pathforall newpath counttomark array astore/gc xdf pop ct 39 0 put
+10 fz 0 fs 2 F/Courier fnt invertflag{PaintBlack}if}bdf
+/cd{}bdf
+/op{/sfl false def/pm save def}bdf
+/cp{not{userdict/#copies 0 put}if ma 0 gt{{t1 the{exit}if}loop}if{copypage}{showpage}ifelse pm restore}bdf
+/px{0 3 1 roll tp tt}bdf
+/psb{/us save def}bdf
+/pse{us restore}bdf
+/ct 40 string def
+/nc{currentpoint initclip newpath gc{dup type dup/arraytype eq exch/packedarraytype eq or{exec}if}
+forall clip newpath moveto}def
+/kp{ct 0 2 index length 2 index 39 2 index put getinterval copy cvx exec mx3 currentmatrix pop}bdf
+end
+md begin/bigs[lnop lnop/legal load userdict/a4 known{/a4 load}{lnop}ifelse lnop lnop lnop lnop lnop]def
+/smalls[lnop userdict/note known{/note load}{dup}ifelse lnop userdict/a4small known{/a4small load}{lnop}ifelse 2 index lnop lnop lnop lnop ]def end
+md begin
+
+T T -130 -125 3170 2425 100 300 300 1 F F F F T T psu
+(freply MacScrelt; document: 6-input-and-Layer#1)jn
+0 mf
+od
+op
+0 0 xl
+1 1 pen
+0 0 gm
+(nc 0 0 3040 2300 6 rc)kp
+0 setlinecap
+currentscreen
+3 1 roll pop pop 45 45 3 -1 roll setscreen
+64 gr
+2565 117 2640 229 112.5 112.5 1 rr
+4 4 pen
+0 gr
+2565 117 2640 229 115 115 0 rr
+64 gr
+2715 4 2790 117 111 111 1 rr
+0 gr
+2715 4 2790 117 115 115 0 rr
+64 gr
+2715 454 2790 567 111 111 1 rr
+0 gr
+2715 454 2790 567 115 115 0 rr
+64 gr
+2865 117 2940 229 111 111 1 rr
+0 gr
+2865 117 2940 229 115 115 0 rr
+64 gr
+2865 567 2940 679 111 111 1 rr
+0 gr
+2865 567 2940 679 115 115 0 rr
+2638 152 gm
+2713 77 lin
+2638 190 gm
+2713 265 lin
+2638 377 gm
+2713 302 lin
+2638 602 gm
+2713 527 lin
+2638 640 gm
+2675 677 lin
+2638 415 gm
+2713 490 lin
+2675 2 gm
+2713 40 lin
+2788 265 gm
+2863 190 lin
+2788 302 gm
+2863 377 lin
+2788 490 gm
+2863 415 lin
+2825 677 gm
+2863 640 lin
+2788 527 gm
+2863 602 lin
+2788 77 gm
+2863 152 lin
+2788 40 gm
+2825 2 lin
+2938 152 gm
+2975 115 lin
+2938 190 gm
+2975 227 lin
+2938 377 gm
+2975 340 lin
+2938 602 gm
+2975 565 lin
+2938 640 gm
+2975 677 lin
+2938 415 gm
+2975 452 lin
+2525 227 gm
+2563 190 lin
+2525 115 gm
+2563 152 lin
+2525 452 gm
+2563 415 lin
+2525 340 gm
+2563 377 lin
+2525 677 gm
+2563 640 lin
+2525 565 gm
+2563 602 lin
+2511 99 gm
+bu fc
+{}mark T /Times-Roman /Times-Roman 0 rf
+bn
+1 setTxMode
+0 fs
+42 fz
+bu fc
+2 F /Times-Roman fnt
+bn
+(I0)show
+2511 216 gm
+0 gr
+(I1)show
+2511 322 gm
+(I2)show
+2511 436 gm
+(I3)show
+2511 543 gm
+(I4)show
+2511 661 gm
+(I5)show
+2615 130 gm
+(AND)show
+64 gr
+2565 342 2640 454 111 111 1 rr
+0 gr
+2565 342 2640 454 115 115 0 rr
+2615 355 gm
+(AND)show
+64 gr
+2565 567 2640 679 111 111 1 rr
+0 gr
+2565 567 2640 679 115 115 0 rr
+2615 580 gm
+(AND)show
+64 gr
+2715 229 2790 342 111 111 1 rr
+0 gr
+2715 229 2790 342 115 115 0 rr
+2765 243 gm
+(AND)show
+2713 490 gm
+2788 527 lin
+2713 527 gm
+2788 490 lin
+64 gr
+2865 342 2940 454 111 111 1 rr
+0 gr
+2865 342 2940 454 115 115 0 rr
+2915 355 gm
+(AND)show
+3023 284 gm
+(OUT)show
+F T cp
+cd
+end
+@endspecial
+t-rom.300 @sf
+162 824 p (Figure) s
+10 r (2:) s
+13 r 65 c
+11 r (simple) s
+10 r (6-input) s
+8 r (AND) s
+10 r (tree.) s
+0 964 p (formed) s
+13 r (ef) s
+174 c
+(ciently) s
+11 r (with) s
+11 r 97 c
+14 r (minimum) s
+12 r (amount) s
+12 r (of) s
+12 r (hardware.) s
+0 1014 p (Standard) s
+12 r (compiler) s
+12 r (techniques) s
+12 r (can) s
+13 r (be) s
+13 r (utilized) s
+11 r (to) s
+12 r (generate) s
+0 1064 p (data) s
+175 c
+(ow) s
+9 r (graphs) s
+8 r (from) s
+8 r (computer) s
+9 r (languages,) s
+9 r (but) s
+8 r (creating) s
+8 r (an) s
+0 1114 p (origami) s
+9 r (array) s
+10 r (from) s
+9 r (the) s
+10 r (logic) s
+9 r (functions) s
+8 r (produced) s
+9 r (is) s
+10 r 97 c
+10 r (dif) s
+174 c
+45 c
+0 1164 p (cult) s
+11 r (problem.) s
+16 r (In) s
+11 r (many) s
+11 r (ways) s
+12 r (this) s
+10 r (is) s
+11 r (analogous) s
+11 r (to) s
+10 r (the) s
+11 r (gen-) s
+0 1213 p (eralized) s
+9 r (two-dimensional) s
+7 r (electrical) s
+9 r (circuit) s
+7 r (layout) s
+8 r (problem) s
+0 1263 p 40 c
+t-ita.300 @sf
+(e.g.) s
+t-rom.300 @sf
+26 r (the) s
+14 r (automatic) s
+13 r (routing) s
+13 r (of) s
+13 r (wires) s
+14 r (on) s
+14 r 97 c
+14 r (printed) s
+13 r (circuit) s
+0 1313 p (board\),) s
+10 r (but) s
+8 r (it) s
+9 r (is) s
+10 r (suf) s
+174 c
+(ciently) s
+7 r (dif) s
+(ferent) s
+8 r (that) s
+9 r (circuit) s
+9 r (layout) s
+8 r (al-) s
+0 1363 p (gorithms) s
+12 r (are) s
+13 r (not) s
+12 r (directly) s
+12 r (applicable.) s
+22 r (Finding) s
+11 r (an) s
+13 r (optimal) s
+0 1413 p (placement) s
+14 r (and) s
+14 r (routing) s
+11 r (is) s
+14 r (considered) s
+13 r (to) s
+13 r (be) s
+14 r (NP-complete,) s
+0 1463 p (although) s
+9 r (this) s
+9 r (has) s
+11 r (not) s
+9 r (been) s
+11 r (proven) s
+10 r (formally) s
+-2 r 46 c
+42 1542 p (Chuang) s
+13 r 91 c
+50 c
+93 c
+15 r (developed) s
+14 r 97 c
+15 r (prototype) s
+13 r (routing) s
+13 r (system) s
+15 r (for) s
+0 1592 p 97 c
+13 r (three-dimensional) s
+12 r (origami) s
+12 r (array) s
+13 r (using) s
+12 r 97 c
+13 r 175 c
+(ooding) s
+11 r (algo-) s
+0 1642 p (rithm) s
+8 r (with) s
+8 r (backtracking.) s
+13 r (This) s
+9 r (was) s
+10 r (used) s
+9 r (to) s
+8 r (place) s
+10 r (and) s
+9 r (route) s
+0 1692 p 97 c
+12 r 87 c
+-2 r (allace) s
+11 r (tree) s
+12 r (adder) s
+-1 r 46 c
+16 r (This) s
+11 r (paper) s
+12 r (proposes) s
+11 r (an) s
+12 r (ef) s
+174 c
+(cient) s
+10 r (al-) s
+0 1742 p (gorithm) s
+12 r (for) s
+13 r (placing) s
+13 r (logic) s
+13 r (functions) s
+12 r (and) s
+14 r (routing) s
+12 r (between) s
+0 1791 p (them) s
+12 r (without) s
+11 r (the) s
+12 r (need) s
+13 r (for) s
+12 r (backtracking.) s
+19 r (Because) s
+14 r (the) s
+12 r (re-) s
+0 1841 p (sult) s
+8 r (can) s
+9 r (be) s
+9 r (optimized) s
+8 r (in) s
+8 r (an) s
+9 r (iterative) s
+8 r (fashion,) s
+8 r (the) s
+9 r (algorithm) s
+0 1891 p (can) s
+14 r (be) s
+13 r (run) s
+13 r (for) s
+12 r 97 c
+14 r (prede) s
+174 c
+(ned) s
+13 r (time) s
+13 r (and) s
+13 r (then) s
+13 r (the) s
+13 r (best) s
+13 r (result) s
+0 1941 p (achieved) s
+11 r (so) s
+10 r (far) s
+11 r (can) s
+11 r (be) s
+10 r (returned.) s
+t-bol.420 @sf
+0 2126 p 50 c
+58 r (Pr) s
+(eliminaries) s
+t-rom.300 @sf
+0 2251 p (For) s
+16 r (the) s
+17 r (purposes) s
+16 r (of) s
+16 r (this) s
+15 r (algorithm,) s
+17 r (an) s
+17 r (origami) s
+16 r (array) s
+17 r (is) s
+0 2301 p 97 c
+13 r (two-dimensional) s
+10 r (staggered) s
+13 r (array) s
+13 r (of) s
+12 r (nodes) s
+12 r (as) s
+13 r (described) s
+0 2351 p (above.) s
+36 r (In) s
+18 r 97 c
+18 r (fully) s
+16 r (automated) s
+18 r (logical) s
+16 r (compiler) s
+18 r (it) s
+16 r (might) s
+0 2401 p (be) s
+15 r (desirable) s
+14 r (to) s
+14 r (treat) s
+15 r (each) s
+16 r (node) s
+14 r (independently) s
+13 r (for) s
+14 r (place-) s
+0 2450 p (ment.) s
+13 r (However) s
+-1 r 44 c
+8 r (in) s
+7 r 97 c
+8 r (lar) s
+(ge) s
+7 r (application) s
+6 r (the) s
+7 r (number) s
+7 r (of) s
+7 r (nodes) s
+0 2500 p (may) s
+15 r (be) s
+14 r (very) s
+14 r (lar) s
+(ge) s
+14 r (\(equal) s
+14 r (to) s
+14 r (the) s
+14 r (number) s
+14 r (of) s
+14 r (discrete) s
+14 r (log-) s
+0 2550 p (ical) s
+17 r (functions) s
+15 r (that) s
+16 r (need) s
+17 r (to) s
+16 r (be) s
+17 r (performed\)) s
+16 r (and) s
+17 r (compila-) s
+0 2600 p (tion) s
+9 r (time) s
+9 r (quickly) s
+9 r (increases) s
+11 r (beyond) s
+10 r (the) s
+9 r (realm) s
+11 r (of) s
+9 r (practical-) s
+1060 841 p @beginspecial
+-27.000000 @hoffset
+-36.000000 @voffset
+0.750000 @hscale
+0.750000 @vscale
+@setspecial
+%!
+systemdict/currentpacking known{currentpacking true setpacking}if
+/LW{save statusdict/product get(LaserWriter)anchorsearch
+exch pop{length 0 eq{1}{2}ifelse}{0}ifelse exch restore}bind def
+/LW+{LW 2 eq}bind def
+/ok{systemdict/statusdict known dup{LW 0 gt and}if}bind def
+/md 250 dict def md begin
+/av 66 def
+/T true def/F false def/mtx matrix def/s75 75 string def/s8 8 string def/s1 ( ) def/pxs 1 def/pys 1 def
+1 0 mtx defaultmatrix dtransform exch atan/pa exch def/nlw .24 def/ppr [-32 -29.52 762 582.48] def
+/pgs 1 def/por true def/xb 500 array def/so true def/fillflag false def/pnm 1 def/fmv true def
+/sfl false def/ma 0 def/invertflag false def/xflip false def/yflip false def/noflips true def/scaleby96 false def/fNote true def/fBitStretch true def
+/fg (Rvd\001\001\000\000\177) def
+/bdf{bind def}bind def
+/xdf{exch def}bdf
+/xl{neg exch neg translate}bdf
+/fp{pnsh 0 ne pnsv 0 ne and}bdf
+/nop{}bdf/lnop[/nop load]cvx bdf
+/vrb[
+{fp{gsave 1 setlinewidth pnsh pnsv scale stroke grestore}if newpath}bind
+/eofill load
+dup
+/newpath load
+2 index
+dup
+{clip newpath}bind
+{}bind
+dup
+2 copy
+]def
+currentscreen/spf xdf/rot xdf/freq xdf
+/doop{vrb exch get exec}bdf
+/psu{/fNote xdf/fBitStretch xdf/scaleby96 xdf/yflip xdf/xflip xdf/invertflag xdf xflip yflip or{/noflips false def}if
+/pgs xdf 2 index .72 mul exch div/pys xdf div .72 mul/pxs xdf ppr astore pop/por xdf sn and/so xdf}bdf
+/txpose{fNote{smalls}{bigs}ifelse pgs get exec pxs pys scale ppr aload pop por{noflips{pop exch neg exch translate pop 1 -1 scale}if
+xflip yflip and{pop exch neg exch translate 180 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg translate}if 
+xflip yflip not and{pop exch neg exch translate pop 180 rotate ppr 3 get ppr 1 get neg sub neg 0 translate}if yflip xflip not and{ppr 1 get neg ppr 0 get neg translate}if}
+{noflips{translate pop pop 270 rotate 1 -1 scale}if xflip yflip and{translate pop pop 90 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg translate}if
+xflip yflip not and{translate pop pop 90 rotate ppr 3 get ppr 1 get neg sub neg 0 translate}if yflip xflip not and{translate pop pop 270 rotate ppr 2 get ppr 0 get neg sub neg 0 exch translate}if}ifelse
+statusdict begin waittimeout 300 lt{/waittimeout 300 def}if end scaleby96{ppr aload pop 4 -1 roll add 2 div 3 1 roll add 2 div 2 copy translate .96 dup scale neg exch neg exch translate}if}bdf
+/fr{4 copy ppr aload pop 3 -1 roll add 3 1 roll exch add 6 2 roll 3 -1 roll
+sub 3 1 roll exch sub 3 -1 roll exch div 3 1 roll div exch scale pop pop xl}bdf
+/obl{{0.212557 mul}{pop 0}ifelse}bdf
+/sfd{ps fg 5 -1 roll get mul 100 div 0 ps 5 -1 roll obl ps neg 0 0 6a astore makefont setfont}bdf
+/fnt{findfont sfd}bdf
+/bt{sa 3 1 roll 3 index and put}bdf
+/sa(\000\000\000\000\000\000\000\000\000\000)def
+/fs{0 1 bt 1 2 bt 2 4 bt 3 8 bt 4 16 bt 5 32 bt 6 64 bt 7 128 bt sa exch 8 exch put}bdf
+/mx1 matrix def
+/mx2 matrix def
+/mx3 matrix def
+/bu{currentpoint currentgray currentlinewidth currentlinecap currentlinejoin currentdash exch aload length
+fg 5 sfl{1}{0}ifelse put pnsv pnsh
+2t aload pop 3a aload pop mx2 aload pop mx1 aload pop mtx currentmatrix aload pop
+mx3 aload pop ps pm restore/ps xdf mx3 astore pop}bdf
+/bn{/pm save def mx3 setmatrix newpath 0 0 moveto ct dup 39 get 0 exch getinterval cvx exec
+mtx astore setmatrix mx1 astore pop mx2 astore pop 3a astore pop
+2t astore pop/pnsh xdf/pnsv xdf gw
+/sfl fg 5 get 0 ne def array astore exch setdash setlinejoin setlinecap
+setlinewidth setgray moveto}bdf
+/fc{save vmstatus exch sub 50000 lt
+{(%%[|0|]%%)=print flush}if pop restore}bdf
+/tc{32768 div add 3 1 roll 32768 div add 2t astore pop}bdf
+/3a [0 0 0] def
+/2t 2 array def
+/tp{3a astore pop}bdf
+/tt{mx2 currentmatrix pop currentpoint 2 copy 2t aload pop qa 2 copy translate 3a aload pop exch dup 0 eq
+{pop}{1 eq{-1 1}{1 -1}ifelse scale}ifelse rotate pop neg exch neg exch translate moveto}bdf
+/te{mx2 setmatrix}bdf
+/th{3 -1 roll div 3 1 roll exch div 2 copy mx1 scale pop scale/sfl true def}bdf
+/tu{1 1 mx1 itransform scale/sfl false def}bdf
+/ts{1 1 mx1 transform scale/sfl true def}bdf
+/fz{/ps xdf}bdf
+/dv{dup 0 ne{div}{pop}ifelse}bdf
+/pop4{pop pop pop pop}bdf
+/it{sfl{mx1 itransform}if}bdf
+/gm{exch it moveto}bdf/rm{it rmoveto}bdf
+/lm{currentpoint sfl{mx1 transform}if exch pop sub 0 exch it rmoveto}bdf
+/fm{statusdict/manualfeed known}bdf
+/se{statusdict exch/manualfeed exch put}bdf
+/mf{dup/ma exch def 0 gt{fm se/t1 5 st ok ma 1 gt and{/t2 0 st/t3 0 st
+statusdict/manualfeedtimeout 3600 put
+}if}if}bdf
+/jn{/statusdict where exch pop{statusdict exch /jobname exch put}if}bdf
+/pen{pnm mul/pnsh xdf pnm mul/pnsv xdf pnsh setlinewidth}bdf
+/min{2 copy gt{exch}if pop}bdf
+/max{2 copy lt{exch}if pop}bdf
+/dh{fg 6 1 put array astore exch pop exch pop exch setdash}bdf
+/ih[currentdash]def
+/rh{fg 6 0 put ih aload pop setdash}bdf
+/dl{gsave nlw pys div setlinewidth 0 setgray}bdf
+/dlin{exch currentpoint currentlinewidth 2 div dup
+translate newpath moveto lineto currentpoint stroke grestore moveto}bdf
+/lin{fg 6 get 0 ne{exch lineto currentpoint 0 doop moveto}
+{exch currentpoint/pnlv xdf/pnlh xdf gsave newpath/@1 xdf/@2 xdf fp{pnlh @2 lt{pnlv @1 ge
+{pnlh pnlv moveto @2 @1 lineto pnsh 0 rlineto
+0 pnsv rlineto pnlh pnsh add pnlv pnsv add lineto pnsh neg 0 rlineto}
+{pnlh pnlv moveto pnsh 0 rlineto @2 pnsh add @1 lineto 0 pnsv rlineto
+pnsh neg 0 rlineto pnlh pnlv pnsv add lineto}ifelse}{pnlv @1 gt
+{@2 @1 moveto pnsh 0 rlineto pnlh pnsh add pnlv lineto 0 pnsv rlineto
+pnsh neg 0 rlineto @2 @1 pnsv add lineto}{pnlh pnlv moveto pnsh 0 rlineto
+0 pnsv rlineto @2 pnsh add @1 pnsv add lineto pnsh neg 0 rlineto
+0 pnsv neg rlineto}ifelse}ifelse
+closepath fill}if @2 @1 grestore moveto}ifelse}bdf
+/gw{/pnm fg 3 get fg 4 get div def}bdf
+/lw{fg exch 4 exch put fg exch 3 exch put gw pnsv pnsh pen}bdf
+/barc{/@1 xdf/@2 xdf/@3 xdf/@4 xdf/@5 xdf
+/@6 xdf/@7 xdf/@8 xdf gsave
+@5 @7 add 2 div @6 @8 add 2 div translate newpath 0 0 moveto
+@5 @7 sub @6 @8 sub mtx currentmatrix pop scale @1{newpath}if
+0 0 0.5 @4 @3 arc @4 @3 sub abs 360 ge{closepath}if
+mtx setmatrix @2 doop grestore}bdf
+/ar{dup 0 eq barc}bdf
+/ov{0 exch 360 exch true barc}bdf
+/rc{/@t xdf currentpoint 6 2 roll newpath 4 copy 4 2 roll exch moveto
+6 -1 roll lineto lineto lineto closepath @t doop moveto}bdf
+/mup{dup pnsh 2 div le exch pnsv 2 div le or}bdf
+/rr{/@1 xdf 2. div/@2 xdf 2. div/@3 xdf
+/@4 xdf/@5 xdf/@6 xdf/@7 xdf
+@7 @5 eq @6 @4 eq @2 mup or or{@7 @6 @5 @4 @1 rc}
+{@4 @6 sub 2. div dup @2 lt{/@2 xdf}{pop}ifelse
+@5 @7 sub 2. div dup @2 lt{/@2 xdf}{pop}ifelse
+@1 0 eq{/@2 @2 pnsh 2 div 2 copy gt{sub def}{0 pop4}ifelse}if
+currentpoint newpath
+@4 @6 add 2. div @7 moveto
+@4 @7 @4 @5 @2 arcto pop4
+@4 @5 @6 @5 @2 arcto pop4
+@6 @5 @6 @7 @2 arcto pop4
+@6 @7 @4 @7 @2 arcto pop4
+closepath @1 doop moveto}ifelse}bdf
+/pr{gsave newpath/pl{exch moveto/pl{exch lineto}def}def}bdf
+/pl{exch lineto}bdf
+/ep{dup 0 eq{{moveto}{exch lin}{}{(%%[|1|]%%)= flush}pathforall
+pop grestore}{doop grestore}ifelse currentpoint newpath moveto}bdf
+/gr{64. div setgray}bdf
+/pat{s8 copy pop 9.375 pa por not{90 add}if{1 add 4 mul cvi s8 exch get exch 1 add 4 mul cvi 7 sub bitshift 1 and}setscreen gr}bdf
+/sg{freq rot/spf load setscreen gr}bdf
+/dc{transform round .5 sub exch round .5 sub exch itransform}bdf
+/sn{userdict/smooth4 known}bdf
+/x8{3 bitshift}bdf
+/x4{2 bitshift}bdf
+/d4{-2 bitshift}bdf
+/d8{-3 bitshift}bdf
+/rb{15 add -4 bitshift 1 bitshift}bdf
+/db{/@7 save def/@1 xdf/@2 xdf/@3 xdf/@4 xdf/@5 xdf/@6 @5 @3 4 add mul def
+dc translate scale/xdbit 1 1 idtransform abs/ydbit exch def abs def{0 0 1 ydbit add 1 10 rc clip}if
+@1 0 eq @1 4 eq or{1 setgray ydbit 0 1 ydbit add 1 2 rc}if
+@1 3 eq @1 7 eq or{1}{0}ifelse setgray/@9 @1 0 eq @1 1 eq @1 3 eq or or invertflag xor def/@13 @6 def
+@2 fBitStretch or{/@10 @4 x4 def/@11 @3 x4 def/@12 @10 rb def/@13 @12 @11 mul def/@15 1 1 dtransform abs/calcY 1 index def round cvi/@14 exch def
+abs/calcX 1 index def round cvi scaleby96 not{1 add}if def/@16 @15 rb def/@17 @16 @14 mul def}if
+sn @13 60000 lt and @2 fBitStretch or and{mtx currentmatrix dup 1 get exch 2 get 0. eq exch 0. eq and @17 60000 lt and fBitStretch and{@16 3 bitshift @14 @9 [calcX 0 0 calcY 0 0]{@17 string @13 string
+currentfile @6 string readhexstring pop 1 index @4 @3 @5 @12 @2 smooth4
+@10 @11 @12 dup string 5 index @15 @14 @16 dup string stretch}imagemask}{@12 x8 @11 @9 [@10 0 0 @11 0 0]{@13 string
+currentfile @6 string readhexstring pop 1 index @4 @3 @5 @12 @2 smooth4}imagemask}ifelse}{@5 3 bitshift @3 4 add @9 [@4 0 0 @3 0 2]{currentfile @6 string readhexstring pop}imagemask}ifelse
+@7 restore}bdf
+/multibit{/mbdeep exch def/mbY exch def/mbX exch def
+save mbX mbY mbdeep[mbX 0 0 mbY 0 0]{currentfile picstr readhexstring pop}image
+restore}bdf
+/wd 16 dict def
+/mfont 14 dict def
+/mdf{mfont wcheck not{/mfont 14 dict def}if mfont begin xdf end}bdf
+/cf{{1 index/FID ne{def}{pop pop}ifelse}forall}bdf/rf{/@1 exch def/@2 exch def
+FontDirectory @2 known{cleartomark pop}{findfont dup begin dup length @1 add dict begin
+cf{/Encoding macvec def}{Encoding dup length array copy/Encoding exch def
+counttomark 2 idiv{Encoding 3 1 roll put}repeat}ifelse
+pop
+exec currentdict end end @2 exch definefont pop}ifelse}bdf
+/bmbc{exch begin wd begin
+/cr xdf
+save
+CharTable cr 6 mul 6 getinterval{}forall
+/bitheight xdf/bitwidth xdf
+.96 div/width xdf
+Gkernmax add/XOffset xdf Gdescent add/YOffset xdf/rowbytes xdf
+rowbytes 255 eq{0 0 0 0 0 0 setcachedevice}
+{Gnormsize dup scale
+width 0 XOffset YOffset bitwidth XOffset add bitheight YOffset add
+setcachedevice
+rowbytes 0 ne{
+XOffset YOffset translate newpath 0 0 moveto
+bitwidth bitheight scale
+sn{
+/xSmt bitwidth x4 def
+/ySmt bitheight x4 def
+/rSmt xSmt rb def
+rSmt x8 ySmt true
+[xSmt 0 0 ySmt neg 0 ySmt]
+{rSmt ySmt mul string CharData cr get
+1 index bitwidth bitheight rowbytes rSmt so smooth4}
+}{rowbytes 3 bitshift bitheight 4 add true
+[bitwidth 0 0 bitheight neg 0 bitheight 2 add]
+{CharData cr get}
+}ifelse
+imagemask
+}if
+}ifelse
+restore
+end end
+}bdf
+/bb{.96 exch div/Gnormsize mdf 2 index
+/Gkernmax mdf 1 index/Gdescent mdf
+3 index div 4 1 roll
+2 index div 1. 5 2 roll
+exch div 4 1 roll
+4 array astore/FontBBox mdf
+}bdf
+/cdf{mfont/CharData get 3 1 roll put}bdf
+/bf{
+mfont begin
+/FontType 3 def
+/FontMatrix [1 0 0 1 0 0] def
+/Encoding macvec def
+/BuildChar/bmbc load def
+end
+mfont definefont pop
+}bdf
+/wi LW 1 eq{{gsave 0 0 0 0 0 0 0 0 moveto lineto lineto lineto closepath clip stringwidth grestore}bind}{/stringwidth load}ifelse def
+/aps{0 get 124 eq}bdf
+/xc{s75 cvs dup}bdf
+/xp{put cvn}bdf
+/scs{xc 3 67 put dup 0 95 xp}bdf
+/sos{xc 3 79 xp}bdf
+/sbs{xc 1 66 xp}bdf
+/sis{xc 2 73 xp}bdf
+/sob{xc 2 79 xp}bdf
+/sss{xc 4 83 xp}bdf
+/dd{exch 1 index add 3 1 roll add exch}bdf
+/smc{moveto dup show}bdf
+/kwn{FontDirectory 1 index known{findfont exch pop}}bdf
+/gl{1 currentgray sub setgray}bdf
+/mm{/mfont 10 dict def mfont begin
+/FontMatrix [1 0 0 1 0 0] def
+/FontType 3 def
+/Encoding macvec def
+/df 4 index findfont def
+/FontBBox [0 0 1 1] def
+/xda xdf/mbc xdf
+/BuildChar{wd begin/cr xdf/fd xdf/cs s1 dup 0 cr put def fd/mbc get exec end}def
+exec end mfont definefont}bdf
+/ac{dup scs kwn{exch findfont dup length 1 add dict begin{1 index/FID ne 2 index/UniqueID ne and{def}{pop pop}ifelse}forall
+fmv{/Encoding macvec def}if/StrokeWidth nlw 1000 mul pys div ps div dup 12 lt{pop 12}if def
+/PaintType 2 def currentdict end definefont}ifelse}bdf
+/mb{dup sbs kwn{exch{pop}{bbc}{}mm}ifelse sfd}bdf
+/mo{dup sos kwn{exch{pop}{boc}{}mm}ifelse sfd}bdf
+/ms{dup sss kwn{exch{pop}{bsc}{}mm}ifelse sfd}bdf
+/ou{dup sos kwn{exch dup ac pop{scs findfont /df2 xdf}{aoc}{}mm}ifelse sfd}bdf
+/su{dup sss kwn{exch dup ac pop{scs findfont /df2 xdf}{asc}{}mm}ifelse sfd}bdf
+/ao{/fmv true def ou}bdf/as{/fmv true def su}bdf
+/vo{/fmv false def ou}bdf/vs{/fmv false def su}bdf
+/bbc{/da .03 def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch da add exch}if grestore setcharwidth
+cs 0 0 smc da 0 smc da da smc 0 da moveto show}bdf
+/boc{/da 1 ps div def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch da add exch}if grestore setcharwidth
+cs 0 0 smc da 0 smc da da smc 0 da smc gl da 2. div dup moveto show}bdf
+/bsc{/da 1 ps div def
+/ds .05 def/da2 da 2. div def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch ds add da2 add exch}if grestore setcharwidth
+cs ds da2 add .01 add 0 smc 0 ds da2 sub translate 0 0 smc
+da 0 smc da da smc 0 da smc gl da 2. div dup moveto show}bdf
+/aoc{fd/df get setfont
+gsave cs wi grestore setcharwidth
+gl cs 0 0 smc fd/df2 get setfont gl 0 0 moveto show}bdf
+/asc{/da .05 def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch da add exch}if grestore setcharwidth
+cs da .01 add 0 smc 0 da translate gl 0 0 smc gl fd/df2 get setfont 0 0 moveto show}bdf
+/st{1000 mul usertime add dup 2147483647 gt{2147483647 sub}if def}bdf
+/the{usertime sub dup 0 lt exch -2147483648 gt and}bdf
+/6a 6 array def
+/2a 2 array def
+/3q 3 array def
+/qs{3 -1 roll sub exch 3 -1 roll sub exch}bdf
+/qa{3 -1 roll add exch 3 -1 roll add exch}bdf
+/qm{3 -1 roll 1 index mul 3 1 roll mul}bdf
+/qn{6a exch get mul}bdf
+/qA .166667 def/qB .833333 def/qC .5 def
+/qx{6a astore pop
+qA 0 qn qB 2 qn add   qA 1 qn qB 3 qn add
+qB 2 qn qA 4 qn add   qB 3 qn qA 5 qn add
+qC 2 qn qC 4 qn add   qC 3 qn qC 5 qn add}bdf
+/qp{6 copy 12 -2 roll pop pop}bdf
+/qc{exch qp qx curveto}bdf
+/qi{{exch 4 copy 2a astore aload pop qa .5 qm newpath moveto}{exch 2 copy 6 -2 roll 2 qm qs 4 2 roll}ifelse}bdf
+/qq{{qc 2a aload pop qx curveto}{exch 4 copy qs qa qx curveto}ifelse}bdf
+/pt{currentpoint newpath moveto}bdf
+/qf{/fillflag true def}bdf
+/ec{1 and 0 ne{0 doop}if grestore currentpoint newpath moveto/fillflag false def}bdf
+/eu{currentpoint fp{0 ep}{grestore newpath}ifelse moveto/fillflag false def}bdf
+/bp{currentpoint newpath 2 copy moveto}bdf
+/ef{gsave fillflag{gsave eofill grestore}if}bdf
+/sm{0 exch{@1 eq{1 add}if}forall}bdf
+/lshow{4 1 roll exch/@1 exch def{1 index wi pop sub 1 index sm dv 0 @1 4 -1 roll widthshow}{1 index wi pop sub
+1 index dup sm 10 mul exch length 1 sub add dv dup 10. mul 0 @1 4 -1 roll 0 6 -1 roll awidthshow}ifelse}bdf
+/setTxMode{sa 9 2 index put 3 eq{1}{0}ifelse setgray}bdf
+/SwToSym{{}mark false/Symbol/Symbol 0 rf 0 sa 6 get 0 ne{pop 1}{sa 7 get 0 eq{pop 2}if}ifelse
+sa 1 get 0 ne/Symbol
+sa 4 get 0 ne{vs}{sa 3 get 0 ne{vo}{fnt}ifelse}ifelse}bdf
+/mc{0 3 1 roll transform neg exch pop}bdf
+/ul{dup 0 ne sa 2 get 0 ne and{gsave 0 0
+/UnderlinePosition kif{mc}{ps -10 div}ifelse/UnderlineThickness kif{mc}{ps 15 div}ifelse
+abs setlinewidth neg rmoveto
+sa 4 get 0 ne{gsave currentlinewidth 2. div dup rmoveto currentpoint newpath moveto
+2 copy rlineto stroke grestore}if
+sa 3 get sa 4 get or 0 ne{gsave gl 2 copy rlineto stroke grestore rlineto strokepath nlw pys div setlinewidth}{rlineto}ifelse
+stroke grestore}{pop}ifelse}bdf
+/sgt{2 copy known{get true}{pop pop false}ifelse}bdf
+/kif{currentfont dup/FontMatrix get exch/FontInfo sgt{true}{currentfont/df sgt
+{dup/FontInfo sgt{3 1 roll/FontMatrix get mtx concatmatrix exch true}{pop pop pop false}
+ifelse}{pop pop false}ifelse}ifelse{3 -1 roll sgt{exch true}{pop false}ifelse}{false}ifelse}bdf
+/blank/Times-Roman findfont/CharStrings get/space get def
+/macvec 256 array def
+/NUL/SOH/STX/ETX/EOT/ENQ/ACK/BEL/BS/HT/LF/VT/FF/CR/SO/SI
+/DLE/DC1/DC2/DC3/DC4/NAK/SYN/ETB/CAN/EM/SUB/ESC/FS/GS/RS/US
+macvec 0 32 getinterval astore pop
+macvec 32/Times-Roman findfont/Encoding get
+32 96 getinterval putinterval macvec dup 39/quotesingle put 96/grave put
+/Adieresis/Aring/Ccedilla/Eacute/Ntilde/Odieresis/Udieresis/aacute
+/agrave/acircumflex/adieresis/atilde/aring/ccedilla/eacute/egrave
+/ecircumflex/edieresis/iacute/igrave/icircumflex/idieresis/ntilde/oacute
+/ograve/ocircumflex/odieresis/otilde/uacute/ugrave/ucircumflex/udieresis
+/dagger/degree/cent/sterling/section/bullet/paragraph/germandbls
+/registered/copyright/trademark/acute/dieresis/notequal/AE/Oslash
+/infinity/plusminus/lessequal/greaterequal/yen/mu/partialdiff/summation
+/product/pi/integral/ordfeminine/ordmasculine/Omega/ae/oslash
+/questiondown/exclamdown/logicalnot/radical/florin/approxequal/Delta/guillemotleft
+/guillemotright/ellipsis/blank/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright/divide/lozenge
+/ydieresis/Ydieresis/fraction/currency/guilsinglleft/guilsinglright/fi/fl
+/daggerdbl/periodcentered/quotesinglbase/quotedblbase/perthousand/Acircumflex/Ecircumflex/Aacute
+/Edieresis/Egrave/Iacute/Icircumflex/Idieresis/Igrave/Oacute/Ocircumflex
+/apple/Ograve/Uacute/Ucircumflex/Ugrave/dotlessi/circumflex/tilde
+/macron/breve/dotaccent/ring/cedilla/hungarumlaut/ogonek/caron
+macvec 128 128 getinterval astore pop
+{}mark true/Courier/Courier 0 rf
+{/Metrics 21 dict begin/zero 600 def/one 600 def/two 600 def/three 600 def/four 600 def/five 600 def/six 600 def/seven 600 def/eight 600 def
+/nine 600 def/comma 600 def/period 600 def/dollar 600 def/numbersign 600 def/percent 600 def/plus 600 def/hyphen 600 def/E 600 def/parenleft 600 def/parenright 600 def/space 600 def
+currentdict end def currentdict/UniqueID known{/UniqueID 16#800000 def}if/FontBBox FontBBox 4 array astore def}mark true/Helvetica/Seattle 1 rf
+/oldsettransfer/settransfer load def
+/concatprocs{/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx}def
+/settransfer{currenttransfer concatprocs oldsettransfer}def
+/PaintBlack{{1 exch sub}settransfer gsave newpath clippath 1 setgray fill grestore}def
+/od{(Rvd\001\001\000\000\177) fg copy pop txpose
+1 0 mtx defaultmatrix dtransform exch atan/pa exch def
+newpath clippath mark
+{transform{itransform moveto}}{transform{itransform lineto}}
+{6 -2 roll transform 6 -2 roll transform 6 -2 roll transform
+{itransform 6 2 roll itransform 6 2 roll itransform 6 2 roll curveto}}
+{{closepath}}pathforall newpath counttomark array astore/gc xdf pop ct 39 0 put
+10 fz 0 fs 2 F/Courier fnt invertflag{PaintBlack}if}bdf
+/cd{}bdf
+/op{/sfl false def/pm save def}bdf
+/cp{not{userdict/#copies 0 put}if ma 0 gt{{t1 the{exit}if}loop}if{copypage}{showpage}ifelse pm restore}bdf
+/px{0 3 1 roll tp tt}bdf
+/psb{/us save def}bdf
+/pse{us restore}bdf
+/ct 40 string def
+/nc{currentpoint initclip newpath gc{dup type dup/arraytype eq exch/packedarraytype eq or{exec}if}
+forall clip newpath moveto}def
+/kp{ct 0 2 index length 2 index 39 2 index put getinterval copy cvx exec mx3 currentmatrix pop}bdf
+end
+md begin/bigs[lnop lnop/legal load userdict/a4 known{/a4 load}{lnop}ifelse lnop lnop lnop lnop lnop]def
+/smalls[lnop userdict/note known{/note load}{dup}ifelse lnop userdict/a4small known{/a4small load}{lnop}ifelse 2 index lnop lnop lnop lnop ]def end
+md begin
+
+T T -130 -125 3170 2425 100 300 300 1 F F F F T T psu
+(freply MacScrelt; document: 4-adder-Layer#1)jn
+0 mf
+od
+op
+0 0 xl
+1 1 pen
+0 0 gm
+(nc 0 0 3040 2300 6 rc)kp
+0 setlinecap
+currentscreen
+3 1 roll pop pop 45 45 3 -1 roll setscreen
+64 gr
+2110 117 2185 229 112.5 112.5 1 rr
+4 4 pen
+0 gr
+2110 117 2185 229 115 115 0 rr
+64 gr
+2260 4 2335 117 111 111 1 rr
+0 gr
+2260 4 2335 117 115 115 0 rr
+64 gr
+2110 567 2185 679 111 111 1 rr
+0 gr
+2110 567 2185 679 115 115 0 rr
+64 gr
+2260 454 2335 567 111 111 1 rr
+0 gr
+2260 454 2335 567 115 115 0 rr
+64 gr
+2260 679 2335 792 111 111 1 rr
+0 gr
+2260 679 2335 792 115 115 0 rr
+64 gr
+2110 792 2185 904 111 111 1 rr
+0 gr
+2110 792 2185 904 115 115 0 rr
+64 gr
+2410 117 2485 229 111 111 1 rr
+0 gr
+2410 117 2485 229 115 115 0 rr
+64 gr
+2410 792 2485 904 111 111 1 rr
+0 gr
+2410 792 2485 904 115 115 0 rr
+64 gr
+2560 4 2635 117 111 111 1 rr
+0 gr
+2560 4 2635 117 115 115 0 rr
+64 gr
+2560 229 2635 342 111 111 1 rr
+0 gr
+2560 229 2635 342 115 115 0 rr
+64 gr
+2560 679 2635 792 111 111 1 rr
+0 gr
+2560 679 2635 792 115 115 0 rr
+2183 152 gm
+2258 77 lin
+2183 190 gm
+2258 265 lin
+2183 377 gm
+2258 302 lin
+2183 602 gm
+2258 527 lin
+2183 640 gm
+2258 715 lin
+2183 827 gm
+2258 752 lin
+2183 415 gm
+2258 490 lin
+2221 2 gm
+2258 40 lin
+2333 265 gm
+2408 190 lin
+2333 302 gm
+2408 377 lin
+2333 490 gm
+2408 415 lin
+2333 715 gm
+2408 640 lin
+2333 752 gm
+2408 827 lin
+2333 527 gm
+2408 602 lin
+2333 77 gm
+2408 152 lin
+2333 40 gm
+2371 2 lin
+2483 152 gm
+2558 77 lin
+2483 190 gm
+2558 265 lin
+2483 377 gm
+2558 302 lin
+2483 602 gm
+2558 527 lin
+2483 640 gm
+2558 715 lin
+2483 827 gm
+2558 752 lin
+2483 415 gm
+2558 490 lin
+2521 2 gm
+2558 40 lin
+2071 227 gm
+2108 190 lin
+2071 115 gm
+2108 152 lin
+2071 452 gm
+2108 415 lin
+2071 340 gm
+2108 377 lin
+2071 677 gm
+2108 640 lin
+2071 565 gm
+2108 602 lin
+2071 902 gm
+2108 865 lin
+2071 790 gm
+2108 827 lin
+64 gr
+2710 117 2785 229 111 111 1 rr
+0 gr
+2710 117 2785 229 115 115 0 rr
+64 gr
+2710 342 2785 454 111 111 1 rr
+0 gr
+2710 342 2785 454 115 115 0 rr
+64 gr
+2860 4 2935 117 111 111 1 rr
+0 gr
+2860 4 2935 117 115 115 0 rr
+64 gr
+2860 229 2935 342 111 111 1 rr
+0 gr
+2860 229 2935 342 115 115 0 rr
+64 gr
+2860 454 2935 567 111 111 1 rr
+0 gr
+2860 454 2935 567 115 115 0 rr
+2633 265 gm
+2708 190 lin
+2633 302 gm
+2708 377 lin
+2633 490 gm
+2708 415 lin
+2633 715 gm
+2708 640 lin
+2633 752 gm
+2708 827 lin
+2633 527 gm
+2708 602 lin
+2633 77 gm
+2708 152 lin
+2633 40 gm
+2671 2 lin
+2783 152 gm
+2858 77 lin
+2783 190 gm
+2858 265 lin
+2783 377 gm
+2858 302 lin
+2783 602 gm
+2858 527 lin
+2783 640 gm
+2858 715 lin
+2783 827 gm
+2858 752 lin
+2783 415 gm
+2858 490 lin
+2821 2 gm
+2858 40 lin
+2165 143 gm
+bu fc
+{}mark T /Times-Roman /Times-Roman 0 rf
+bn
+1 setTxMode
+0 fs
+42 fz
+bu fc
+2 F /Times-Roman fnt
+bn
+(HA)show
+2051 80 gm
+0 gr
+(A0)show
+2051 203 gm
+(B0)show
+2051 309 gm
+(A1)show
+2051 430 gm
+(B1)show
+2051 534 gm
+(A2)show
+2051 657 gm
+(B2)show
+2051 757 gm
+(A3)show
+2051 880 gm
+(B3)show
+64 gr
+2110 342 2185 454 111 111 1 rr
+0 gr
+2110 342 2185 454 115 115 0 rr
+2165 368 gm
+(HA)show
+64 gr
+2260 229 2335 342 111 111 1 rr
+0 gr
+2260 229 2335 342 115 115 0 rr
+2315 255 gm
+(HA)show
+2258 40 gm
+2333 40 lin
+2258 77 gm
+2333 77 lin
+2558 40 gm
+2633 40 lin
+2558 77 gm
+2633 77 lin
+2408 152 gm
+2483 152 lin
+2408 190 gm
+2483 190 lin
+2254 486 gm
+2329 486 lin
+2254 523 gm
+2329 523 lin
+2558 265 gm
+2633 265 lin
+2558 302 gm
+2633 302 lin
+2708 152 gm
+2783 152 lin
+2708 190 gm
+2783 190 lin
+64 gr
+2410 342 2485 454 111 111 1 rr
+0 gr
+2410 342 2485 454 115 115 0 rr
+2465 368 gm
+(OR)show
+64 gr
+2410 567 2485 679 111 111 1 rr
+0 gr
+2410 567 2485 679 115 115 0 rr
+2465 593 gm
+(HA)show
+64 gr
+2560 454 2635 567 111 111 1 rr
+0 gr
+2560 454 2635 567 115 115 0 rr
+2615 480 gm
+(HA)show
+64 gr
+2710 567 2785 679 111 111 1 rr
+0 gr
+2710 567 2785 679 115 115 0 rr
+2765 593 gm
+(OR)show
+2108 827 gm
+2183 827 lin
+2108 865 gm
+2183 865 lin
+2558 715 gm
+2633 715 lin
+2558 752 gm
+2633 752 lin
+2108 602 gm
+2183 602 lin
+2108 640 gm
+2183 640 lin
+64 gr
+2860 679 2935 792 111 111 1 rr
+0 gr
+2860 679 2935 792 115 115 0 rr
+2915 705 gm
+(HA)show
+64 gr
+2710 792 2785 904 111 111 1 rr
+0 gr
+2710 792 2785 904 115 115 0 rr
+2765 818 gm
+(HA)show
+2408 827 gm
+2483 827 lin
+2408 865 gm
+2483 865 lin
+2258 715 gm
+2333 715 lin
+2258 752 gm
+2333 752 lin
+2183 865 gm
+2258 940 lin
+64 gr
+2260 904 2335 1017 111 111 1 rr
+0 gr
+2260 904 2335 1017 115 115 0 rr
+2333 940 lin
+2258 977 gm
+2333 977 lin
+64 gr
+2110 1017 2185 1129 111 111 1 rr
+0 gr
+2110 1017 2185 1129 115 115 0 rr
+2183 1052 gm
+2258 977 lin
+2183 1090 gm
+2221 1127 lin
+64 gr
+2560 904 2635 1017 111 111 1 rr
+0 gr
+2560 904 2635 1017 115 115 0 rr
+64 gr
+2410 1017 2485 1129 111 111 1 rr
+0 gr
+2410 1017 2485 1129 115 115 0 rr
+2483 1052 gm
+2558 977 lin
+2483 1090 gm
+2521 1127 lin
+64 gr
+2860 904 2935 1017 111 111 1 rr
+0 gr
+2860 904 2935 1017 115 115 0 rr
+64 gr
+2710 1017 2785 1129 111 111 1 rr
+0 gr
+2710 1017 2785 1129 115 115 0 rr
+2783 1052 gm
+2858 977 lin
+2783 1090 gm
+2821 1127 lin
+2483 865 gm
+2558 940 lin
+2333 940 gm
+2408 865 lin
+2333 977 gm
+2408 1052 lin
+2371 1127 gm
+2408 1090 lin
+2071 1127 gm
+2108 1090 lin
+2071 1015 gm
+2108 1052 lin
+2633 940 gm
+2708 865 lin
+2633 977 gm
+2708 1052 lin
+2783 865 gm
+2858 940 lin
+2933 40 gm
+2971 2 lin
+2933 265 gm
+2971 227 lin
+2933 490 gm
+2971 452 lin
+2933 715 gm
+2971 677 lin
+2933 940 gm
+2971 902 lin
+2933 77 gm
+2971 115 lin
+2933 302 gm
+2971 340 lin
+2933 527 gm
+2971 565 lin
+2933 752 gm
+2971 790 lin
+2933 977 gm
+2971 1015 lin
+2858 490 gm
+2933 490 lin
+2858 527 gm
+2933 527 lin
+2708 377 gm
+2783 377 lin
+2708 415 gm
+2783 415 lin
+2858 40 gm
+2933 40 lin
+2858 77 gm
+2933 77 lin
+2858 265 gm
+2933 265 lin
+2858 302 gm
+2933 302 lin
+3023 97 gm
+(S0)show
+3023 201 gm
+(S1)show
+3023 426 gm
+(S2)show
+3023 651 gm
+(S3)show
+2558 940 gm
+2633 940 lin
+2558 977 gm
+2633 977 lin
+F T cp
+cd
+end
+@endspecial
+996 974 p (Figure) s
+13 r (3:) s
+21 r 65 c
+15 r (4-bit) s
+12 r (by) s
+14 r (4-bit) s
+13 r (adder) s
+14 r (made) s
+15 r (from) s
+14 r (half-adders) s
+996 1024 p (and) s
+10 r (OR) s
+10 r (gates.) s
+996 1165 p (ity) s
+-2 r 46 c
+13 r (Therefore) s
+11 r (it) s
+10 r (is) s
+11 r (frequently) s
+9 r (desirable) s
+10 r (to) s
+10 r (break) s
+11 r (down) s
+10 r (the) s
+996 1215 p (problem) s
+8 r (into) s
+7 r (subproblems,) s
+cmr7.300 @sf
+1439 1201 p 49 c
+t-rom.300 @sf
+1466 1215 p (and) s
+9 r (place) s
+9 r (and) s
+9 r (route) s
+8 r (the) s
+8 r (nodes) s
+996 1265 p (required) s
+11 r (for) s
+12 r (each) s
+13 r (subproblem) s
+11 r (separately) s
+13 r (or) s
+11 r (perhaps) s
+13 r (even) s
+996 1315 p (by) s
+12 r (hand.) s
+19 r (Once) s
+13 r (the) s
+12 r (placement) s
+13 r (and) s
+13 r (routing) s
+10 r (for) s
+12 r 97 c
+12 r (subprob-) s
+996 1365 p (lem) s
+8 r (has) s
+9 r (been) s
+9 r (produced,) s
+9 r (we) s
+8 r (can) s
+10 r (consider) s
+8 r (the) s
+8 r (result) s
+7 r (to) s
+8 r (be) s
+9 r (an) s
+996 1414 p (atomic) s
+11 r (unit) s
+10 r (for) s
+10 r (future) s
+11 r (connection) s
+10 r (to) s
+11 r (other) s
+10 r (nodes) s
+11 r (and) s
+11 r (sub-) s
+996 1464 p (problems.) s
+21 r (Such) s
+13 r 97 c
+14 r (subproblem) s
+12 r (is) s
+12 r (called) s
+14 r 97 c
+t-ita.300 @sf
+13 r (module) s
+t-rom.300 @sf
+44 c
+13 r (and) s
+13 r (is) s
+996 1514 p (considered) s
+8 r (in) s
+7 r (this) s
+7 r (algorithm) s
+7 r (to) s
+8 r (be) s
+8 r (an) s
+cmmi10.300 @sf
+8 r 120 c
+t-rom.300 @sf
+8 r (by) s
+cmmi10.300 @sf
+8 r 121 c
+t-rom.300 @sf
+10 r (rectangular) s
+8 r (set) s
+996 1564 p (of) s
+10 r (nodes) s
+11 r (with) s
+10 r (de) s
+174 c
+(ned) s
+11 r (input) s
+9 r (and) s
+11 r (output) s
+9 r (locations.) s
+14 r 84 c
+-2 r (ypical) s
+996 1614 p (modules) s
+11 r (are) s
+cmmi10.300 @sf
+12 r 110 c
+t-rom.300 @sf
+(-bit) s
+10 r (adders,) s
+12 r (multipliers,) s
+10 r (and) s
+12 r (bus) s
+11 r (multiplex-) s
+996 1663 p (ors.) s
+13 r (Individual) s
+7 r (ungrouped) s
+8 r (nodes) s
+10 r (are) s
+10 r (also) s
+9 r (considered) s
+9 r (to) s
+9 r (be) s
+996 1713 p (modules.) s
+1037 1793 p (This) s
+11 r (algorithm) s
+9 r (assumes) s
+13 r (that) s
+10 r (there) s
+11 r (are) s
+11 r (four) s
+10 r 175 c
+(avors) s
+11 r (ded-) s
+996 1843 p (icated) s
+10 r (to) s
+10 r (routing.) s
+12 r (They) s
+11 r (are:) s
+1027 1976 p (1.) s
+t-ita.300 @sf
+21 r (passthr) s
+-1 r (ough) s
+t-rom.300 @sf
+-1 r 58 c
+21 r (copy) s
+15 r (the) s
+15 r (left) s
+14 r (input) s
+14 r (to) s
+14 r (the) s
+15 r (left) s
+14 r (output,) s
+1079 2026 p (and) s
+10 r (the) s
+10 r (right) s
+9 r (input) s
+9 r (to) s
+9 r (the) s
+10 r (right) s
+9 r (output.) s
+1027 2124 p (2.) s
+t-ita.300 @sf
+21 r (cr) s
+-1 r (ossover) s
+t-rom.300 @sf
+58 c
+14 r (copy) s
+9 r (the) s
+9 r (left) s
+9 r (input) s
+8 r (to) s
+9 r (the) s
+9 r (right) s
+8 r (output,) s
+8 r (and) s
+1079 2174 p (the) s
+10 r (right) s
+9 r (input) s
+8 r (to) s
+10 r (the) s
+10 r (left) s
+10 r (output.) s
+1027 2272 p (3.) s
+t-ita.300 @sf
+21 r (left) s
+8 r (br) s
+-1 r (oadcast) s
+t-rom.300 @sf
+58 c
+12 r (copy) s
+9 r (the) s
+9 r (left) s
+9 r (input) s
+7 r (to) s
+9 r (both) s
+8 r (the) s
+9 r (left) s
+9 r (and) s
+1079 2322 p (right) s
+9 r (outputs,) s
+9 r (and) s
+10 r (discard) s
+10 r (the) s
+10 r (right) s
+9 r (input.) s
+1027 2421 p (4.) s
+t-ita.300 @sf
+21 r (right) s
+10 r (br) s
+-1 r (oadcast) s
+t-rom.300 @sf
+58 c
+14 r (copy) s
+11 r (the) s
+11 r (right) s
+10 r (input) s
+10 r (to) s
+10 r (both) s
+10 r (the) s
+12 r (left) s
+1079 2471 p (and) s
+10 r (right) s
+9 r (outputs,) s
+9 r (and) s
+10 r (discard) s
+10 r (the) s
+11 r (left) s
+9 r (input.) s
+996 2522 p 382 2 ru
+cmr6.300 @sf
+1038 2549 p 49 c
+t-rom.240 @sf
+1056 2560 p (Procedures) s
+5 r (for) s
+7 r (breaking) s
+5 r 97 c
+7 r (problem) s
+5 r (into) s
+7 r (subproblems) s
+5 r (will) s
+7 r (not) s
+7 r (be) s
+6 r (dis-) s
+996 2600 p (cussed) s
+7 r (in) s
+8 r (this) s
+8 r (paper) s
+-1 r 46 c
+t-rom.300 @sf
+965 2724 p 50 c
+@eop
+3 @bop0
+/cmsy10.300 @newfont
+cmsy10.300 @sf
+[<07E01FF83FFC7FFE7FFEFFFFFFFFFFFFFFFFFFFFFFFF7FFE7FFE3FFC1FF807E0> 16 16 -2 -2 21] 15 @dc
+[<780000000000FC00000003C0FE00040007F87E000E0007FC7F000F0007CC33801F80078001801FC0078001C03FE0078000C0
+  3EF0078000C07C78078000E07C3C07800060781E07800070F80F07800030F80783800030F003C3C00038F001E3C00019F000
+  F3C00019F00073C0001DE0003BC0000DE0001DC0000FE0000FE0000FE0000FE0000FC00007E00007C00003E00007C00001E0
+  0007C00000E0000780000070000380000030000180000010> 46 29 -1 1 50] 77 @dc
+[<3FF000001FFE00000FFFC0000783F00003807C0003C01E0001C0070001E0038001E001C000E000E000F000F000F0007000F0
+  007800700078007800380078003C0078003C0038003C003C003CC03C007CE03C007CF03C00FC703C01F8383C07F81E1C1FF0
+  0FFFFFE003FFFF80007FFE00> 30 28 0 0 32] 68 @dc
+/cmmi7.300 @newfont
+cmmi7.300 @sf
+[<1C003F003B00398039801C001C000E00CE00CE0067003E001C000000000000000700078007800300> 9 20 0 0 12] 105 @dc
+cmsy10.300 @sf
+[<0E0007E00007000FF80007801FFE0007801F8F0003803F038003C03E018001C03E000001E07C000001E07C000000E0FC0000
+  00F1F8000000F7F8000000F3F800000071FE000000780F00000078038000007801C000003800E000003C00F000C03C007000
+  E03C007800F03C007800703C00F800383C01F8001E1C0FF8000FFFFFF00003FFFFE000007FFF0000> 33 28 0 0 35] 82 @dc
+cmmi10.300 @sf
+[<70F8F8F870> 5 5 -3 0 12] 58 @dc
+/Times-Italic /t-ita.240 ReEncodeForTeX /t-ita.240 /t-ita.240 33.208800 TeXPSmakefont def
+[<1803003C003C07807F001E03C0F3801E03C0F1801E03C078C01E03C078C00F01E078400F01E03C000F01E03C000F01E03C00
+  0780F01E000780F01E00C780F01E00C7C0F81E0063E0FC1E0067B0F61E003F1FE3FC001E0FC1F800> 34 18 -1 0 36] 109 @dc
+cmsy10.300 @sf
+[<007FF801FFF807C0000F00001C0000380000300000700000600000E00000C00000C00000FFFFF8FFFFF8C00000C00000E000
+  006000007000003000003800001C00000F000007C00001FFF8007FF8> 21 26 -3 3 28] 50 @dc
+/cmr10.300 @newfont
+cmr10.300 @sf
+[<FFFFFFE0FFFFFFE00000000000000000000000000000000000000000000000000000000000000000FFFFFFE0FFFFFFE0> 27 12 -2 -4 32] 61 @dc
+[<07E00FF01C38381C781E700E700EF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00F700E700E781E381C1C38
+  0FF007E0> 16 27 -2 0 21] 48 @dc
+cmmi10.300 @sf
+[<406070303018181878F8F8F070> 5 13 -3 8 12] 59 @dc
+[<18003C001E001E001E001E000F000F000F000F00078E079FC79FC78F63C767E33F7E1E3C> 16 18 -1 0 19] 114 @dc
+3 @bop1
+t-rom.300 @sf
+0 91 p (Their) s
+9 r (symbols) s
+9 r (are) s
+10 r (listed) s
+8 r (in) s
+9 r 174 c
+(gure) s
+9 r (4.) s
+14 r 65 c
+9 r (series) s
+10 r (of) s
+9 r (connected) s
+0 141 p (routing) s
+8 r 175 c
+(avors) s
+11 r (is) s
+10 r (called) s
+10 r 97 c
+t-ita.300 @sf
+11 r (wir) s
+-1 r 101 c
+t-rom.300 @sf
+46 c
+252 692 p @beginspecial
+-36.000000 @hoffset
+-36.000000 @voffset
+@setspecial
+%!
+systemdict/currentpacking known{currentpacking true setpacking}if
+/LW{save statusdict/product get(LaserWriter)anchorsearch
+exch pop{length 0 eq{1}{2}ifelse}{0}ifelse exch restore}bind def
+/LW+{LW 2 eq}bind def
+/ok{systemdict/statusdict known dup{LW 0 gt and}if}bind def
+/md 250 dict def md begin
+/av 66 def
+/T true def/F false def/mtx matrix def/s75 75 string def/s8 8 string def/s1 ( ) def/pxs 1 def/pys 1 def
+1 0 mtx defaultmatrix dtransform exch atan/pa exch def/nlw .24 def/ppr [-32 -29.52 762 582.48] def
+/pgs 1 def/por true def/xb 500 array def/so true def/fillflag false def/pnm 1 def/fmv true def
+/sfl false def/ma 0 def/invertflag false def/xflip false def/yflip false def/noflips true def/scaleby96 false def/fNote true def/fBitStretch true def
+/fg (Rvd\001\001\000\000\177) def
+/bdf{bind def}bind def
+/xdf{exch def}bdf
+/xl{neg exch neg translate}bdf
+/fp{pnsh 0 ne pnsv 0 ne and}bdf
+/nop{}bdf/lnop[/nop load]cvx bdf
+/vrb[
+{fp{gsave 1 setlinewidth pnsh pnsv scale stroke grestore}if newpath}bind
+/eofill load
+dup
+/newpath load
+2 index
+dup
+{clip newpath}bind
+{}bind
+dup
+2 copy
+]def
+currentscreen/spf xdf/rot xdf/freq xdf
+/doop{vrb exch get exec}bdf
+/psu{/fNote xdf/fBitStretch xdf/scaleby96 xdf/yflip xdf/xflip xdf/invertflag xdf xflip yflip or{/noflips false def}if
+/pgs xdf 2 index .72 mul exch div/pys xdf div .72 mul/pxs xdf ppr astore pop/por xdf sn and/so xdf}bdf
+/txpose{fNote{smalls}{bigs}ifelse pgs get exec pxs pys scale ppr aload pop por{noflips{pop exch neg exch translate pop 1 -1 scale}if
+xflip yflip and{pop exch neg exch translate 180 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg translate}if 
+xflip yflip not and{pop exch neg exch translate pop 180 rotate ppr 3 get ppr 1 get neg sub neg 0 translate}if yflip xflip not and{ppr 1 get neg ppr 0 get neg translate}if}
+{noflips{translate pop pop 270 rotate 1 -1 scale}if xflip yflip and{translate pop pop 90 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg translate}if
+xflip yflip not and{translate pop pop 90 rotate ppr 3 get ppr 1 get neg sub neg 0 translate}if yflip xflip not and{translate pop pop 270 rotate ppr 2 get ppr 0 get neg sub neg 0 exch translate}if}ifelse
+statusdict begin waittimeout 300 lt{/waittimeout 300 def}if end scaleby96{ppr aload pop 4 -1 roll add 2 div 3 1 roll add 2 div 2 copy translate .96 dup scale neg exch neg exch translate}if}bdf
+/fr{4 copy ppr aload pop 3 -1 roll add 3 1 roll exch add 6 2 roll 3 -1 roll
+sub 3 1 roll exch sub 3 -1 roll exch div 3 1 roll div exch scale pop pop xl}bdf
+/obl{{0.212557 mul}{pop 0}ifelse}bdf
+/sfd{ps fg 5 -1 roll get mul 100 div 0 ps 5 -1 roll obl ps neg 0 0 6a astore makefont setfont}bdf
+/fnt{findfont sfd}bdf
+/bt{sa 3 1 roll 3 index and put}bdf
+/sa(\000\000\000\000\000\000\000\000\000\000)def
+/fs{0 1 bt 1 2 bt 2 4 bt 3 8 bt 4 16 bt 5 32 bt 6 64 bt 7 128 bt sa exch 8 exch put}bdf
+/mx1 matrix def
+/mx2 matrix def
+/mx3 matrix def
+/bu{currentpoint currentgray currentlinewidth currentlinecap currentlinejoin currentdash exch aload length
+fg 5 sfl{1}{0}ifelse put pnsv pnsh
+2t aload pop 3a aload pop mx2 aload pop mx1 aload pop mtx currentmatrix aload pop
+mx3 aload pop ps pm restore/ps xdf mx3 astore pop}bdf
+/bn{/pm save def mx3 setmatrix newpath 0 0 moveto ct dup 39 get 0 exch getinterval cvx exec
+mtx astore setmatrix mx1 astore pop mx2 astore pop 3a astore pop
+2t astore pop/pnsh xdf/pnsv xdf gw
+/sfl fg 5 get 0 ne def array astore exch setdash setlinejoin setlinecap
+setlinewidth setgray moveto}bdf
+/fc{save vmstatus exch sub 50000 lt
+{(%%[|0|]%%)=print flush}if pop restore}bdf
+/tc{32768 div add 3 1 roll 32768 div add 2t astore pop}bdf
+/3a [0 0 0] def
+/2t 2 array def
+/tp{3a astore pop}bdf
+/tt{mx2 currentmatrix pop currentpoint 2 copy 2t aload pop qa 2 copy translate 3a aload pop exch dup 0 eq
+{pop}{1 eq{-1 1}{1 -1}ifelse scale}ifelse rotate pop neg exch neg exch translate moveto}bdf
+/te{mx2 setmatrix}bdf
+/th{3 -1 roll div 3 1 roll exch div 2 copy mx1 scale pop scale/sfl true def}bdf
+/tu{1 1 mx1 itransform scale/sfl false def}bdf
+/ts{1 1 mx1 transform scale/sfl true def}bdf
+/fz{/ps xdf}bdf
+/dv{dup 0 ne{div}{pop}ifelse}bdf
+/pop4{pop pop pop pop}bdf
+/it{sfl{mx1 itransform}if}bdf
+/gm{exch it moveto}bdf/rm{it rmoveto}bdf
+/lm{currentpoint sfl{mx1 transform}if exch pop sub 0 exch it rmoveto}bdf
+/fm{statusdict/manualfeed known}bdf
+/se{statusdict exch/manualfeed exch put}bdf
+/mf{dup/ma exch def 0 gt{fm se/t1 5 st ok ma 1 gt and{/t2 0 st/t3 0 st
+statusdict/manualfeedtimeout 3600 put
+}if}if}bdf
+/jn{/statusdict where exch pop{statusdict exch /jobname exch put}if}bdf
+/pen{pnm mul/pnsh xdf pnm mul/pnsv xdf pnsh setlinewidth}bdf
+/min{2 copy gt{exch}if pop}bdf
+/max{2 copy lt{exch}if pop}bdf
+/dh{fg 6 1 put array astore exch pop exch pop exch setdash}bdf
+/ih[currentdash]def
+/rh{fg 6 0 put ih aload pop setdash}bdf
+/dl{gsave nlw pys div setlinewidth 0 setgray}bdf
+/dlin{exch currentpoint currentlinewidth 2 div dup
+translate newpath moveto lineto currentpoint stroke grestore moveto}bdf
+/lin{fg 6 get 0 ne{exch lineto currentpoint 0 doop moveto}
+{exch currentpoint/pnlv xdf/pnlh xdf gsave newpath/@1 xdf/@2 xdf fp{pnlh @2 lt{pnlv @1 ge
+{pnlh pnlv moveto @2 @1 lineto pnsh 0 rlineto
+0 pnsv rlineto pnlh pnsh add pnlv pnsv add lineto pnsh neg 0 rlineto}
+{pnlh pnlv moveto pnsh 0 rlineto @2 pnsh add @1 lineto 0 pnsv rlineto
+pnsh neg 0 rlineto pnlh pnlv pnsv add lineto}ifelse}{pnlv @1 gt
+{@2 @1 moveto pnsh 0 rlineto pnlh pnsh add pnlv lineto 0 pnsv rlineto
+pnsh neg 0 rlineto @2 @1 pnsv add lineto}{pnlh pnlv moveto pnsh 0 rlineto
+0 pnsv rlineto @2 pnsh add @1 pnsv add lineto pnsh neg 0 rlineto
+0 pnsv neg rlineto}ifelse}ifelse
+closepath fill}if @2 @1 grestore moveto}ifelse}bdf
+/gw{/pnm fg 3 get fg 4 get div def}bdf
+/lw{fg exch 4 exch put fg exch 3 exch put gw pnsv pnsh pen}bdf
+/barc{/@1 xdf/@2 xdf/@3 xdf/@4 xdf/@5 xdf
+/@6 xdf/@7 xdf/@8 xdf gsave
+@5 @7 add 2 div @6 @8 add 2 div translate newpath 0 0 moveto
+@5 @7 sub @6 @8 sub mtx currentmatrix pop scale @1{newpath}if
+0 0 0.5 @4 @3 arc @4 @3 sub abs 360 ge{closepath}if
+mtx setmatrix @2 doop grestore}bdf
+/ar{dup 0 eq barc}bdf
+/ov{0 exch 360 exch true barc}bdf
+/rc{/@t xdf currentpoint 6 2 roll newpath 4 copy 4 2 roll exch moveto
+6 -1 roll lineto lineto lineto closepath @t doop moveto}bdf
+/mup{dup pnsh 2 div le exch pnsv 2 div le or}bdf
+/rr{/@1 xdf 2. div/@2 xdf 2. div/@3 xdf
+/@4 xdf/@5 xdf/@6 xdf/@7 xdf
+@7 @5 eq @6 @4 eq @2 mup or or{@7 @6 @5 @4 @1 rc}
+{@4 @6 sub 2. div dup @2 lt{/@2 xdf}{pop}ifelse
+@5 @7 sub 2. div dup @2 lt{/@2 xdf}{pop}ifelse
+@1 0 eq{/@2 @2 pnsh 2 div 2 copy gt{sub def}{0 pop4}ifelse}if
+currentpoint newpath
+@4 @6 add 2. div @7 moveto
+@4 @7 @4 @5 @2 arcto pop4
+@4 @5 @6 @5 @2 arcto pop4
+@6 @5 @6 @7 @2 arcto pop4
+@6 @7 @4 @7 @2 arcto pop4
+closepath @1 doop moveto}ifelse}bdf
+/pr{gsave newpath/pl{exch moveto/pl{exch lineto}def}def}bdf
+/pl{exch lineto}bdf
+/ep{dup 0 eq{{moveto}{exch lin}{}{(%%[|1|]%%)= flush}pathforall
+pop grestore}{doop grestore}ifelse currentpoint newpath moveto}bdf
+/gr{64. div setgray}bdf
+/pat{s8 copy pop 9.375 pa por not{90 add}if{1 add 4 mul cvi s8 exch get exch 1 add 4 mul cvi 7 sub bitshift 1 and}setscreen gr}bdf
+/sg{freq rot/spf load setscreen gr}bdf
+/dc{transform round .5 sub exch round .5 sub exch itransform}bdf
+/sn{userdict/smooth4 known}bdf
+/x8{3 bitshift}bdf
+/x4{2 bitshift}bdf
+/d4{-2 bitshift}bdf
+/d8{-3 bitshift}bdf
+/rb{15 add -4 bitshift 1 bitshift}bdf
+/db{/@7 save def/@1 xdf/@2 xdf/@3 xdf/@4 xdf/@5 xdf/@6 @5 @3 4 add mul def
+dc translate scale/xdbit 1 1 idtransform abs/ydbit exch def abs def{0 0 1 ydbit add 1 10 rc clip}if
+@1 0 eq @1 4 eq or{1 setgray ydbit 0 1 ydbit add 1 2 rc}if
+@1 3 eq @1 7 eq or{1}{0}ifelse setgray/@9 @1 0 eq @1 1 eq @1 3 eq or or invertflag xor def/@13 @6 def
+@2 fBitStretch or{/@10 @4 x4 def/@11 @3 x4 def/@12 @10 rb def/@13 @12 @11 mul def/@15 1 1 dtransform abs/calcY 1 index def round cvi/@14 exch def
+abs/calcX 1 index def round cvi scaleby96 not{1 add}if def/@16 @15 rb def/@17 @16 @14 mul def}if
+sn @13 60000 lt and @2 fBitStretch or and{mtx currentmatrix dup 1 get exch 2 get 0. eq exch 0. eq and @17 60000 lt and fBitStretch and{@16 3 bitshift @14 @9 [calcX 0 0 calcY 0 0]{@17 string @13 string
+currentfile @6 string readhexstring pop 1 index @4 @3 @5 @12 @2 smooth4
+@10 @11 @12 dup string 5 index @15 @14 @16 dup string stretch}imagemask}{@12 x8 @11 @9 [@10 0 0 @11 0 0]{@13 string
+currentfile @6 string readhexstring pop 1 index @4 @3 @5 @12 @2 smooth4}imagemask}ifelse}{@5 3 bitshift @3 4 add @9 [@4 0 0 @3 0 2]{currentfile @6 string readhexstring pop}imagemask}ifelse
+@7 restore}bdf
+/multibit{/mbdeep exch def/mbY exch def/mbX exch def
+save mbX mbY mbdeep[mbX 0 0 mbY 0 0]{currentfile picstr readhexstring pop}image
+restore}bdf
+/wd 16 dict def
+/mfont 14 dict def
+/mdf{mfont wcheck not{/mfont 14 dict def}if mfont begin xdf end}bdf
+/cf{{1 index/FID ne{def}{pop pop}ifelse}forall}bdf/rf{/@1 exch def/@2 exch def
+FontDirectory @2 known{cleartomark pop}{findfont dup begin dup length @1 add dict begin
+cf{/Encoding macvec def}{Encoding dup length array copy/Encoding exch def
+counttomark 2 idiv{Encoding 3 1 roll put}repeat}ifelse
+pop
+exec currentdict end end @2 exch definefont pop}ifelse}bdf
+/bmbc{exch begin wd begin
+/cr xdf
+save
+CharTable cr 6 mul 6 getinterval{}forall
+/bitheight xdf/bitwidth xdf
+.96 div/width xdf
+Gkernmax add/XOffset xdf Gdescent add/YOffset xdf/rowbytes xdf
+rowbytes 255 eq{0 0 0 0 0 0 setcachedevice}
+{Gnormsize dup scale
+width 0 XOffset YOffset bitwidth XOffset add bitheight YOffset add
+setcachedevice
+rowbytes 0 ne{
+XOffset YOffset translate newpath 0 0 moveto
+bitwidth bitheight scale
+sn{
+/xSmt bitwidth x4 def
+/ySmt bitheight x4 def
+/rSmt xSmt rb def
+rSmt x8 ySmt true
+[xSmt 0 0 ySmt neg 0 ySmt]
+{rSmt ySmt mul string CharData cr get
+1 index bitwidth bitheight rowbytes rSmt so smooth4}
+}{rowbytes 3 bitshift bitheight 4 add true
+[bitwidth 0 0 bitheight neg 0 bitheight 2 add]
+{CharData cr get}
+}ifelse
+imagemask
+}if
+}ifelse
+restore
+end end
+}bdf
+/bb{.96 exch div/Gnormsize mdf 2 index
+/Gkernmax mdf 1 index/Gdescent mdf
+3 index div 4 1 roll
+2 index div 1. 5 2 roll
+exch div 4 1 roll
+4 array astore/FontBBox mdf
+}bdf
+/cdf{mfont/CharData get 3 1 roll put}bdf
+/bf{
+mfont begin
+/FontType 3 def
+/FontMatrix [1 0 0 1 0 0] def
+/Encoding macvec def
+/BuildChar/bmbc load def
+end
+mfont definefont pop
+}bdf
+/wi LW 1 eq{{gsave 0 0 0 0 0 0 0 0 moveto lineto lineto lineto closepath clip stringwidth grestore}bind}{/stringwidth load}ifelse def
+/aps{0 get 124 eq}bdf
+/xc{s75 cvs dup}bdf
+/xp{put cvn}bdf
+/scs{xc 3 67 put dup 0 95 xp}bdf
+/sos{xc 3 79 xp}bdf
+/sbs{xc 1 66 xp}bdf
+/sis{xc 2 73 xp}bdf
+/sob{xc 2 79 xp}bdf
+/sss{xc 4 83 xp}bdf
+/dd{exch 1 index add 3 1 roll add exch}bdf
+/smc{moveto dup show}bdf
+/kwn{FontDirectory 1 index known{findfont exch pop}}bdf
+/gl{1 currentgray sub setgray}bdf
+/mm{/mfont 10 dict def mfont begin
+/FontMatrix [1 0 0 1 0 0] def
+/FontType 3 def
+/Encoding macvec def
+/df 4 index findfont def
+/FontBBox [0 0 1 1] def
+/xda xdf/mbc xdf
+/BuildChar{wd begin/cr xdf/fd xdf/cs s1 dup 0 cr put def fd/mbc get exec end}def
+exec end mfont definefont}bdf
+/ac{dup scs kwn{exch findfont dup length 1 add dict begin{1 index/FID ne 2 index/UniqueID ne and{def}{pop pop}ifelse}forall
+fmv{/Encoding macvec def}if/StrokeWidth nlw 1000 mul pys div ps div dup 12 lt{pop 12}if def
+/PaintType 2 def currentdict end definefont}ifelse}bdf
+/mb{dup sbs kwn{exch{pop}{bbc}{}mm}ifelse sfd}bdf
+/mo{dup sos kwn{exch{pop}{boc}{}mm}ifelse sfd}bdf
+/ms{dup sss kwn{exch{pop}{bsc}{}mm}ifelse sfd}bdf
+/ou{dup sos kwn{exch dup ac pop{scs findfont /df2 xdf}{aoc}{}mm}ifelse sfd}bdf
+/su{dup sss kwn{exch dup ac pop{scs findfont /df2 xdf}{asc}{}mm}ifelse sfd}bdf
+/ao{/fmv true def ou}bdf/as{/fmv true def su}bdf
+/vo{/fmv false def ou}bdf/vs{/fmv false def su}bdf
+/bbc{/da .03 def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch da add exch}if grestore setcharwidth
+cs 0 0 smc da 0 smc da da smc 0 da moveto show}bdf
+/boc{/da 1 ps div def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch da add exch}if grestore setcharwidth
+cs 0 0 smc da 0 smc da da smc 0 da smc gl da 2. div dup moveto show}bdf
+/bsc{/da 1 ps div def
+/ds .05 def/da2 da 2. div def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch ds add da2 add exch}if grestore setcharwidth
+cs ds da2 add .01 add 0 smc 0 ds da2 sub translate 0 0 smc
+da 0 smc da da smc 0 da smc gl da 2. div dup moveto show}bdf
+/aoc{fd/df get setfont
+gsave cs wi grestore setcharwidth
+gl cs 0 0 smc fd/df2 get setfont gl 0 0 moveto show}bdf
+/asc{/da .05 def fd/df get setfont
+gsave cs wi 1 index 0 ne{exch da add exch}if grestore setcharwidth
+cs da .01 add 0 smc 0 da translate gl 0 0 smc gl fd/df2 get setfont 0 0 moveto show}bdf
+/st{1000 mul usertime add dup 2147483647 gt{2147483647 sub}if def}bdf
+/the{usertime sub dup 0 lt exch -2147483648 gt and}bdf
+/6a 6 array def
+/2a 2 array def
+/3q 3 array def
+/qs{3 -1 roll sub exch 3 -1 roll sub exch}bdf
+/qa{3 -1 roll add exch 3 -1 roll add exch}bdf
+/qm{3 -1 roll 1 index mul 3 1 roll mul}bdf
+/qn{6a exch get mul}bdf
+/qA .166667 def/qB .833333 def/qC .5 def
+/qx{6a astore pop
+qA 0 qn qB 2 qn add   qA 1 qn qB 3 qn add
+qB 2 qn qA 4 qn add   qB 3 qn qA 5 qn add
+qC 2 qn qC 4 qn add   qC 3 qn qC 5 qn add}bdf
+/qp{6 copy 12 -2 roll pop pop}bdf
+/qc{exch qp qx curveto}bdf
+/qi{{exch 4 copy 2a astore aload pop qa .5 qm newpath moveto}{exch 2 copy 6 -2 roll 2 qm qs 4 2 roll}ifelse}bdf
+/qq{{qc 2a aload pop qx curveto}{exch 4 copy qs qa qx curveto}ifelse}bdf
+/pt{currentpoint newpath moveto}bdf
+/qf{/fillflag true def}bdf
+/ec{1 and 0 ne{0 doop}if grestore currentpoint newpath moveto/fillflag false def}bdf
+/eu{currentpoint fp{0 ep}{grestore newpath}ifelse moveto/fillflag false def}bdf
+/bp{currentpoint newpath 2 copy moveto}bdf
+/ef{gsave fillflag{gsave eofill grestore}if}bdf
+/sm{0 exch{@1 eq{1 add}if}forall}bdf
+/lshow{4 1 roll exch/@1 exch def{1 index wi pop sub 1 index sm dv 0 @1 4 -1 roll widthshow}{1 index wi pop sub
+1 index dup sm 10 mul exch length 1 sub add dv dup 10. mul 0 @1 4 -1 roll 0 6 -1 roll awidthshow}ifelse}bdf
+/setTxMode{sa 9 2 index put 3 eq{1}{0}ifelse setgray}bdf
+/SwToSym{{}mark false/Symbol/Symbol 0 rf 0 sa 6 get 0 ne{pop 1}{sa 7 get 0 eq{pop 2}if}ifelse
+sa 1 get 0 ne/Symbol
+sa 4 get 0 ne{vs}{sa 3 get 0 ne{vo}{fnt}ifelse}ifelse}bdf
+/mc{0 3 1 roll transform neg exch pop}bdf
+/ul{dup 0 ne sa 2 get 0 ne and{gsave 0 0
+/UnderlinePosition kif{mc}{ps -10 div}ifelse/UnderlineThickness kif{mc}{ps 15 div}ifelse
+abs setlinewidth neg rmoveto
+sa 4 get 0 ne{gsave currentlinewidth 2. div dup rmoveto currentpoint newpath moveto
+2 copy rlineto stroke grestore}if
+sa 3 get sa 4 get or 0 ne{gsave gl 2 copy rlineto stroke grestore rlineto strokepath nlw pys div setlinewidth}{rlineto}ifelse
+stroke grestore}{pop}ifelse}bdf
+/sgt{2 copy known{get true}{pop pop false}ifelse}bdf
+/kif{currentfont dup/FontMatrix get exch/FontInfo sgt{true}{currentfont/df sgt
+{dup/FontInfo sgt{3 1 roll/FontMatrix get mtx concatmatrix exch true}{pop pop pop false}
+ifelse}{pop pop false}ifelse}ifelse{3 -1 roll sgt{exch true}{pop false}ifelse}{false}ifelse}bdf
+/blank/Times-Roman findfont/CharStrings get/space get def
+/macvec 256 array def
+/NUL/SOH/STX/ETX/EOT/ENQ/ACK/BEL/BS/HT/LF/VT/FF/CR/SO/SI
+/DLE/DC1/DC2/DC3/DC4/NAK/SYN/ETB/CAN/EM/SUB/ESC/FS/GS/RS/US
+macvec 0 32 getinterval astore pop
+macvec 32/Times-Roman findfont/Encoding get
+32 96 getinterval putinterval macvec dup 39/quotesingle put 96/grave put
+/Adieresis/Aring/Ccedilla/Eacute/Ntilde/Odieresis/Udieresis/aacute
+/agrave/acircumflex/adieresis/atilde/aring/ccedilla/eacute/egrave
+/ecircumflex/edieresis/iacute/igrave/icircumflex/idieresis/ntilde/oacute
+/ograve/ocircumflex/odieresis/otilde/uacute/ugrave/ucircumflex/udieresis
+/dagger/degree/cent/sterling/section/bullet/paragraph/germandbls
+/registered/copyright/trademark/acute/dieresis/notequal/AE/Oslash
+/infinity/plusminus/lessequal/greaterequal/yen/mu/partialdiff/summation
+/product/pi/integral/ordfeminine/ordmasculine/Omega/ae/oslash
+/questiondown/exclamdown/logicalnot/radical/florin/approxequal/Delta/guillemotleft
+/guillemotright/ellipsis/blank/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright/divide/lozenge
+/ydieresis/Ydieresis/fraction/currency/guilsinglleft/guilsinglright/fi/fl
+/daggerdbl/periodcentered/quotesinglbase/quotedblbase/perthousand/Acircumflex/Ecircumflex/Aacute
+/Edieresis/Egrave/Iacute/Icircumflex/Idieresis/Igrave/Oacute/Ocircumflex
+/apple/Ograve/Uacute/Ucircumflex/Ugrave/dotlessi/circumflex/tilde
+/macron/breve/dotaccent/ring/cedilla/hungarumlaut/ogonek/caron
+macvec 128 128 getinterval astore pop
+{}mark true/Courier/Courier 0 rf
+{/Metrics 21 dict begin/zero 600 def/one 600 def/two 600 def/three 600 def/four 600 def/five 600 def/six 600 def/seven 600 def/eight 600 def
+/nine 600 def/comma 600 def/period 600 def/dollar 600 def/numbersign 600 def/percent 600 def/plus 600 def/hyphen 600 def/E 600 def/parenleft 600 def/parenright 600 def/space 600 def
+currentdict end def currentdict/UniqueID known{/UniqueID 16#800000 def}if/FontBBox FontBBox 4 array astore def}mark true/Helvetica/Seattle 1 rf
+/oldsettransfer/settransfer load def
+/concatprocs{/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx}def
+/settransfer{currenttransfer concatprocs oldsettransfer}def
+/PaintBlack{{1 exch sub}settransfer gsave newpath clippath 1 setgray fill grestore}def
+/od{(Rvd\001\001\000\000\177) fg copy pop txpose
+1 0 mtx defaultmatrix dtransform exch atan/pa exch def
+newpath clippath mark
+{transform{itransform moveto}}{transform{itransform lineto}}
+{6 -2 roll transform 6 -2 roll transform 6 -2 roll transform
+{itransform 6 2 roll itransform 6 2 roll itransform 6 2 roll curveto}}
+{{closepath}}pathforall newpath counttomark array astore/gc xdf pop ct 39 0 put
+10 fz 0 fs 2 F/Courier fnt invertflag{PaintBlack}if}bdf
+/cd{}bdf
+/op{/sfl false def/pm save def}bdf
+/cp{not{userdict/#copies 0 put}if ma 0 gt{{t1 the{exit}if}loop}if{copypage}{showpage}ifelse pm restore}bdf
+/px{0 3 1 roll tp tt}bdf
+/psb{/us save def}bdf
+/pse{us restore}bdf
+/ct 40 string def
+/nc{currentpoint initclip newpath gc{dup type dup/arraytype eq exch/packedarraytype eq or{exec}if}
+forall clip newpath moveto}def
+/kp{ct 0 2 index length 2 index 39 2 index put getinterval copy cvx exec mx3 currentmatrix pop}bdf
+end
+md begin/bigs[lnop lnop/legal load userdict/a4 known{/a4 load}{lnop}ifelse lnop lnop lnop lnop lnop]def
+/smalls[lnop userdict/note known{/note load}{dup}ifelse lnop userdict/a4small known{/a4small load}{lnop}ifelse 2 index lnop lnop lnop lnop ]def end
+md begin
+
+T T -130 -125 3170 2425 100 300 300 1 F F F F T T psu
+(freply MacScrelt; document: r-flavors-Layer#1)jn
+0 mf
+od
+op
+0 0 xl
+1 1 pen
+0 0 gm
+(nc 0 0 3040 2300 6 rc)kp
+0 setlinecap
+currentscreen
+3 1 roll pop pop 45 45 3 -1 roll setscreen
+64 gr
+2621 4 2696 117 1 ov
+4 4 pen
+0 gr
+2621 4 2696 117 0 ov
+64 gr
+2733 4 2808 117 1 ov
+0 gr
+2733 4 2808 117 0 ov
+64 gr
+2846 4 2921 117 1 ov
+0 gr
+2846 4 2921 117 0 ov
+64 gr
+2958 4 3033 117 1 ov
+0 gr
+2958 4 3033 117 0 ov
+2619 40 gm
+2694 40 lin
+2619 77 gm
+2694 77 lin
+2731 40 gm
+2806 77 lin
+2731 77 gm
+2806 40 lin
+2844 40 gm
+2919 40 lin
+2844 40 gm
+2919 77 lin
+2956 77 gm
+3031 77 lin
+2956 77 gm
+3031 40 lin
+2671 172 gm
+bu fc
+{}mark T /Times-Roman /Times-Roman 0 rf
+bn
+1 setTxMode
+0 fs
+42 fz
+bu fc
+2 F /Times-Roman fnt
+bn
+(Passthrough)show
+2784 172 gm
+0 gr
+(Crossover)show
+2896 172 gm
+(Left broadcast)show
+3009 172 gm
+(Right broadcast)show
+F T cp
+cd
+end
+@endspecial
+189 825 p (Figure) s
+10 r (4:) s
+13 r (Flavors) s
+10 r (used) s
+11 r (for) s
+9 r (routing.) s
+42 925 p (The) s
+10 r (algorithm) s
+9 r (requires) s
+10 r (the) s
+10 r (following) s
+8 r (data) s
+11 r (as) s
+11 r (input:) s
+cmsy10.300 @sf
+42 1039 p 15 c
+20 r 77 c
+t-rom.300 @sf
+44 c
+16 r (the) s
+14 r (set) s
+15 r (of) s
+14 r (all) s
+14 r (of) s
+14 r (the) s
+14 r (modules) s
+14 r (which) s
+14 r (need) s
+15 r (to) s
+14 r (be) s
+83 1089 p (placed.) s
+cmsy10.300 @sf
+42 1173 p 15 c
+20 r 68 c
+t-rom.300 @sf
+1 r 44 c
+21 r (the) s
+19 r (set) s
+18 r (of) s
+19 r (dependencies) s
+19 r (between) s
+19 r (the) s
+18 r (modules.) s
+83 1223 p (Each) s
+cmsy10.300 @sf
+15 r 68 c
+cmmi7.300 @sf
+212 1229 p 105 c
+t-rom.300 @sf
+240 1223 p (corresponds) s
+13 r (to) s
+cmsy10.300 @sf
+13 r 77 c
+cmmi7.300 @sf
+550 1229 p 105 c
+t-rom.300 @sf
+578 1223 p (and) s
+14 r (is) s
+13 r (the) s
+14 r (set) s
+14 r (of) s
+14 r (mod-) s
+83 1273 p (ules) s
+10 r (which) s
+10 r (provide) s
+9 r (inputs) s
+9 r (to) s
+cmsy10.300 @sf
+10 r 77 c
+cmmi7.300 @sf
+614 1279 p 105 c
+t-rom.300 @sf
+627 1273 p 46 c
+cmsy10.300 @sf
+42 1357 p 15 c
+20 r 82 c
+t-rom.300 @sf
+44 c
+17 r (the) s
+15 r (set) s
+15 r (of) s
+15 r (routings) s
+13 r (between) s
+15 r (the) s
+15 r (modules.) s
+28 r (Each) s
+cmsy10.300 @sf
+83 1407 p 82 c
+cmmi7.300 @sf
+118 1413 p 105 c
+t-rom.300 @sf
+146 1407 p (indicates) s
+13 r (an) s
+14 r (output) s
+12 r (pin) s
+13 r (of) s
+14 r 97 c
+14 r (module) s
+14 r 40 c
+cmsy10.300 @sf
+82 c
+cmmi10.300 @sf
+58 c
+t-ita.240 @sf
+(sr) s
+99 c
+t-rom.300 @sf
+-2 r 41 c
+13 r (and) s
+83 1457 p (the) s
+9 r (input) s
+8 r (pin) s
+8 r (of) s
+9 r (another) s
+9 r (module) s
+9 r 40 c
+cmsy10.300 @sf
+82 c
+cmmi10.300 @sf
+58 c
+t-ita.300 @sf
+(dest) s
+t-rom.300 @sf
+-1 r 41 c
+10 r (it) s
+8 r (should) s
+8 r (be) s
+83 1507 p (connected) s
+11 r (to.) s
+42 1620 p (Inputs) s
+14 r (and) s
+16 r (outputs) s
+15 r (to) s
+15 r (the) s
+16 r (array) s
+16 r (are) s
+17 r (treated) s
+16 r (as) s
+17 r (special) s
+0 1670 p (modules) s
+7 r (which) s
+8 r (are) s
+8 r (used) s
+8 r (during) s
+6 r (placement) s
+9 r (and) s
+8 r (routing) s
+-1 r 44 c
+7 r (but) s
+0 1720 p (are) s
+11 r (not) s
+9 r (actually) s
+10 r (placed) s
+11 r (in) s
+10 r (the) s
+10 r (physical) s
+10 r (array) s
+-2 r 46 c
+t-bol.420 @sf
+0 1891 p 51 c
+58 r (Module) s
+23 r (Placement) s
+t-rom.300 @sf
+0 2014 p (The) s
+14 r 174 c
+(rst) s
+12 r (step) s
+13 r (in) s
+12 r (the) s
+13 r (algorithm) s
+11 r (is) s
+13 r (to) s
+12 r (place) s
+14 r (the) s
+12 r (modules) s
+13 r (in) s
+0 2064 p (an) s
+13 r (array) s
+14 r (so) s
+13 r (that) s
+12 r (routing) s
+11 r (between) s
+14 r (them) s
+13 r (is) s
+13 r (as) s
+14 r (short) s
+12 r (as) s
+14 r (rea-) s
+0 2114 p (sonably) s
+9 r (possible.) s
+12 r (Modules) s
+9 r (are) s
+10 r 174 c
+(rst) s
+9 r (ordered) s
+9 r (vertically) s
+9 r (into) s
+0 2164 p (distinct) s
+t-ita.300 @sf
+13 r (levels) s
+t-rom.300 @sf
+15 r (\(this) s
+13 r (is) s
+14 r 97 c
+t-ita.300 @sf
+15 r (logical) s
+t-rom.300 @sf
+13 r (placement) s
+208 c
+(the) s
+14 r (physical) s
+0 2214 p (placement) s
+14 r (won') s
+116 c
+11 r (be) s
+13 r (determined) s
+13 r (until) s
+11 r (later\),) s
+14 r (and) s
+13 r (then) s
+13 r (are) s
+0 2263 p (placed) s
+11 r (horizontally) s
+8 r (within) s
+8 r (each) s
+12 r (level.) s
+42 2343 p (The) s
+10 r (ordering) s
+9 r (of) s
+10 r (modules) s
+10 r (vertically) s
+9 r (is) s
+10 r 97 c
+11 r (simple) s
+10 r (process:) s
+31 2466 p (1.) s
+21 r (Mark) s
+10 r (all) s
+10 r (of) s
+10 r (the) s
+10 r (modules) s
+10 r (as) s
+11 r (unused.) s
+31 2550 p (2.) s
+21 r (Add) s
+14 r (all) s
+15 r (of) s
+14 r (the) s
+15 r (inputs) s
+13 r (to) s
+14 r (level) s
+15 r (0,) s
+16 r (and) s
+15 r (mark) s
+15 r (them) s
+15 r (as) s
+83 2600 p (used;) s
+10 r (set) s
+11 r (the) s
+10 r (level) s
+10 r (number) s
+10 r (to) s
+10 r (1.) s
+1027 91 p (3.) s
+21 r (Add) s
+12 r (to) s
+13 r (the) s
+12 r (current) s
+13 r (level) s
+13 r (all) s
+12 r (modules) s
+13 r (\(which) s
+12 r (are) s
+14 r (not) s
+1079 141 p (outputs\)) s
+9 r (which) s
+11 r (depend) s
+11 r (only) s
+10 r (on) s
+10 r (modules) s
+11 r (which) s
+11 r (have) s
+1079 191 p (already) s
+15 r (been) s
+15 r (added) s
+15 r (to) s
+15 r (previous) s
+13 r (levels.) s
+28 r (That) s
+15 r (is,) s
+16 r (all) s
+1079 241 p (modules) s
+cmsy10.300 @sf
+9 r 77 c
+cmmi7.300 @sf
+1279 247 p 105 c
+t-rom.300 @sf
+1302 241 p (such) s
+10 r (that) s
+cmsy10.300 @sf
+9 r 77 c
+cmmi7.300 @sf
+1510 247 p 105 c
+t-rom.300 @sf
+1533 241 p (isn') s
+116 c
+8 r (marked) s
+10 r (as) s
+10 r (used,) s
+10 r (and) s
+1079 291 p (for) s
+11 r (each) s
+14 r (module) s
+cmmi10.300 @sf
+12 r 109 c
+cmsy10.300 @sf
+16 r 50 c
+15 r 68 c
+cmmi7.300 @sf
+1492 297 p 105 c
+t-rom.300 @sf
+1506 291 p 44 c
+cmmi10.300 @sf
+13 r 109 c
+t-rom.300 @sf
+13 r (is) s
+12 r (marked) s
+13 r (as) s
+13 r (used) s
+12 r (and) s
+1079 340 p (the) s
+10 r (level) s
+10 r (of) s
+cmmi10.300 @sf
+10 r 109 c
+t-rom.300 @sf
+11 r (is) s
+10 r (less) s
+10 r (than) s
+10 r (the) s
+10 r (current) s
+10 r (level.) s
+1027 421 p (4.) s
+21 r (Increment) s
+10 r (the) s
+11 r (level) s
+10 r (number) s
+10 r (by) s
+10 r (1.) s
+1027 502 p (5.) s
+21 r (If) s
+13 r (all) s
+14 r (modules) s
+13 r (which) s
+13 r (are) s
+15 r (not) s
+13 r (outputs) s
+12 r (are) s
+14 r (marked) s
+14 r (as) s
+1079 552 p (used,) s
+11 r (add) s
+10 r (the) s
+10 r (outputs) s
+9 r (to) s
+9 r (the) s
+10 r (current) s
+10 r (level) s
+10 r (and) s
+11 r (stop.) s
+1027 633 p (6.) s
+21 r (Go) s
+10 r (to) s
+10 r (step) s
+10 r (3.) s
+996 749 p (Note) s
+8 r (that) s
+8 r (step) s
+8 r 51 c
+9 r (must) s
+8 r (eventually) s
+7 r (use) s
+9 r (all) s
+8 r (of) s
+8 r (the) s
+9 r (modules) s
+8 r (be-) s
+996 799 p (cause) s
+9 r (there) s
+8 r (can) s
+9 r (be) s
+8 r (no) s
+7 r (circular) s
+8 r (dependencies) s
+9 r (between) s
+8 r (mod-) s
+996 848 p (ules) s
+10 r (\(the) s
+10 r (modules) s
+10 r (form) s
+10 r 97 c
+11 r (strict) s
+9 r (hierarchy\).) s
+1037 928 p (Once) s
+17 r (the) s
+16 r (modules) s
+16 r (have) s
+16 r (been) s
+17 r (ordered) s
+15 r (vertically) s
+-2 r 44 c
+16 r (they) s
+996 978 p (must) s
+9 r (be) s
+10 r (arranged) s
+10 r (horizontally) s
+-3 r 46 c
+12 r (This) s
+9 r (is) s
+10 r (done) s
+9 r (in) s
+9 r (two) s
+9 r (stages:) s
+996 1028 p (ideal) s
+14 r (placement,) s
+16 r (and) s
+14 r (shifting) s
+12 r (to) s
+14 r (allow) s
+13 r (room) s
+14 r (for) s
+14 r (routing.) s
+996 1078 p (During) s
+9 r (the) s
+11 r (ideal) s
+11 r (placement) s
+12 r (stage,) s
+11 r (the) s
+11 r (modules) s
+11 r (are) s
+12 r (placed) s
+996 1128 p (in) s
+12 r (such) s
+14 r 97 c
+14 r (way) s
+13 r (that) s
+13 r (the) s
+13 r (total) s
+12 r (idealized) s
+13 r (routing) s
+11 r (distance) s
+14 r (to) s
+996 1177 p (each) s
+14 r (module) s
+14 r (is) s
+13 r (minimized.) s
+24 r (For) s
+13 r 97 c
+14 r (given) s
+13 r (module) s
+cmsy10.300 @sf
+13 r 77 c
+t-rom.300 @sf
+44 c
+15 r (the) s
+996 1227 p (idealized) s
+10 r (routing) s
+9 r (distance) s
+10 r (is) s
+11 r (the) s
+10 r (sum) s
+11 r (of) s
+10 r (the) s
+10 r (squares) s
+11 r (of) s
+10 r (the) s
+996 1277 p (horizontal) s
+10 r (displacements) s
+12 r (for) s
+11 r (each) s
+13 r (module) s
+11 r (that) s
+11 r (feeds) s
+13 r (data) s
+996 1327 p (to) s
+6 r (an) s
+7 r (input) s
+5 r (of) s
+cmsy10.300 @sf
+7 r 77 c
+t-rom.300 @sf
+46 c
+13 r (The) s
+7 r (horizontal) s
+6 r (position) s
+4 r (of) s
+7 r (these) s
+7 r (modules) s
+996 1377 p (will) s
+12 r (always) s
+14 r (be) s
+13 r (known) s
+13 r (since) s
+13 r (module) s
+13 r (placement) s
+14 r (proceeds) s
+996 1426 p (in) s
+11 r (order) s
+11 r (down) s
+11 r (the) s
+11 r (hierarchy) s
+-2 r 46 c
+17 r (For) s
+11 r (each) s
+13 r (level,) s
+12 r (modules) s
+11 r (are) s
+996 1476 p (picked) s
+11 r (one) s
+11 r (by) s
+11 r (one) s
+11 r (and) s
+11 r (placed) s
+12 r (in) s
+10 r (such) s
+12 r 97 c
+12 r (manner) s
+11 r (that) s
+11 r (their) s
+996 1526 p (idealized) s
+14 r (routing) s
+13 r (distance) s
+14 r (is) s
+15 r (minimized) s
+14 r (and) s
+15 r (they) s
+14 r (do) s
+14 r (not) s
+996 1576 p (overlap.) s
+15 r (This) s
+11 r (can) s
+11 r (be) s
+12 r (done) s
+10 r (very) s
+11 r (ef) s
+174 c
+(ciently) s
+9 r (using) s
+10 r 97 c
+12 r (variant) s
+996 1626 p (of) s
+10 r (the) s
+10 r (median) s
+10 r (method) s
+10 r (discussed) s
+11 r (in) s
+9 r 91 c
+53 c
+(].) s
+1037 1705 p (Once) s
+9 r (the) s
+7 r (modules) s
+7 r (are) s
+9 r (ordered) s
+7 r (vertically) s
+7 r (and) s
+8 r (placed) s
+8 r (hor-) s
+996 1755 p (izontally) s
+8 r (in) s
+10 r (an) s
+10 r (ideal) s
+10 r (manner) s
+-1 r 44 c
+10 r (some) s
+11 r (may) s
+11 r (need) s
+10 r (to) s
+10 r (be) s
+10 r (shifted) s
+996 1805 p (to) s
+12 r (make) s
+13 r (room) s
+13 r (for) s
+12 r (wires) s
+12 r (which) s
+12 r (need) s
+13 r (to) s
+12 r (go) s
+12 r (between) s
+13 r (mod-) s
+996 1855 p (ules.) s
+21 r (This) s
+13 r (is) s
+13 r (done) s
+12 r (by) s
+13 r (tracing) s
+12 r (the) s
+13 r (ideal) s
+12 r (path) s
+13 r (of) s
+12 r (each) s
+14 r (wire) s
+996 1905 p (while) s
+13 r (keeping) s
+14 r (counters) s
+13 r (\(which) s
+14 r (we) s
+14 r (will) s
+13 r (call) s
+cmmi10.300 @sf
+14 r (m:) s
+t-ita.300 @sf
+(right) s
+t-rom.300 @sf
+13 r (and) s
+cmmi10.300 @sf
+996 1955 p (m:) s
+t-ita.300 @sf
+(left) s
+t-rom.300 @sf
+-1 r 41 c
+8 r (indicating) s
+7 r (how) s
+8 r (much) s
+9 r (space) s
+9 r (adjacent) s
+9 r (modules) s
+9 r (need) s
+996 2004 p (between) s
+12 r (them) s
+13 r (and) s
+12 r (creating) s
+12 r 97 c
+t-ita.300 @sf
+13 r (goal) s
+t-rom.300 @sf
+11 r (for) s
+12 r (each) s
+13 r (wire) s
+12 r (on) s
+12 r 97 c
+13 r (per) s
+996 2054 p (level) s
+10 r (basis.) s
+14 r (The) s
+11 r (algorithm) s
+9 r (is:) s
+1027 2170 p (1.) s
+21 r (For) s
+10 r (all) s
+cmmi10.300 @sf
+10 r 109 c
+cmsy10.300 @sf
+12 r 50 c
+11 r 77 c
+t-rom.300 @sf
+44 c
+10 r (let) s
+cmmi10.300 @sf
+10 r (m:) s
+t-ita.300 @sf
+(right) s
+cmr10.300 @sf
+11 r 61 c
+11 r 48 c
+cmmi10.300 @sf
+59 c
+7 r (m:) s
+t-ita.300 @sf
+(left) s
+cmr10.300 @sf
+10 r 61 c
+12 r 48 c
+t-rom.300 @sf
+46 c
+1027 2251 p (2.) s
+21 r (For) s
+12 r (each) s
+cmmi10.300 @sf
+14 r 114 c
+cmsy10.300 @sf
+18 r 50 c
+17 r 82 c
+t-rom.300 @sf
+44 c
+14 r (follow) s
+11 r (the) s
+12 r (routing) s
+11 r (from) s
+13 r (its) s
+12 r (source) s
+1079 2301 p (to) s
+12 r (its) s
+12 r (destination) s
+12 r (in) s
+12 r 97 c
+14 r (straight) s
+11 r (diagonal) s
+12 r (line.) s
+22 r (When-) s
+1079 2351 p (ever) s
+cmmi10.300 @sf
+9 r 114 c
+t-rom.300 @sf
+11 r (would) s
+8 r (intersect) s
+9 r 97 c
+9 r (module,) s
+cmmi10.300 @sf
+10 r 109 c
+t-rom.300 @sf
+44 c
+10 r (increment) s
+9 r (either) s
+cmmi10.300 @sf
+1079 2401 p (m:) s
+t-ita.300 @sf
+(right) s
+t-rom.300 @sf
+12 r (or) s
+cmmi10.300 @sf
+13 r (m:) s
+t-ita.300 @sf
+(left) s
+t-rom.300 @sf
+12 r (depending) s
+12 r (on) s
+13 r (whether) s
+13 r (the) s
+13 r (wire) s
+13 r (is) s
+1079 2450 p (intersecting) s
+11 r (the) s
+11 r (right) s
+11 r (half) s
+12 r (or) s
+11 r (left) s
+12 r (half) s
+11 r (of) s
+12 r (the) s
+12 r (module,) s
+1079 2500 p (respectively) s
+-2 r 46 c
+21 r (Keep) s
+14 r (track) s
+13 r (of) s
+13 r (which) s
+13 r (modules) s
+cmmi10.300 @sf
+12 r 114 c
+t-rom.300 @sf
+14 r (needs) s
+1079 2550 p (to) s
+10 r (pass) s
+12 r (between,) s
+12 r (and) s
+11 r (whether) s
+11 r (it) s
+10 r (needs) s
+12 r (to) s
+10 r (pass) s
+12 r (on) s
+10 r (the) s
+1079 2600 p (right) s
+9 r (or) s
+9 r (the) s
+11 r (left.) s
+965 2724 p 51 c
+@eop
+4 @bop0
+cmr7.300 @sf
+[<FFE0FFE07FE0307018300C300E000700038001C001E000F000F070F0F8F0F9E0FBE07FC01F00> 12 19 -2 0 17] 50 @dc
+cmr10.300 @sf
+[<0006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006
+  0000FFFFFFE0FFFFFFE000060000000600000006000000060000000600000006000000060000000600000006000000060000
+  000600000006000000060000> 27 28 -2 4 32] 43 @dc
+cmsy10.300 @sf
+[<0C00006000000E00007000000700007800000780007C00000780007E000007C0007E000007E0007F000007F0007B800003F0
+  0079800003B80079C00003DC00F8E00003CC00F8600003CE00F0700003C700F0380003C300F0180003C380F01C0003C1C0F0
+  0C0003C0C1F00E0003C0E1F0060003C071E0070003C031E0030007C039E0030007C01BE0030007801FE003800F800FC00780
+  0F800FC01F801F0007C00F80FF0007C00F80FE0007800F80780003800700> 41 30 -1 2 41] 87 @dc
+cmmi10.300 @sf
+[<01F0F80007FBFC000F1F86000F0F83000F0781000F0781800F0781800F0780C00F0780C00F0780C00783C0600783C060C3C3
+  C06063C3C0E063C1E1E033C1E1E01F81E1E00F00C0C0> 27 18 -1 0 30] 119 @dc
+[<01FC000007FF80001F83E0003E00F0003C007C007C003E0078001F00F8000F00F8000F80F80007C0F80007C0F80003E0F800
+  03E0F80003E07C0001F07C0001F07C0001F03E0001F03E0001F01E0001F00F0001F0078001E007C001E003E003C000F007C0
+  007C0F80001FFE000003F800> 28 28 -2 0 32] 79 @dc
+cmr10.300 @sf
+[<00C00180030007000E000E001C001C003800380038007000700070007000F000F000F000F000F000F000F000F000F000F000
+  F000F00070007000700070003800380038001C001C000E000E0007000300018000C0> 10 42 -3 11 16] 40 @dc
+[<C0006000300038001C001C000E000E00070007000700038003800380038003C003C003C003C003C003C003C003C003C003C0
+  03C003C003800380038003800700070007000E000E001C001C00380030006000C000> 10 42 -2 11 16] 41 @dc
+cmr7.300 @sf
+[<1FC03FF07078F838F83CF83C703C003800700FC00FC000F0007038787878787838703FE00FC0> 14 19 -1 0 17] 51 @dc
+cmsy10.300 @sf
+[<C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0> 2 41 -5 10 12] 106 @dc
+cmr7.300 @sf
+[<07FC07FC00E000E000E000E0FFFCFFFCE0E070E030E018E01CE00EE007E003E001E001E000E0> 14 19 -1 0 17] 52 @dc
+4 @bop1
+t-rom.300 @sf
+31 91 p (3.) s
+21 r (Shift) s
+13 r (the) s
+14 r (modules) s
+13 r (\(keeping) s
+14 r (their) s
+13 r (same) s
+15 r (relative) s
+14 r (hor-) s
+83 141 p (izontal) s
+12 r (position\)) s
+12 r (such) s
+13 r (that) s
+13 r (the) s
+13 r (distance) s
+13 r (between) s
+14 r (ad-) s
+83 191 p (jacent) s
+17 r (modules) s
+cmmi10.300 @sf
+16 r 109 c
+cmr7.300 @sf
+392 197 p 49 c
+t-rom.300 @sf
+428 191 p (and) s
+cmmi10.300 @sf
+16 r 109 c
+cmr7.300 @sf
+540 197 p 50 c
+t-rom.300 @sf
+576 191 p (is) s
+16 r (at) s
+17 r (least) s
+cmmi10.300 @sf
+17 r 109 c
+cmr7.300 @sf
+796 197 p 49 c
+cmmi10.300 @sf
+815 191 p 58 c
+t-ita.300 @sf
+(right) s
+cmr10.300 @sf
+13 r 43 c
+cmmi10.300 @sf
+83 241 p 109 c
+cmr7.300 @sf
+119 247 p 50 c
+cmmi10.300 @sf
+138 241 p 58 c
+t-ita.300 @sf
+(left) s
+t-rom.300 @sf
+-1 r 46 c
+31 326 p (4.) s
+21 r (For) s
+13 r (each) s
+cmmi10.300 @sf
+14 r 114 c
+cmsy10.300 @sf
+18 r 50 c
+16 r 82 c
+t-rom.300 @sf
+44 c
+14 r 174 c
+(nd) s
+13 r (the) s
+13 r (new) s
+13 r (position) s
+10 r (of) s
+13 r (each) s
+14 r (pair) s
+83 375 p (of) s
+11 r (modules) s
+11 r (it) s
+10 r (is) s
+11 r (going) s
+9 r (to) s
+11 r (pass) s
+11 r (between,) s
+12 r (and) s
+11 r (assign) s
+11 r (it) s
+83 425 p 97 c
+14 r (goal) s
+13 r (column) s
+12 r (for) s
+13 r (that) s
+13 r (level) s
+13 r (such) s
+13 r (that) s
+13 r (no) s
+13 r (two) s
+12 r (wires) s
+83 475 p (have) s
+11 r (the) s
+10 r (same) s
+11 r (goal) s
+10 r (column) s
+9 r (for) s
+10 r (that) s
+10 r (level) s
+9 r (\(there) s
+10 r (must) s
+83 525 p (be) s
+11 r (enough) s
+9 r (space) s
+12 r (because) s
+11 r (of) s
+10 r (steps) s
+11 r 50 c
+10 r (and) s
+10 r (3\).) s
+14 r (The) s
+11 r (goal) s
+83 575 p (column) s
+11 r (for) s
+11 r (the) s
+12 r (wire') s
+-1 r 115 c
+10 r (starting) s
+10 r (level) s
+12 r (is) s
+11 r (the) s
+12 r (horizontal) s
+83 624 p (position) s
+7 r (of) s
+9 r (the) s
+9 r (appropriate) s
+9 r (output) s
+8 r (of) s
+9 r (the) s
+9 r (source) s
+10 r (mod-) s
+83 674 p (ule,) s
+13 r (and) s
+13 r (the) s
+12 r (goal) s
+12 r (column) s
+12 r (for) s
+12 r (the) s
+13 r (destination) s
+10 r (level) s
+13 r (is) s
+83 724 p (the) s
+9 r (horizontal) s
+7 r (position) s
+7 r (of) s
+9 r (the) s
+9 r (appropriate) s
+8 r (input) s
+8 r (of) s
+8 r (the) s
+83 774 p (destination) s
+9 r (module.) s
+42 897 p (Once) s
+18 r (this) s
+18 r (step) s
+18 r (is) s
+18 r (completed,) s
+20 r (all) s
+18 r (modules) s
+18 r (have) s
+19 r (been) s
+0 946 p (placed) s
+8 r (in) s
+8 r (such) s
+8 r 97 c
+8 r (manner) s
+9 r (that) s
+7 r (routing,) s
+7 r (using) s
+6 r (the) s
+8 r (appropriate) s
+0 996 p (goal) s
+10 r (columns,) s
+t-ita.300 @sf
+10 r (must) s
+t-rom.300 @sf
+10 r (be) s
+11 r (possible) s
+9 r (without) s
+8 r (backtracking.) s
+t-bol.420 @sf
+0 1168 p 52 c
+58 r (Routing) s
+t-rom.300 @sf
+0 1291 p (Now) s
+11 r (that) s
+12 r (the) s
+11 r (modules) s
+11 r (have) s
+13 r (been) s
+12 r (placed) s
+12 r (horizontally) s
+9 r (and) s
+0 1341 p (ordered) s
+13 r (vertically) s
+-2 r 44 c
+12 r (and) s
+13 r (each) s
+14 r (wire) s
+13 r (that) s
+13 r (needs) s
+13 r (to) s
+13 r (be) s
+13 r (routed) s
+0 1391 p (has) s
+15 r 97 c
+15 r (goal) s
+15 r (column) s
+14 r (for) s
+14 r (every) s
+15 r (level) s
+15 r (it) s
+14 r (must) s
+14 r (pass) s
+16 r (through,) s
+0 1440 p (routing) s
+10 r (can) s
+12 r (proceed.) s
+19 r (Routing) s
+10 r (proceeds) s
+12 r (from) s
+12 r (the) s
+12 r (outputs,) s
+0 1490 p (up) s
+10 r (through) s
+8 r (the) s
+10 r (levels,) s
+10 r (to) s
+9 r (the) s
+10 r (inputs) s
+9 r (\(thus) s
+9 r (routing) s
+8 r (proceeds) s
+0 1540 p (in) s
+9 r (the) s
+t-ita.300 @sf
+10 r (opposite) s
+t-rom.300 @sf
+9 r (direction) s
+9 r (from) s
+9 r (the) s
+10 r 175 c
+(ow) s
+10 r (of) s
+10 r (data\).) s
+14 r (The) s
+11 r (rout-) s
+0 1590 p (ing) s
+14 r (algorithm) s
+13 r (maintains) s
+14 r (the) s
+14 r (following) s
+12 r (state:) s
+22 r (the) s
+15 r (current) s
+0 1640 p (level) s
+13 r (and) s
+13 r (the) s
+13 r (set) s
+13 r (of) s
+13 r (wires,) s
+cmsy10.300 @sf
+14 r 87 c
+t-rom.300 @sf
+3 r 44 c
+15 r (which) s
+12 r (are) s
+14 r (currently) s
+12 r (being) s
+0 1689 p (routed.) s
+13 r (It) s
+10 r (proceeds) s
+11 r (as) s
+11 r (follows:) s
+31 1812 p (1.) s
+21 r (Set) s
+cmsy10.300 @sf
+11 r 87 c
+t-rom.300 @sf
+15 r (equal) s
+11 r (to) s
+10 r (all) s
+cmmi10.300 @sf
+10 r 114 c
+cmsy10.300 @sf
+14 r 50 c
+13 r 82 c
+t-rom.300 @sf
+11 r (whose) s
+11 r (destination) s
+10 r (module) s
+83 1862 p (is) s
+13 r (an) s
+14 r (output,) s
+12 r (and) s
+13 r (set) s
+14 r (each) s
+14 r (wire') s
+-1 r 115 c
+12 r (current) s
+13 r (position) s
+11 r (to) s
+83 1912 p (the) s
+11 r (horizontal) s
+10 r (position) s
+9 r (of) s
+10 r (the) s
+11 r (output.) s
+15 r (Set) s
+12 r (the) s
+11 r (current) s
+83 1962 p (level) s
+9 r (to) s
+8 r (the) s
+8 r (level) s
+9 r (on) s
+8 r (which) s
+8 r (all) s
+9 r (outputs) s
+7 r (reside) s
+9 r (minus) s
+8 r (1.) s
+31 2046 p (2.) s
+21 r (Determine) s
+12 r (the) s
+11 r (goal) s
+12 r (column) s
+11 r (for) s
+11 r (each) s
+cmmi10.300 @sf
+13 r 119 c
+cmsy10.300 @sf
+15 r 50 c
+14 r 87 c
+t-rom.300 @sf
+15 r (for) s
+11 r (the) s
+83 2096 p (current) s
+10 r (level.) s
+31 2181 p (3.) s
+21 r (Route) s
+22 r (each) s
+23 r (wire) s
+22 r (toward) s
+22 r (its) s
+22 r (goal) s
+22 r (column) s
+22 r (by) s
+21 r (the) s
+83 2231 p (method) s
+12 r (outlined) s
+11 r (below) s
+-2 r 44 c
+13 r (and) s
+13 r (continue) s
+12 r (until) s
+11 r (all) s
+12 r (wires) s
+83 2281 p (have) s
+11 r (reached) s
+11 r (their) s
+10 r (goal) s
+10 r (columns.) s
+31 2365 p (4.) s
+21 r (Place) s
+10 r (all) s
+8 r (modules) s
+8 r (which) s
+8 r (reside) s
+9 r (on) s
+8 r (the) s
+9 r (current) s
+8 r (level) s
+8 r (at) s
+83 2415 p (their) s
+12 r (desired) s
+12 r (horizontal) s
+11 r (position) s
+-1 r 44 c
+12 r (and) s
+12 r (delete) s
+13 r (all) s
+cmmi10.300 @sf
+12 r 119 c
+cmsy10.300 @sf
+17 r 50 c
+83 2465 p 87 c
+t-rom.300 @sf
+14 r (whose) s
+10 r (source) s
+11 r (module) s
+10 r (has) s
+11 r (now) s
+9 r (been) s
+11 r (placed.) s
+31 2550 p (5.) s
+21 r (Continue) s
+11 r (routing) s
+11 r (as) s
+14 r (in) s
+12 r (step) s
+13 r (3.) s
+21 r (Whenever) s
+14 r (the) s
+13 r (top) s
+12 r (of) s
+83 2600 p 97 c
+17 r (freshly) s
+17 r (placed) s
+17 r (module) s
+16 r (is) s
+17 r (reached,) s
+20 r (add) s
+17 r (the) s
+16 r (wires) s
+1079 91 p (whose) s
+12 r (destinations) s
+10 r (are) s
+13 r (that) s
+11 r (module) s
+11 r (to) s
+cmsy10.300 @sf
+11 r 87 c
+t-rom.300 @sf
+3 r 46 c
+20 r (Continue) s
+1079 141 p (until) s
+10 r (the) s
+11 r (tops) s
+12 r (of) s
+11 r (all) s
+12 r (modules) s
+11 r (on) s
+12 r (this) s
+11 r (level) s
+11 r (have) s
+13 r (been) s
+1079 191 p (reached.) s
+1027 280 p (6.) s
+21 r (Decrement) s
+11 r (the) s
+10 r (current) s
+10 r (level) s
+10 r (number) s
+-1 r 46 c
+1027 368 p (7.) s
+21 r (Repeat) s
+12 r (until) s
+11 r (level) s
+12 r 48 c
+12 r (\(the) s
+12 r (level) s
+12 r (containing) s
+11 r (only) s
+11 r (array) s
+1079 418 p (inputs\)) s
+8 r (is) s
+11 r (reached.) s
+1027 507 p (8.) s
+21 r (Continue) s
+11 r (routing) s
+12 r (wires) s
+13 r (until) s
+12 r (all) s
+13 r (wires) s
+13 r (have) s
+14 r (reached) s
+1079 557 p (their) s
+12 r (goal) s
+13 r (columns) s
+13 r (\(the) s
+13 r (positions) s
+12 r (of) s
+13 r (the) s
+13 r (appropriate) s
+1079 607 p (inputs\).) s
+1037 732 p (As) s
+16 r (wires) s
+15 r (are) s
+16 r (being) s
+15 r (routed,) s
+16 r 97 c
+15 r (number) s
+15 r (of) s
+15 r (con) s
+175 c
+(icts) s
+15 r (can) s
+996 782 p (arise.) s
+18 r (These) s
+12 r (include) s
+11 r (two) s
+11 r (wires) s
+11 r (interacting) s
+10 r (\(such) s
+12 r (as) s
+12 r (need-) s
+996 832 p (ing) s
+12 r (to) s
+13 r (cross\)) s
+13 r (or) s
+13 r 97 c
+13 r (wire) s
+13 r (needing) s
+13 r (to) s
+13 r (move) s
+13 r (left) s
+13 r (or) s
+12 r (right) s
+12 r (and) s
+996 882 p (not) s
+8 r (being) s
+9 r (able) s
+9 r (to) s
+9 r (\(because) s
+10 r (of) s
+9 r (interconnection) s
+8 r (constraints\).) s
+996 931 p (Such) s
+15 r (con) s
+175 c
+(icts) s
+14 r (are) s
+15 r (resolved) s
+15 r (according) s
+14 r (to) s
+14 r (the) s
+15 r (appropriate) s
+996 981 p (entry) s
+11 r (in) s
+11 r (table) s
+12 r (1.) s
+18 r (For) s
+12 r (example,) s
+13 r (if) s
+12 r (the) s
+11 r (wire) s
+12 r (entering) s
+11 r (on) s
+11 r (the) s
+996 1031 p (left) s
+7 r (side) s
+8 r (of) s
+8 r (the) s
+8 r (node) s
+8 r (needs) s
+9 r (to) s
+7 r (go) s
+8 r (right) s
+7 r (and) s
+8 r (the) s
+8 r (wire) s
+8 r (entering) s
+996 1081 p (on) s
+11 r (the) s
+11 r (right) s
+10 r (side) s
+12 r (of) s
+11 r (the) s
+11 r (node) s
+11 r (needs) s
+12 r (to) s
+11 r (go) s
+11 r (left,) s
+12 r 97 c
+12 r (crossover) s
+996 1131 p (should) s
+9 r (be) s
+11 r (placed) s
+12 r (at) s
+10 r (the) s
+11 r (current) s
+10 r (location.) s
+15 r (Likewise) s
+11 r (if) s
+10 r (only) s
+996 1181 p (one) s
+10 r (wire) s
+9 r (is) s
+10 r (entering) s
+9 r (the) s
+10 r (node,) s
+10 r (is) s
+10 r (entering) s
+9 r (on) s
+9 r (the) s
+10 r (right,) s
+9 r (and) s
+996 1230 p (needs) s
+11 r (to) s
+9 r (go) s
+10 r (left,) s
+10 r 97 c
+11 r (crossover) s
+11 r (should) s
+9 r (be) s
+10 r (placed.) s
+1037 1310 p (The) s
+14 r (only) s
+12 r (con) s
+175 c
+(ict) s
+13 r (not) s
+13 r (covered) s
+13 r (by) s
+13 r (this) s
+12 r (table) s
+13 r (is) s
+13 r (the) s
+14 r (case) s
+996 1360 p (where) s
+14 r (two) s
+13 r (wires) s
+14 r (are) s
+15 r (entering) s
+13 r 97 c
+15 r (node) s
+13 r (and) s
+14 r (have) s
+15 r (the) s
+14 r (same) s
+996 1410 p (goal) s
+12 r (column) s
+12 r (for) s
+12 r (the) s
+12 r (current) s
+12 r (level.) s
+20 r (In) s
+12 r (this) s
+12 r (case,) s
+15 r (the) s
+12 r (wires) s
+996 1460 p (should) s
+9 r (be) s
+10 r (combined) s
+10 r (by) s
+10 r (using) s
+9 r 97 c
+11 r (left) s
+10 r (or) s
+10 r (right) s
+9 r (broadcast) s
+10 r (and) s
+996 1509 p (removing) s
+9 r (one) s
+11 r (of) s
+9 r (the) s
+11 r (wires) s
+10 r (from) s
+10 r (the) s
+10 r (current) s
+10 r (wire) s
+10 r (list) s
+cmsy10.300 @sf
+9 r 87 c
+t-rom.300 @sf
+3 r 46 c
+t-bol.420 @sf
+996 1686 p 53 c
+58 r (Performance) s
+22 r (Analysis) s
+t-rom.300 @sf
+996 1809 p (All) s
+9 r (portions) s
+8 r (of) s
+10 r (the) s
+10 r (presented) s
+11 r (algorithm) s
+9 r (run) s
+9 r (in) s
+10 r (polynomial) s
+996 1859 p (time) s
+7 r (in) s
+7 r (the) s
+7 r (number) s
+7 r (of) s
+7 r (modules.) s
+13 r (The) s
+8 r (estimates) s
+8 r (given) s
+7 r (below) s
+996 1909 p (are) s
+11 r (easily) s
+10 r (achieved) s
+10 r (with) s
+9 r (standard) s
+10 r (programming) s
+9 r (practices,) s
+996 1959 p (and) s
+11 r (better) s
+11 r (upper) s
+10 r (bounds) s
+11 r (can) s
+11 r (probably) s
+10 r (be) s
+12 r (achieved) s
+11 r (with) s
+11 r 97 c
+996 2009 p (littl) s
+-1 r 101 c
+9 r (ef) s
+(fort.) s
+13 r (Speci) s
+174 c
+(cally) s
+-2 r 44 c
+10 r (assuming) s
+10 r (there) s
+11 r (are) s
+cmmi10.300 @sf
+11 r 110 c
+t-rom.300 @sf
+10 r (modules:) s
+cmsy10.300 @sf
+1037 2134 p 15 c
+t-rom.300 @sf
+21 r (Ordering) s
+12 r (the) s
+13 r (modules) s
+12 r (vertically) s
+12 r (is) s
+13 r (an) s
+cmmi10.300 @sf
+13 r 79 c
+cmr10.300 @sf
+1 r 40 c
+cmmi10.300 @sf
+110 c
+cmr7.300 @sf
+1796 2120 p 50 c
+cmr10.300 @sf
+1815 2134 p 41 c
+t-rom.300 @sf
+13 r (opera-) s
+1079 2184 p (tion.) s
+cmsy10.300 @sf
+1037 2273 p 15 c
+t-rom.300 @sf
+21 r (Ideal) s
+10 r (horizontal) s
+9 r (placement) s
+11 r (of) s
+10 r (modules) s
+10 r (is) s
+cmmi10.300 @sf
+10 r 79 c
+cmr10.300 @sf
+1 r 40 c
+cmmi10.300 @sf
+110 c
+cmr7.300 @sf
+1840 2259 p 51 c
+cmr10.300 @sf
+1858 2273 p 41 c
+t-rom.300 @sf
+46 c
+cmsy10.300 @sf
+1037 2362 p 15 c
+t-rom.300 @sf
+21 r (There) s
+13 r (are) s
+cmsy10.300 @sf
+13 r (jRj) s
+cmr10.300 @sf
+16 r 61 c
+cmmi10.300 @sf
+16 r 79 c
+cmr10.300 @sf
+1 r 40 c
+cmmi10.300 @sf
+110 c
+cmr7.300 @sf
+1448 2348 p 50 c
+cmr10.300 @sf
+1466 2362 p 41 c
+t-rom.300 @sf
+13 r (wires,) s
+13 r (and) s
+13 r (thus) s
+11 r (the) s
+12 r (process) s
+1079 2411 p (of) s
+10 r (shifting) s
+8 r (the) s
+10 r (modules) s
+10 r (horizontally) s
+8 r (is) s
+cmmi10.300 @sf
+10 r 79 c
+cmr10.300 @sf
+1 r 40 c
+cmmi10.300 @sf
+110 c
+cmr7.300 @sf
+1796 2397 p 52 c
+cmr10.300 @sf
+1815 2411 p 41 c
+t-rom.300 @sf
+46 c
+cmsy10.300 @sf
+1037 2500 p 15 c
+t-rom.300 @sf
+21 r (There) s
+12 r (are) s
+cmmi10.300 @sf
+12 r 79 c
+cmr10.300 @sf
+1 r 40 c
+cmmi10.300 @sf
+110 c
+cmr7.300 @sf
+1323 2486 p 50 c
+cmr10.300 @sf
+1342 2500 p 41 c
+t-rom.300 @sf
+12 r (wires,) s
+12 r (and) s
+11 r (the) s
+11 r (array) s
+12 r (is) s
+cmmi10.300 @sf
+12 r 79 c
+cmr10.300 @sf
+1 r 40 c
+cmmi10.300 @sf
+110 c
+cmr10.300 @sf
+41 c
+t-rom.300 @sf
+11 r (nodes) s
+1079 2550 p (high,) s
+14 r (so) s
+14 r (routing) s
+13 r (is) s
+14 r (in) s
+13 r (general) s
+cmmi10.300 @sf
+15 r 79 c
+cmr10.300 @sf
+1 r 40 c
+cmmi10.300 @sf
+110 c
+cmr7.300 @sf
+1663 2536 p 51 c
+cmr10.300 @sf
+1681 2550 p 41 c
+t-rom.300 @sf
+15 r (\(although) s
+12 r (it) s
+13 r (is) s
+1079 2600 p (actually) s
+10 r (slightl) s
+-1 r 121 c
+8 r (worse\).) s
+965 2724 p 52 c
+@eop
+5 @bop0
+cmr10.300 @sf
+[<FFFFFFFCFFFFFFFC7FFFFFF87FFFFFF8300003F0180003E0180007E00C0007C00C000FC006000F8006001F8003001F000300
+  3F0001803E0001807E0000C07C0000C0FC000060F8000061F8000031F0000033F000001BE000001FE000000FC000000FC000
+  000780000007800000030000> 30 28 -2 0 35] 1 @dc
+cmmi10.300 @sf
+[<0FC01FF0383C700EF004F000F000F000F000F00078007800381E1C3E0E1F071E03FE00F8> 16 18 -1 0 18] 99 @dc
+[<FFF00000FFF800000780000007800000078000000780000003C0000003C0000003C0000003C0000001E0000001E0000001FF
+  F00001FFFE0000F01F0000F0078000F003C000F003E0007801E0007801F0007801F0007801F0003C01F0003C01F0003C01F0
+  003C03E003FFFFC001FFFF00> 28 28 -2 0 27] 80 @dc
+/cmex10.300 @newfont
+cmex10.300 @sf
+[<0000700001F00003E0000780000F00001E00003C0000780000780000F00000F00000F00000F00000F00000F00000F00000F0
+  0000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000
+  F00000F00000F00000F00000F00000F00000F00001E00001E00001C00003C0000780000700000E00003C0000700000E00000
+  7000003C00000E000007000007800003C00001C00001E00001E00000F00000F00000F00000F00000F00000F00000F00000F0
+  0000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000F00000
+  F00000F00000F00000F00000F00000F00000F000007800007800003C00001E00000F000007800003E00001F0000070> 20 99 -5 97 31] 26 @dc
+cmsy10.300 @sf
+[<FFFFFF80FFFFFF80000000000000000000000000000000000000000000000000000000000000038000000F8000003E000000
+  F8000003E000000F8000003E000000F8000003E000000F8000003E000000F8000000F0000000FC0000001F00000007C00000
+  01F00000007C0000001F00000007C0000001F00000007C0000001F000000078000000180> 25 34 -3 8 32] 20 @dc
+cmr10.300 @sf
+[<FFFCFFFC07800780078007800780078007800780078007800780078007800780078007800780078007800780E780FF801F80
+  03800180> 14 27 -3 0 21] 49 @dc
+cmmi10.300 @sf
+[<C0000000F0000000FC0000001F00000007C0000001F00000007C0000001F00000007C0000001F00000007C0000001F000000
+  07800000078000001F0000007C000001F0000007C000001F0000007C000001F0000007C000001F0000007C000000F0000000
+  80000000> 25 26 -3 3 32] 62 @dc
+[<0FC01FF0383C700E7004F000F000F000F000FFE07FF8781C38063C061E060F0603FE00F8> 15 18 -1 0 19] 101 @dc
+/cmsy7.300 @newfont
+cmsy7.300 @sf
+[<FFFFC0FFFFC0> 18 2 -3 -6 26] 0 @dc
+cmr7.300 @sf
+[<FFFFFCFFFFFC7FFFF87FFFF83000F03001F01801E01C03E00C03C00E07C0060780070F80030F00039F00019E0000FC0000FC
+  00007800007800003000> 22 20 -2 0 27] 1 @dc
+cmmi7.300 @sf
+[<1F003FC070E07020F000F0007800780078C03DE01EF00FE003C0> 12 13 -1 0 15] 99 @dc
+[<C000C000E000600060007000300030003800180018001C000C000C000E000600060007000300030003800180018001C000C0
+  00C000E000600060> 11 29 -2 7 17] 61 @dc
+[<7FF8007FFC0003C00003C00003C00003C00001E00001E00001E00001E00000F00000F000C0F03060F0306078306078303078
+  383878383FFFF81FFFF8> 21 20 0 0 20] 84 @dc
+cmr6.300 @sf
+[<FFC0FFC07FC0306018600E000700038001C001E000E0E0E0E1E0C3C07F801F00> 11 16 -1 0 15] 50 @dc
+5 @bop1
+t-rom.300 @sf
+271 276 p 87 c
+-1 r (ire) s
+9 r (on) s
+10 r (right) s
+304 325 p (needs) s
+11 r (to) s
+9 r (go) s
+1004 126 p 87 c
+-1 r (ire) s
+10 r (on) s
+10 r (left) s
+9 r (needs) s
+11 r (to) s
+10 r (go) s
+800 176 p (left) s
+160 r (straight) s
+147 r (right) s
+170 r (none) s
+702 193 p 1002 2 ru
+622 226 p (left) s
+702 241 p 2 50 ru
+727 226 p (passthrough) s
+952 241 p 2 50 ru
+998 226 p (crossover) s
+1202 241 p 2 50 ru
+1228 226 p (passthrough) s
+1453 241 p 2 50 ru
+1499 226 p (crossover) s
+1703 241 p 2 50 ru
+702 243 p 1002 2 ru
+553 276 p (straight) s
+702 291 p 2 50 ru
+727 276 p (passthrough) s
+952 291 p 2 50 ru
+978 276 p (passthrough) s
+1202 291 p 2 50 ru
+1249 276 p (crossover) s
+1453 291 p 2 50 ru
+1479 276 p (passthrough) s
+1703 291 p 2 50 ru
+702 293 p 1002 2 ru
+599 326 p (right) s
+702 341 p 2 50 ru
+727 326 p (passthrough) s
+952 341 p 2 50 ru
+978 326 p (passthrough) s
+1202 341 p 2 50 ru
+1228 326 p (passthrough) s
+1453 341 p 2 50 ru
+1479 326 p (passthrough) s
+1703 341 p 2 50 ru
+702 343 p 1002 2 ru
+597 376 p (none) s
+702 391 p 2 50 ru
+727 376 p (passthrough) s
+952 391 p 2 50 ru
+978 376 p (passthrough) s
+1202 391 p 2 50 ru
+1249 376 p (crossover) s
+1453 391 p 2 50 ru
+250 r 2 50 ru
+702 393 p 1002 2 ru
+497 505 p 84 c
+-2 r (able) s
+10 r (1:) s
+13 r (Flavors) s
+10 r (used) s
+10 r (to) s
+10 r (resolve) s
+10 r (various) s
+10 r (routing) s
+8 r (con) s
+175 c
+(icts.) s
+42 639 p (The) s
+10 r (algorithm) s
+8 r (was) s
+10 r (implemented) s
+10 r (and) s
+9 r (included) s
+9 r (in) s
+9 r 97 c
+10 r (sim-) s
+0 689 p (ple) s
+14 r (compiler) s
+13 r 91 c
+52 c
+(].) s
+25 r 84 c
+-2 r (able) s
+14 r 50 c
+13 r (shows) s
+14 r (the) s
+14 r (running) s
+12 r (times) s
+14 r (on) s
+14 r 97 c
+0 739 p (DEC) s
+12 r (VS2000) s
+11 r (workstation) s
+10 r (for) s
+12 r (this) s
+11 r (algorithm) s
+10 r (for) s
+12 r (the) s
+11 r (gen-) s
+0 788 p (eration) s
+7 r (of) s
+7 r (ripple-carry) s
+6 r (adders) s
+8 r (with) s
+6 r 56 c
+177 c
+(20) s
+6 r (bits) s
+7 r (of) s
+7 r (input) s
+5 r (\(4) s
+177 c
+(10) s
+0 838 p (bits) s
+11 r (for) s
+11 r (each) s
+13 r (operand\)) s
+11 r (and) s
+12 r (selectors) s
+12 r (for) s
+11 r 50 c
+177 c
+(20) s
+11 r (bits) s
+10 r (\(gener-) s
+0 888 p (ating) s
+10 r 49 c
+177 c
+(10) s
+11 r (selected) s
+12 r (bits) s
+10 r (with) s
+10 r 97 c
+12 r (single) s
+10 r (select) s
+12 r (line\).) s
+16 r (As) s
+12 r (can) s
+0 938 p (be) s
+11 r (seen,) s
+12 r (for) s
+10 r (speci) s
+174 c
+99 c
+12 r (applications) s
+9 r (the) s
+11 r (algorithm) s
+9 r (can) s
+12 r (run) s
+10 r (in) s
+0 988 p (almost) s
+10 r (linear) s
+10 r (time.) s
+71 1088 p 814 2 ru
+71 1138 p 2 50 ru
+95 1124 p (Function) s
+389 1139 p 2 50 ru
+389 1138 p 2 50 ru
+415 1124 p 35 c
+10 r (of) s
+10 r (modules) s
+656 1139 p 2 50 ru
+656 1138 p 2 50 ru
+682 1124 p 84 c
+(ime) s
+9 r (\(sec\)) s
+883 1139 p 2 50 ru
+71 1140 p 814 2 ru
+71 1189 p 2 50 ru
+95 1175 p (Adder) s
+11 r (\(8) s
+9 r (bit\)) s
+389 1190 p 2 50 ru
+611 1174 p 53 c
+656 1189 p 2 50 ru
+807 1174 p (2.1) s
+883 1189 p 2 50 ru
+71 1239 p 2 50 ru
+95 1225 p (Adder) s
+11 r (\(12) s
+9 r (bit\)) s
+389 1240 p 2 50 ru
+611 1224 p 55 c
+656 1239 p 2 50 ru
+807 1224 p (4.4) s
+883 1239 p 2 50 ru
+71 1289 p 2 50 ru
+95 1275 p (Adder) s
+11 r (\(16) s
+9 r (bit\)) s
+389 1290 p 2 50 ru
+611 1274 p 57 c
+656 1289 p 2 50 ru
+807 1274 p (6.4) s
+883 1289 p 2 50 ru
+71 1339 p 2 50 ru
+95 1325 p (Adder) s
+11 r (\(20) s
+9 r (bit\)) s
+389 1340 p 2 50 ru
+592 1324 p 49 c
+-1 r 49 c
+656 1339 p 2 50 ru
+807 1324 p (8.5) s
+883 1339 p 2 50 ru
+71 1341 p 814 2 ru
+71 1390 p 2 50 ru
+95 1376 p (Selector) s
+11 r (\(2) s
+10 r (bit\)) s
+389 1391 p 2 50 ru
+611 1375 p 52 c
+656 1390 p 2 50 ru
+828 1375 p (.9) s
+883 1390 p 2 50 ru
+71 1440 p 2 50 ru
+95 1426 p (Selector) s
+11 r (\(6) s
+10 r (bit\)) s
+389 1441 p 2 50 ru
+590 1425 p (12) s
+656 1440 p 2 50 ru
+807 1425 p (1.7) s
+883 1440 p 2 50 ru
+71 1490 p 2 50 ru
+95 1476 p (Selector) s
+11 r (\(10) s
+10 r (bit\)) s
+389 1491 p 2 50 ru
+590 1475 p (20) s
+656 1490 p 2 50 ru
+807 1475 p (3.3) s
+883 1490 p 2 50 ru
+71 1540 p 2 50 ru
+95 1526 p (Selector) s
+11 r (\(20) s
+10 r (bit\)) s
+389 1541 p 2 50 ru
+590 1525 p (40) s
+656 1540 p 2 50 ru
+786 1525 p (10.1) s
+883 1540 p 2 50 ru
+71 1542 p 814 2 ru
+0 1656 p 84 c
+-2 r (able) s
+12 r (2:) s
+17 r (Placement) s
+13 r (and) s
+12 r (routing) s
+11 r (times) s
+12 r (for) s
+12 r (several) s
+13 r (sample) s
+0 1706 p (applications.) s
+t-bol.420 @sf
+0 1926 p 54 c
+58 r (Optimization) s
+1 r 115 c
+t-rom.300 @sf
+0 2052 p (Unfortunately) s
+-3 r 44 c
+9 r (we) s
+10 r (pay) s
+10 r (for) s
+10 r (the) s
+10 r (speed) s
+10 r (of) s
+10 r (the) s
+10 r (algorithm) s
+8 r (with) s
+0 2102 p (inef) s
+174 c
+(ciencies) s
+11 r (in) s
+12 r (the) s
+11 r (resulting) s
+10 r (origami) s
+11 r (array) s
+-2 r 46 c
+18 r (In) s
+12 r (the) s
+11 r (appli-) s
+0 2151 p (cations) s
+12 r (that) s
+11 r (have) s
+13 r (been) s
+13 r (generated) s
+12 r (by) s
+12 r (this) s
+11 r (algorithm) s
+11 r (so) s
+12 r (far) s
+0 2201 p (\(including) s
+12 r 97 c
+15 r (few) s
+15 r (simple) s
+14 r (8-bit) s
+13 r (3-function) s
+12 r (calculators) s
+14 r (and) s
+0 2251 p 97 c
+10 r (16-point) s
+7 r (convolutio) s
+-1 r 110 c
+7 r (machine\),) s
+11 r (routing) s
+7 r (accounts) s
+10 r (for) s
+8 r (ap-) s
+0 2301 p (proximately) s
+6 r (45%) s
+6 r (of) s
+7 r (all) s
+7 r (assigned) s
+7 r (nodes,) s
+8 r (while) s
+6 r (another) s
+7 r (45%) s
+0 2351 p (of) s
+13 r (the) s
+12 r (nodes) s
+13 r (are) s
+14 r (left) s
+12 r (unused) s
+13 r (entirely) s
+-2 r 46 c
+20 r (When) s
+13 r (we) s
+14 r (consider) s
+0 2401 p (that) s
+9 r (in) s
+10 r (an) s
+10 r (ideal) s
+10 r (situation) s
+8 r (each) s
+11 r (node) s
+10 r (would) s
+9 r (have) s
+10 r 97 c
+11 r (physical) s
+0 2450 p (piece) s
+12 r (of) s
+12 r (hardware) s
+12 r (associated) s
+13 r (with) s
+10 r (it,) s
+12 r (and) s
+12 r (that) s
+11 r (the) s
+11 r (latency) s
+0 2500 p (of) s
+9 r (the) s
+10 r (system) s
+10 r (is) s
+9 r (proportional) s
+7 r (to) s
+9 r (the) s
+10 r (height) s
+8 r (of) s
+10 r (the) s
+9 r (array) s
+-2 r 44 c
+10 r (we) s
+0 2550 p (can) s
+14 r (see) s
+14 r (that) s
+13 r (this) s
+12 r (is) s
+13 r 97 c
+14 r (tremendous) s
+13 r (amount) s
+13 r (of) s
+13 r (wasted) s
+13 r (time) s
+0 2600 p (and) s
+9 r (hardware.) s
+14 r (Most) s
+9 r (of) s
+8 r (the) s
+9 r (speci) s
+174 c
+99 c
+10 r (pathological) s
+7 r (cases) s
+11 r (that) s
+996 639 p (have) s
+10 r (been) s
+9 r (encountered) s
+10 r (are) s
+10 r (too) s
+8 r (complex) s
+10 r (to) s
+8 r (be) s
+10 r (discussed) s
+10 r (in) s
+996 689 p (this) s
+7 r (paper) s
+-1 r 44 c
+8 r (but) s
+7 r (there) s
+8 r (appear) s
+9 r (to) s
+7 r (be) s
+8 r 97 c
+8 r (number) s
+8 r (of) s
+8 r (general) s
+8 r (ways) s
+996 739 p (to) s
+9 r (improve) s
+10 r (this) s
+9 r (algorithm.) s
+1037 818 p (One) s
+14 r (routing) s
+11 r (problem) s
+12 r (arises) s
+14 r (when) s
+13 r (two) s
+13 r (buses) s
+13 r (need) s
+14 r (two) s
+996 868 p (cross.) s
+14 r (For) s
+7 r (single) s
+8 r (wires) s
+8 r (this) s
+7 r (is) s
+8 r (obviously) s
+6 r (not) s
+7 r 97 c
+9 r (problem,) s
+8 r (but) s
+996 918 p (for) s
+12 r (lar) s
+(ge) s
+12 r (buses) s
+13 r (of) s
+13 r (wires) s
+12 r (to) s
+12 r (cross) s
+14 r (huge) s
+12 r (areas) s
+14 r (may) s
+13 r (have) s
+14 r (to) s
+996 968 p (be) s
+11 r (dedicated) s
+12 r (to) s
+10 r (routing.) s
+15 r (This) s
+11 r (amount) s
+11 r (is) s
+11 r (greatly) s
+10 r (increased) s
+996 1018 p (when) s
+12 r (the) s
+12 r (wires) s
+13 r (in) s
+11 r (the) s
+12 r (bus) s
+13 r (are) s
+13 r (densely) s
+12 r (packed) s
+13 r (\(they) s
+12 r (have) s
+996 1068 p (no) s
+9 r (space) s
+11 r (on) s
+9 r (either) s
+10 r (side\).) s
+13 r (Adding) s
+9 r (the) s
+9 r (constraint) s
+9 r (that,) s
+9 r (when) s
+996 1117 p (not) s
+12 r (required) s
+12 r (to) s
+13 r (be) s
+13 r (densely) s
+13 r (packed) s
+14 r (to) s
+12 r (interface) s
+13 r (to) s
+13 r 97 c
+13 r (mod-) s
+996 1167 p (ule,) s
+18 r (wires) s
+17 r (should) s
+16 r (have) s
+17 r (at) s
+17 r (least) s
+16 r (one) s
+17 r (free) s
+18 r (space) s
+18 r (between) s
+996 1217 p (them) s
+12 r (should) s
+10 r (signi) s
+174 c
+(cantly) s
+10 r (decrease) s
+14 r (the) s
+11 r (amount) s
+12 r (of) s
+11 r (routing) s
+996 1267 p (required.) s
+cmr7.300 @sf
+1145 1253 p 50 c
+t-rom.300 @sf
+1037 1347 p (Many) s
+10 r (other) s
+9 r (optimizations) s
+8 r (can) s
+10 r (be) s
+10 r (applied) s
+9 r (in) s
+9 r (an) s
+10 r (iterative) s
+996 1396 p (manner) s
+-1 r 46 c
+16 r 65 c
+11 r (popular) s
+10 r (way) s
+12 r (to) s
+10 r (do) s
+11 r (this) s
+10 r (is) s
+11 r (called) s
+t-ita.300 @sf
+12 r (simulated) s
+10 r (an-) s
+996 1446 p (nealing) s
+t-rom.300 @sf
+12 r 91 c
+(10) s
+44 c
+14 r 49 c
+44 c
+14 r 54 c
+44 c
+15 r (12) s
+-1 r (].) s
+25 r (In) s
+14 r (this) s
+13 r (method,) s
+15 r (one) s
+14 r (of) s
+14 r 97 c
+14 r (number) s
+996 1496 p (of) s
+11 r (optimization) s
+-1 r 115 c
+10 r (is) s
+11 r (chosen) s
+11 r (and) s
+11 r (applied) s
+11 r (to) s
+10 r (the) s
+11 r (current) s
+11 r (sys-) s
+996 1546 p (tem.) s
+14 r 65 c
+9 r (cost) s
+9 r (function) s
+7 r (is) s
+9 r (used) s
+9 r (which) s
+9 r (indicates) s
+8 r (the) s
+9 r (desirabil-) s
+996 1596 p (ity) s
+7 r (of) s
+8 r 97 c
+9 r (given) s
+7 r (system,) s
+10 r (and) s
+8 r (the) s
+8 r (change) s
+9 r (in) s
+7 r (cost) s
+9 r 40 c
+cmr10.300 @sf
+1 c
+cmmi10.300 @sf
+99 c
+t-rom.300 @sf
+41 c
+7 r (from) s
+8 r (the) s
+996 1645 p (original) s
+9 r (system) s
+12 r (to) s
+10 r (the) s
+11 r (new) s
+12 r (system) s
+11 r (is) s
+11 r (computed.) s
+17 r (The) s
+12 r (new) s
+996 1695 p (system) s
+10 r (is) s
+10 r (accepted) s
+12 r (with) s
+9 r (probability) s
+-1 r 58 c
+cmmi10.300 @sf
+1240 1836 p 80 c
+cmr10.300 @sf
+17 r 61 c
+cmex10.300 @sf
+1328 1777 p 26 c
+cmr10.300 @sf
+1379 1811 p 1 c
+cmmi10.300 @sf
+99 c
+cmsy10.300 @sf
+12 r 20 c
+cmr10.300 @sf
+11 r 48 c
+42 r 49 c
+1379 1861 p 1 c
+cmmi10.300 @sf
+99 c
+12 r 62 c
+cmr10.300 @sf
+11 r 48 c
+cmmi10.300 @sf
+42 r 101 c
+cmsy7.300 @sf
+1569 1847 p 0 c
+cmr7.300 @sf
+1 c
+cmmi7.300 @sf
+(c=T) s
+t-rom.300 @sf
+996 1974 p (where) s
+13 r 84 c
+12 r (is) s
+13 r (the) s
+12 r 96 c
+-2 r (`temperature') s
+-3 r 39 c
+11 r (of) s
+12 r (the) s
+12 r (system) s
+12 r (which) s
+12 r (grad-) s
+996 2024 p (ually) s
+15 r (decreases) s
+18 r (as) s
+17 r (more) s
+16 r (optimizations) s
+14 r (are) s
+17 r (applied,) s
+17 r (thus) s
+996 2074 p (accomplishing) s
+14 r (an) s
+16 r 96 c
+-2 r (`annealing') s
+-3 r 39 c
+13 r (ef) s
+(fect.) s
+29 r 84 c
+-2 r (wo) s
+14 r (of) s
+15 r (the) s
+16 r (opti-) s
+996 2124 p (mizations) s
+10 r (which) s
+10 r (could) s
+10 r (be) s
+10 r (iteratively) s
+9 r (applied) s
+10 r (using) s
+10 r (this) s
+9 r (or) s
+996 2173 p (similar) s
+9 r (methods) s
+10 r (are:) s
+cmsy10.300 @sf
+1037 2289 p 15 c
+t-rom.300 @sf
+21 r (The) s
+12 r (modules) s
+12 r (have) s
+13 r (been) s
+12 r (placed) s
+12 r (to) s
+12 r (minimize) s
+12 r (the) s
+11 r (ide-) s
+1079 2339 p (alized) s
+14 r (routing) s
+13 r (distance;) s
+16 r (however) s
+-1 r 44 c
+15 r (it) s
+13 r (is) s
+14 r (possible) s
+14 r (that) s
+1079 2389 p (they) s
+10 r (have) s
+12 r (not) s
+10 r (been) s
+11 r (placed) s
+11 r (to) s
+11 r (minimize) s
+10 r (the) s
+11 r (real) s
+11 r (rout-) s
+1079 2439 p (ing) s
+18 r (distance.) s
+41 r (Localized) s
+20 r (transposition) s
+17 r (of) s
+19 r (modules) s
+1079 2488 p (should) s
+8 r (decrease) s
+12 r (routing) s
+7 r (requirements) s
+10 r (in) s
+9 r (many) s
+10 r (cases.) s
+996 2521 p 382 2 ru
+cmr6.300 @sf
+1038 2549 p 50 c
+t-rom.240 @sf
+1056 2560 p (An) s
+10 r (experimental) s
+10 r (implementation) s
+10 r (of) s
+11 r (this) s
+11 r (optimization) s
+10 r (achieved) s
+10 r (an) s
+996 2600 p (over) s
+7 r (40%) s
+7 r (reduction) s
+7 r (in) s
+8 r (array) s
+8 r (size.) s
+t-rom.300 @sf
+965 2724 p 53 c
+@eop
+6 @bop0
+cmmi10.300 @sf
+[<07C01FF03C1078007000F000F000F000F000FFF07FF0780038003C001E000F0003FC00FC> 14 18 -1 0 17] 15 @dc
+/Times-SmallCaps /t-romsc.300 ReEncodeForTeX /t-romsc.300 /t-romsc.300 41.511000 TeXPSmakefont def
+6 @bop1
+t-rom.300 @sf
+83 91 p (This) s
+21 r (can) s
+21 r (be) s
+22 r (done) s
+20 r (using) s
+20 r 97 c
+21 r (method) s
+21 r (similar) s
+20 r (to) s
+20 r (the) s
+cmmi10.300 @sf
+83 141 p 15 c
+t-rom.300 @sf
+177 c
+(neighborhoo) s
+-1 r (ds) s
+9 r (presented) s
+10 r (in) s
+10 r 91 c
+53 c
+-1 r (].) s
+cmsy10.300 @sf
+42 234 p 15 c
+t-rom.300 @sf
+20 r (Much) s
+14 r (of) s
+13 r (the) s
+14 r (routing) s
+11 r (in) s
+13 r (an) s
+14 r (origami) s
+13 r (array) s
+14 r (is) s
+14 r (devoted) s
+83 283 p (to) s
+16 r (permuting) s
+15 r 97 c
+16 r (set) s
+17 r (of) s
+16 r (wires) s
+16 r (to) s
+16 r (match) s
+16 r (the) s
+16 r (input) s
+15 r (re-) s
+83 333 p (quirements) s
+14 r (of) s
+15 r 97 c
+15 r (module.) s
+28 r (For) s
+14 r (example,) s
+18 r (if) s
+14 r (an) s
+15 r (adder) s
+83 383 p (has) s
+9 r (an) s
+10 r (output) s
+7 r (with) s
+8 r (the) s
+8 r (most) s
+9 r (signi) s
+174 c
+(cant) s
+8 r (bit) s
+8 r (on) s
+9 r (the) s
+9 r (left,) s
+83 433 p (and) s
+11 r (this) s
+10 r (result) s
+10 r (needs) s
+11 r (to) s
+10 r (be) s
+11 r (sent) s
+11 r (to) s
+10 r 97 c
+11 r (negation) s
+10 r (module) s
+83 483 p (which) s
+10 r (expects) s
+12 r (the) s
+10 r (most) s
+11 r (signi) s
+174 c
+(cant) s
+10 r (bit) s
+9 r (on) s
+11 r (the) s
+10 r (right,) s
+10 r 97 c
+83 532 p (great) s
+10 r (deal) s
+10 r (of) s
+9 r (time) s
+9 r (will) s
+9 r (be) s
+10 r (spent) s
+9 r (rearranging) s
+9 r (the) s
+9 r (wires) s
+83 582 p (to) s
+11 r (satisfy) s
+11 r (this) s
+10 r (constraint.) s
+16 r (While) s
+11 r (it) s
+11 r (is) s
+11 r (possible) s
+11 r (to) s
+10 r (par-) s
+83 632 p (tially) s
+13 r (solve) s
+15 r (this) s
+13 r (problem) s
+14 r (by) s
+15 r (developing) s
+13 r (libraries) s
+14 r (of) s
+83 682 p 96 c
+-2 r (`matching') s
+-3 r 39 c
+11 r (modules,) s
+13 r (it) s
+12 r (is) s
+13 r (impossible) s
+11 r (to) s
+13 r (do) s
+12 r (this) s
+12 r (for) s
+83 732 p (all) s
+7 r (combinations) s
+6 r (in) s
+7 r (practice.) s
+14 r 65 c
+7 r (simple) s
+7 r (solution) s
+5 r (to) s
+7 r (this) s
+83 781 p (problem) s
+9 r (is) s
+10 r (to) s
+9 r (provide) s
+8 r (more) s
+10 r (than) s
+9 r (one) s
+10 r (module) s
+9 r (capable) s
+83 831 p (of) s
+11 r (performing) s
+10 r 97 c
+12 r (particular) s
+11 r (task.) s
+17 r (The) s
+12 r (modules) s
+11 r (would) s
+83 881 p (be) s
+14 r (identical) s
+13 r (in) s
+13 r (function,) s
+13 r (but) s
+13 r (would) s
+13 r (have) s
+14 r (their) s
+13 r (input) s
+83 931 p (and) s
+15 r (output) s
+13 r (pins) s
+14 r (permuted) s
+15 r (in) s
+14 r (dif) s
+(ferent) s
+14 r (ways) s
+15 r (so) s
+15 r (that) s
+83 981 p (the) s
+10 r (routing) s
+7 r (distance) s
+10 r (could) s
+9 r (be) s
+10 r (reduced) s
+10 r (by) s
+9 r (selection) s
+10 r (of) s
+83 1031 p (the) s
+8 r (appropriate) s
+8 r (modules.) s
+13 r (Since) s
+9 r (it) s
+7 r (is) s
+8 r (impossible) s
+7 r (to) s
+8 r (de-) s
+83 1080 p (termine) s
+10 r (which) s
+9 r (instance) s
+10 r (of) s
+10 r 97 c
+11 r (module) s
+9 r (will) s
+9 r (produce) s
+9 r (the) s
+83 1130 p (lar) s
+(gest) s
+9 r (reduction) s
+8 r (in) s
+9 r (array) s
+10 r (size,) s
+11 r (modules) s
+9 r (must) s
+10 r (be) s
+9 r (cho-) s
+83 1180 p (sen) s
+11 r (at) s
+10 r (random) s
+10 r (during) s
+9 r (the) s
+10 r (annealing) s
+10 r (process.) s
+42 1308 p (None) s
+18 r (of) s
+19 r (these) s
+19 r (optimizations) s
+18 r (have) s
+19 r (been) s
+19 r (fully) s
+18 r (imple-) s
+0 1358 p (mented) s
+11 r (at) s
+10 r (the) s
+10 r (time) s
+10 r (of) s
+10 r (this) s
+10 r (writing) s
+-1 r 46 c
+t-bol.420 @sf
+0 1538 p 55 c
+58 r (Conclusion) s
+t-rom.300 @sf
+0 1663 p (An) s
+20 r (algorithm) s
+19 r (to) s
+19 r (place) s
+21 r (and) s
+20 r (route) s
+19 r (logic) s
+20 r (modules) s
+20 r (in) s
+19 r (an) s
+0 1713 p (origami) s
+15 r (array) s
+17 r (has) s
+16 r (been) s
+17 r (developed.) s
+31 r (The) s
+16 r (algorithm) s
+15 r (runs) s
+0 1763 p (in) s
+15 r (polynomial) s
+15 r (time) s
+15 r (in) s
+16 r (the) s
+16 r (number) s
+15 r (of) s
+16 r (modules,) s
+18 r (and) s
+16 r (can) s
+0 1813 p (achieve) s
+14 r (almost) s
+13 r (linear) s
+12 r (performance) s
+14 r (in) s
+12 r (some) s
+14 r (cases.) s
+24 r (How-) s
+0 1862 p (ever) s
+-1 r 44 c
+8 r (the) s
+6 r (resultant) s
+6 r (origami) s
+6 r (array) s
+8 r (is) s
+6 r (very) s
+7 r (inef) s
+174 c
+(cient) s
+6 r (and) s
+6 r (con-) s
+0 1912 p (sists) s
+12 r (primarily) s
+12 r (of) s
+12 r (routing) s
+11 r (and) s
+12 r (unassigned) s
+13 r (nodes.) s
+21 r (Several) s
+0 1962 p (iterative) s
+14 r (optimization) s
+12 r (techniques) s
+15 r (were) s
+15 r (presented) s
+15 r (includ-) s
+0 2012 p (ing) s
+16 r (techniques) s
+17 r (based) s
+17 r (on) s
+17 r (simulated) s
+16 r (annealing,) s
+18 r (but) s
+17 r (none) s
+0 2062 p (have) s
+11 r (been) s
+10 r (implemented) s
+11 r (at) s
+10 r (the) s
+10 r (time) s
+10 r (of) s
+10 r (this) s
+10 r (writing.) s
+t-bol.420 @sf
+0 2242 p (Refer) s
+(ences) s
+t-rom.300 @sf
+21 2358 p ([1]) s
+t-romsc.300 @sf
+97 2353 p 20 c
+90 2358 p (Cern) s
+5 r 19 c
+-18 r (y,) s
+11 r 86 c
+-4 r 46 c
+t-rom.300 @sf
+11 r 65 c
+9 r (thermodynamical) s
+8 r (approach) s
+9 r (to) s
+7 r (the) s
+9 r (trav-) s
+90 2408 p (eling) s
+11 r (salesman) s
+12 r (problem:) s
+15 r (An) s
+12 r (ef) s
+174 c
+(cient) s
+11 r (simulation) s
+9 r (al-) s
+90 2458 p (gorithm.) s
+t-ita.300 @sf
+12 r (Journal) s
+9 r (of) s
+8 r (Optimizatio) s
+-1 r 110 c
+8 r (Theory) s
+10 r (and) s
+8 r (Appli-) s
+90 2507 p (cations) s
+9 r (45) s
+t-rom.300 @sf
+44 c
+10 r 49 c
+11 r (\(Jan.) s
+11 r (1985\),) s
+9 r (41) s
+177 c
+(51.) s
+21 2600 p ([2]) s
+t-romsc.300 @sf
+20 r (Chuang,) s
+14 r (I.) s
+14 r (L.) s
+t-rom.300 @sf
+15 r (Computational) s
+9 r (origami.) s
+14 r (Aug.) s
+10 r (1988.) s
+1016 91 p ([3]) s
+t-romsc.300 @sf
+21 r (Chuang,) s
+13 r (I.) s
+13 r (L.) s
+t-rom.300 @sf
+15 r (An) s
+10 r (introductio) s
+-1 r 110 c
+8 r (to) s
+9 r (the) s
+10 r (application) s
+8 r (of) s
+1086 141 p (computational) s
+9 r (origami.) s
+14 r (Feb.) s
+11 r (1989.) s
+1016 224 p ([4]) s
+t-romsc.300 @sf
+21 r (Chuang,) s
+18 r (I.) s
+17 r (L.,) s
+20 r (and) s
+17 r (French,) s
+19 r (R.) s
+18 r (S.) s
+t-rom.300 @sf
+25 r (Karma) s
+14 r (I:) s
+12 r (An) s
+1086 274 p (origami) s
+9 r (architecture) s
+10 r (computer) s
+-1 r 46 c
+14 r (Dec.) s
+12 r (1988.) s
+1016 357 p ([5]) s
+t-romsc.300 @sf
+21 r (Goto,) s
+33 r (S.) s
+t-rom.300 @sf
+58 r (An) s
+21 r (ef) s
+174 c
+(cient) s
+22 r (algorithm) s
+20 r (for) s
+21 r (the) s
+22 r (two-) s
+1086 407 p (dimensional) s
+11 r (placement) s
+13 r (problem) s
+12 r (in) s
+11 r (electrical) s
+13 r (circuit) s
+1086 457 p (layout.) s
+t-ita.300 @sf
+43 r (IEEE) s
+20 r 84 c
+-1 r (rans.) s
+17 r (Cir) s
+-1 r (cuits) s
+17 r (Syst.) s
+19 r (CAS-28) s
+t-rom.300 @sf
+17 r (\(Jan.) s
+1086 506 p (1981\),) s
+9 r (12) s
+177 c
+(18.) s
+1016 589 p ([6]) s
+t-romsc.300 @sf
+21 r (Grover,) s
+21 r (L.) s
+20 r (K.) s
+t-rom.300 @sf
+31 r 65 c
+14 r (new) s
+15 r (simulated) s
+14 r (annealing) s
+14 r (algo-) s
+1086 639 p (rithm) s
+13 r (for) s
+14 r (standard) s
+15 r (cell) s
+14 r (placement.) s
+32 r (In) s
+t-ita.300 @sf
+14 r (Pr) s
+-1 r (oceedings) s
+1086 689 p (IEEE) s
+13 r (Internation) s
+-1 r (al) s
+10 r (Confer) s
+-1 r (ence) s
+12 r (on) s
+11 r (Computer) s
+(-Aided) s
+1086 739 p (Design) s
+t-rom.300 @sf
+10 r (\(1986\),) s
+9 r (pp.) s
+10 r (378) s
+177 c
+(380.) s
+1016 822 p ([7]) s
+t-romsc.300 @sf
+21 r (Huang,) s
+12 r (A.) s
+t-rom.300 @sf
+13 r (Architectural) s
+8 r (considerations) s
+7 r (involved) s
+8 r (in) s
+1086 872 p (the) s
+12 r (design) s
+12 r (of) s
+12 r (an) s
+12 r (optical) s
+12 r (digital) s
+10 r (computer) s
+-1 r 46 c
+t-ita.300 @sf
+21 r (Pr) s
+-1 r (oceed-) s
+1086 922 p (ings) s
+9 r (of) s
+10 r (the) s
+10 r (IEEE) s
+11 r (72) s
+t-rom.300 @sf
+44 c
+11 r 55 c
+10 r (\(July) s
+9 r (1984\),) s
+10 r (780) s
+177 c
+(786.) s
+1016 1005 p ([8]) s
+t-romsc.300 @sf
+21 r (Huang,) s
+14 r (A.) s
+t-rom.300 @sf
+15 r (Computational) s
+8 r (origami.) s
+14 r (Patent) s
+10 r (applica-) s
+1086 1054 p (tion,) s
+9 r (July) s
+10 r (1987.) s
+1016 1137 p ([9]) s
+t-romsc.300 @sf
+21 r (Huang,) s
+16 r (A.) s
+t-rom.300 @sf
+19 r (Computational) s
+10 r (origami) s
+10 r 45 c
+12 r (the) s
+11 r (folding) s
+9 r (of) s
+1086 1187 p (circuits) s
+7 r (and) s
+8 r (systems.) s
+12 r (In) s
+t-ita.300 @sf
+8 r (Pr) s
+-1 r (oceedings) s
+8 r (of) s
+8 r (the) s
+8 r (1989) s
+7 r (Op-) s
+1086 1237 p (tical) s
+8 r (Computing) s
+7 r (Confer) s
+-1 r (ence) s
+t-rom.300 @sf
+9 r (\(Feb.) s
+10 r (1989\).) s
+13 r 84 c
+-2 r 111 c
+8 r (appear) s
+-1 r 46 c
+996 1320 p ([10]) s
+t-romsc.300 @sf
+20 r (Kirkpatrick,) s
+12 r (S.,) s
+12 r (Gelatt,) s
+13 r (Jr.,) s
+12 r (C.) s
+10 r (D.,) s
+12 r (and) s
+10 r (Vecchi,) s
+1086 1370 p (M.) s
+13 r 80 c
+-4 r 46 c
+t-rom.300 @sf
+13 r (Optimization) s
+7 r (by) s
+9 r (simulated) s
+9 r (annealing.) s
+t-ita.300 @sf
+13 r (Science) s
+1086 1420 p (220) s
+t-rom.300 @sf
+44 c
+10 r (4598) s
+9 r (\(May) s
+10 r (1983\),) s
+10 r (671) s
+177 c
+(680.) s
+997 1503 p ([1) s
+-1 r (1]) s
+t-romsc.300 @sf
+20 r (Lu,) s
+23 r (H.) s
+t-rom.300 @sf
+34 r (Computational) s
+14 r (origami:) s
+23 r 65 c
+15 r (geometric) s
+16 r (ap-) s
+1086 1552 p (proach) s
+18 r (to) s
+17 r (regular) s
+18 r (multiprocessing.) s
+43 r (Master) s
+2 r 39 c
+-1 r 115 c
+16 r (the-) s
+1086 1602 p (sis,) s
+14 r (MIT) s
+14 r (Department) s
+13 r (of) s
+13 r (Electrical) s
+14 r (Engineering) s
+12 r (and) s
+1086 1652 p (Computer) s
+9 r (Science,) s
+12 r (May) s
+10 r (1988.) s
+996 1735 p ([12]) s
+t-romsc.300 @sf
+20 r (Wong,) s
+13 r (D.) s
+12 r 70 c
+-2 r (.,) s
+12 r (Leong,) s
+14 r (H.) s
+12 r 87 c
+-3 r (.,) s
+13 r (and) s
+12 r (Liu,) s
+13 r (C.) s
+13 r (L.) s
+t-ita.300 @sf
+13 r (Simu-) s
+1086 1785 p (lated) s
+9 r (Annealing) s
+9 r (for) s
+10 r (VLSI) s
+11 r (design) s
+t-rom.300 @sf
+46 c
+15 r (Kluwer) s
+10 r (Academic) s
+1086 1835 p (Publishers,) s
+9 r (1988.) s
+965 2724 p 54 c
+@eop
+@end

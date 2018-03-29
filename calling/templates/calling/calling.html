@@ -24,9 +24,12 @@
           <div class="col-5">
             <div class="row">
               <div class="col-12">
-                <h1 class="display-4">Rob French</h1>
+                <h1 class="display-4"><a href="/">Rob French</a></h1>
                 <h3>Square Dance Caller</h3>
-                <p class="lead">Rob calls Mainstream thru C-4 in the San Francisco Bay Area and travels throughout the U.S., Canada, Europe, and Japan. He is available for dances, weekends, and conventions. Fully edited tapes are available for sale.
+                <p class="lead">
+                  Rob calls Mainstream thru C-4 in the San Francisco Bay Area and travels throughout
+                  the U.S., Canada, Europe, and Japan. He is available for dances, weekends, and
+                  conventions. Fully edited tapes are available for sale.
               </div>
             </div>
             <div class="row">
@@ -65,7 +68,7 @@
       <div class="tab-content">
         {% for year in years %}
         <div class="tab-pane fade {% if year == current_year %}show active{% endif %}" id="Y{{year}}" role="tabpanel" aria-labelledby="{{year}}-tab">
-          <h2 class="text-center">Upcoming Events - {{year}}</h2>
+          <h2 class="text-center">Calling Events - {{year}}</h2>
           <div class="row">
             <div class="col-1"></div>
             <div class="col-10">

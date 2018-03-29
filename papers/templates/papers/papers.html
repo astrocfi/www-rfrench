@@ -18,15 +18,24 @@
       <div class="jumbotron">
         <div class="row">
           <div class="col-1"></div>
-          <div class="col-2">
+          <div class="col-4">
             <img class="img-fluid rounded" src="{% static "papers/rob-papers.jpg" %}" alt="Rob's face"/>
           </div>
-          <div class="col-7">
+          <div class="col-6">
             <div class="row">
               <div class="col-12">
-                <h1 class="display-4">Rob French</h1>
+                <h1 class="display-4"><a href="/">Rob French</a></h1>
                 <h3>Research Papers and Issued Patents</h3>
-                <p class="lead">Rob is a Research Assistant at the SETI Institute in Mountain View, CA where he performs research on the outer planets of our solar system and is deeply involved in the archiving of NASA mission data.
+                <p class="lead">
+                  Rob works at the SETI Institute in Mountain View, CA where he performs
+                  research on the outer planets of our solar system and is deeply involved in the archiving
+                  of NASA mission data.
+                </p>
+                <p class="lead">
+                  In previous careers he was involved in the design of highly-parallel processor
+                  architectures for telecommunications, compiler algorithms for parallel processing, and the
+                  development of instant messaging.
+                </p>
               </div>
             </div>
           </div>
@@ -50,7 +59,11 @@
                     <br>
                     <li>
                       {% if paper.full_text_link %}
-                        <a target="_blank" href="{{ paper.full_text_link }}"><b>{{paper.title}}</b></a>
+                        {% if paper.static_content %}
+                          <a target="_blank" href="{% static paper.full_text_link %}"><b>{{paper.title}}</b></a>
+                        {% else %}
+                          <a target="_blank" href="{{ paper.full_text_link }}"><b>{{paper.title}}</b></a>
+                        {% endif %}
                       {% else %}
                         <b>{{paper.title}}</b>
                       {% endif %}
