@@ -21,8 +21,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
-ALLOWED_HOSTS = ['127.0.0.1', 'rfrench.org', 'robertfrench.org',
-                 'robert-french.org']
+ALLOWED_HOSTS = ['127.0.0.1',
+		 'rfrench.org', 'www.rfrench.org',
+		 'robertfrench.org', 'www.robertfrench.org',
+                 'robert-french.org', 'www.robert-french.org',
+		 '45.63.93.214']
 
 
 # Application definition
