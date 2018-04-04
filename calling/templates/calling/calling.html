@@ -24,30 +24,30 @@
           <div class="col-7">
             <div class="row">
               <div class="col-12">
-                <h1 class="display-4"><a href="/">Rob French</a></h1>
+                <h1 class="display-4"><a href="/"><strong>Rob French</strong></a></h1>
                 <h3>Square Dance Caller</h3>
                 <p class="lead">
-                  Rob calls Mainstream thru C-4 in the San Francisco Bay Area and travels throughout
+                  <strong>Rob calls Mainstream thru C-4 in the San Francisco Bay Area and travels throughout
                   the U.S., Canada, Europe, and Japan. He is available for dances, weekends, and
-                  conventions. Fully edited tapes are available for sale.
+                  conventions. Fully edited tapes are available for sale.</strong>
               </div>
             </div>
             <div class="row">
               <div class="col-6">
-                <p><b>Contact:</b><br>
+                <p><strong><b>Contact:</b><br>
                   Robert French<br>
                   1712 Kimberly Dr<br>
                   Sunnyvale, CA 94087<br>
                   <a href="mailto:caller@rfrench.org">caller@rfrench.org</a><br>
-                  (408) 802-2635
+                  (408) 802-2635</strong>
                 </p>
               </div>
               <div class="col-6">
-                <p><b>Tape ordering:</b><br>
+                <p><strong><b>Tape ordering:</b><br>
                   <a href="http://www.krubow.com/Recordings/frenchsmithdances.html">Keith Rubow</a><br>
                   762 W. Bridwell St.<br>
                   Glendora, CA 91741<br>
-                  <a href="mailto:keith@krubow.com">keith@krubow.com</a>
+                  <a href="mailto:keith@krubow.com">keith@krubow.com</a></strong>
                 </p>
               </div>
             </div>
@@ -59,7 +59,7 @@
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         {% for year in years %}
           <li class="nav-item">
-            <a class="nav-link {% if year == current_year %}active{% endif %}" id="Y{{year}}-tab" data-toggle="tab" href="#Y{{year}}" role="tab" aria-controls="home" aria-selected="true">{{year}}</a>
+            <a class="nav-link {% if year == current_year %}active{% endif %}" id="Y{{year}}-tab" data-toggle="tab" href="#Y{{year}}" role="tab" aria-controls="home" aria-selected="true"><strong>{{year}}</strong></a>
           </li>
         {% endfor %}
       </ul>
@@ -84,15 +84,15 @@
                   {% for gig in gigs.all %}
                     {% if gig.year == year %}
                       <tr>
-                        <td>{{gig.pretty_date}}</td>
-                        <td>{{gig.pretty_level}}</td>
+                        <td><strong>{{gig.pretty_date}}</strong></td>
+                        <td><strong>{{gig.pretty_level}}</strong></td>
                         {% if gig.link != '' %}
-                          <td><a target="_blank" href="{{gig.link}}">{{gig.title}}</a></td>
+                          <td><a target="_blank" href="{{gig.link}}"><strong>{{gig.title}}</strong></a></td>
                         {% else %}
-                          <td>{{gig.title}}</td>
+                          <td><strong>{{gig.title}}</strong></td>
                         {% endif %}
-                        <td>{{gig.location}}</td>
-                        <td>{{gig.callers}}</td>
+                        <td><strong>{{gig.location}}</strong></td>
+                        <td><strong>{{gig.callers}}</strong></td>
                       </tr>
                     {% endif %}
                   {% endfor %}

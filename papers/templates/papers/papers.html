@@ -27,14 +27,15 @@
                 <h1 class="display-4"><a href="/">Rob French</a></h1>
                 <h3>Research Papers and Issued Patents</h3>
                 <p class="lead">
-                  Rob works at the SETI Institute in Mountain View, CA where he performs
-                  research on the outer planets of our solar system and is deeply involved in the archiving
-                  of NASA mission data.
+                  <strong>Rob works at the <a target="_blank" href="https://www.seti.org">SETI Institute</a>
+                  in Mountain View, CA where he performs research on the outer planets of our solar system
+                  and is deeply involved in the archiving of
+                  <a target="_blank" href="https://pds-rings.seti.org">NASA mission data</a>.</strong>
                 </p>
                 <p class="lead">
-                  In previous careers he was involved in the design of highly-parallel processor
+                  <strong>In previous careers he was involved in the design of highly-parallel processor
                   architectures for telecommunications, compiler algorithms for parallel processing, and the
-                  development of instant messaging.
+                  development of instant messaging.</strong>
                 </p>
               </div>
             </div>
@@ -42,62 +43,81 @@
         </div>
       </div>
 
-    {% for category in categories %}
-      <div class='text-center'>
-        <br>
-        <h1>{{ category }}</h1>
-      </div>
-      <br>
-      {% for category2, sub_categories in sub_categories.items %}
-        {% if category == category2 %}
-          {% for sub_category in sub_categories %}
-            <h2>{{ sub_category }}</h2>
-            <ul>
-              {% for papers_key, papers in papers.items %}
-                {% if papers_key.0 == category and papers_key.1 == sub_category %}
-                  {% for paper in papers %}
-                    <br>
-                    <li>
-                      {% if paper.full_text_link %}
-                        {% if paper.static_content %}
-                          <a target="_blank" href="{% static paper.full_text_link %}"><b>{{paper.title}}</b></a>
-                        {% else %}
-                          <a target="_blank" href="{{ paper.full_text_link }}"><b>{{paper.title}}</b></a>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-9">
+        {% for category in categories %}
+          <div class="card">
+            <div class="card-header text-white bg-primary">
+              <h1>{{ category }}</h1>
+            </div>
+            <div class="card-body">
+              {% for category2, sub_categories in sub_categories.items %}
+                {% if category == category2 %}
+                  {% for sub_category in sub_categories %}
+                    <h2 class="text-secondary">{{ sub_category.name }}</h2>
+                    <ul>
+                      {% for papers_key, papers in papers.items %}
+                        {% if papers_key.0 == category and papers_key.1 == sub_category.name %}
+                          {% for paper in papers %}
+                            <br>
+                            <li>
+                              {% if paper.full_text_link %}
+                                {% if paper.static_content %}
+                                  <a target="_blank" href="{% static paper.full_text_link %}"><b>{{paper.title}}</b></a>
+                                {% else %}
+                                  <a target="_blank" href="{{ paper.full_text_link }}"><b>{{paper.title}}</b></a>
+                                {% endif %}
+                              {% else %}
+                                <b>{{paper.title}}</b>
+                              {% endif %}
+                              ({{ paper.doc_type }})
+                              {% if paper.citation %}
+                                [{{ paper.year }}, {{ paper.citation }}]
+                              {% else %}
+                                [{{ paper.year }}]
+                              {% endif %}
+                              {% if paper.journal_link %}
+                                [<a target="_blank" href="{{ paper.journal_link }}">Journal Article</a>]
+                              {% endif %}
+                              {% if paper.abstract_link %}
+                                [<a target="_blank" href="{{ paper.abstract_link }}">Abstract</a>]
+                              {% endif %}
+                              {% if paper.ADS_link %}
+                                [<a target="_blank" href="{{ paper.ADS_link }}">ADS</a>]
+                              {% endif %}
+                              {% if paper.arXiv_link %}
+                                [<a target="_blank" href="{{ paper.arXiv_link }}">arXiv</a>]
+                              {% endif %}
+                              <br>
+                              {% if paper.authors %}
+                                {{ paper.authors }}<br>
+                              {% endif %}
+                            </li>
+                          {% endfor %}
                         {% endif %}
-                      {% else %}
-                        <b>{{paper.title}}</b>
-                      {% endif %}
-                      ({{ paper.doc_type }})
-                      {% if paper.citation %}
-                        [{{ paper.year }}, {{ paper.citation }}]
-                      {% else %}
-                        [{{ paper.year }}]
-                      {% endif %}
-                      {% if paper.journal_link %}
-                        [<a target="_blank" href="{{ paper.journal_link }}">Journal Article</a>]
-                      {% endif %}
-                      {% if paper.abstract_link %}
-                        [<a target="_blank" href="{{ paper.abstract_link }}">Abstract</a>]
-                      {% endif %}
-                      {% if paper.ADS_link %}
-                        [<a target="_blank" href="{{ paper.ADS_link }}">ADS</a>]
-                      {% endif %}
-                      {% if paper.arXiv_link %}
-                        [<a target="_blank" href="{{ paper.arXiv_link }}">arXiv</a>]
-                      {% endif %}
+                      {% endfor %}
+                    </ul>
+                    {% if sub_category.not_last_entry %}
                       <br>
-                      {% if paper.authors %}
-                        {{ paper.authors }}<br>
-                      {% endif %}
-                    </li>
+                      <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6"><hr style="height:1px; border:solid 1px black; color:#000;"></div>
+                      </div>
+                    <br>
+                    {% endif %}
                   {% endfor %}
                 {% endif %}
               {% endfor %}
-            </ul>
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
+            </div>
+          </div>
+          <br>
+        {% endfor %}
+      </div>
+    </div>
+
+    <br>
+    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

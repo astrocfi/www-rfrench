@@ -11,11 +11,11 @@ def papers(request):
         sub_categories = (PaperSubCategory.objects.
                           filter(category__name=category.name))
         sub_category_dict[category.name] = []
-        for sub_category in sub_categories:
+        for i, sub_category in enumerate(sub_categories):
             papers = (Paper.objects.filter(sub_category=sub_category).
                       order_by('display_order'))
             paper_list = list(papers)
-            for paper in papers:
+            for paper in paper_list:
                 if (paper.full_text_link and
                     paper.full_text_link.find('rfrench.org') != -1):
                     paper.full_text_link = (paper.full_text_link.
@@ -24,10 +24,12 @@ def papers(request):
                 else:
                     paper.static_content = False
             if len(paper_list) > 0:
-                sub_category_dict[category.name].append(sub_category.name)
+                sub_category_dict[category.name].append(sub_category)
                 category_used = True
                 paper_dict[(category.name,
                             sub_category.name)] = paper_list
+            sub_category.not_last_entry = i != len(sub_categories)-1
+            print(sub_category.name, sub_category.not_last_entry)
         if category_used:
             category_list.append(category.name)
 
