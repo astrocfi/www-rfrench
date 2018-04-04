@@ -12,9 +12,22 @@
     <title>Rob French's Home Page</title>
   </head>
 
-  <body>
+  <body style="padding-top:50px;">
     {% load static %}
     <div class="container-fluid">
+      <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/calling">Square Dance Calling</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/papers">Papers and Presentations</a>
+          </li>
+        </ul>
+      </nav>
       <div class="jumbotron">
         <div class="row">
           <div class="col-1"></div>
@@ -24,25 +37,11 @@
           <div class="col-7">
             <div class="row">
               <div class="col-12">
-                <h1 class="display-4">Rob French</h1>
+                <h1 class="display-4"><a href="/"><strong>Rob French</strong></a></h1>
                 <h3>Bio</h3>
                 <p class="lead">
                   Rob lives in Sunnyvale, CA with his wife and three cats.
                 </p>
-                <div class="row">
-                  <div class="col-3">
-                    <img class="img-fluid rounded" src="{% static "main/rob-main.jpg" %}" alt="Cat #1"/>
-                  </div>
-                  <div class="col-3">
-                    <img class="img-fluid rounded" src="{% static "main/rob-main.jpg" %}" alt="Cat #2"/>
-                  </div>
-                  <div class="col-3">
-                    <img class="img-fluid rounded" src="{% static "main/rob-main.jpg" %}" alt="Cat #3"/>
-                  </div>
-                  <div class="col-3">
-                    <img class="img-fluid rounded" src="{% static "main/rob-main.jpg" %}" alt="CJ"/>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -52,8 +51,9 @@
       <h2>Professional Information</h2>
 
       <ul>
-        <li><a target="_blank" href="main/resume.pdf"><strong>Curriculum Vitae</strong></a>
-          (<a target="_blank" href="https://www.linkedin.com/in/rfrench">LinkedIn Profile</a>)
+        <li><a target="_blank" href="{% static "main/resume.pdf" %}""><strong>Curriculum Vitae</strong></a>
+          (<a target="_blank" href="https://www.linkedin.com/in/rfrench">LinkedIn Profile</a>,
+           <a target="_blank" href="https://www.researchgate.net/profile/Robert_French8">ResearchGate Profile</a>)
         <br>
         <li>Since 2010 I have worked for the <a target="_blank" href="https://www.seti.org/">SETI Institute</a>
             as an astronomer and <a target="_blank" href="https://pds-rings.seti.org">data archivist</a>.
@@ -72,7 +72,7 @@
             <a target="_blank" href="https://suif.stanford.edu/suif/suif1/index.html">SUIF Compiler System</a>.
         <br>
         <li>Finally, from 1986 to 1990 I was an undergruate at MIT, where I helped
-            <a target="_blank" href="static/zephyr.pdf">invent instant messaging</a>.
+            <a target="_blank" href="{% static "papers/usenix.pdf" %}">invent instant messaging</a>.
       </ul>
 
       <h2>Square Dancing</h2>
