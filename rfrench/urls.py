@@ -24,8 +24,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main.views.main),
     path('index.html', main.views.main),
+    path('calling', calling.views.calling),
     path('calling/', calling.views.calling),
     path('calling/index.html', calling.views.calling),
+    path('papers', papers.views.papers),
     path('papers/', papers.views.papers),
     path('papers/index.html', papers.views.papers),
 ]
