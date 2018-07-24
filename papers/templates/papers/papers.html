@@ -100,7 +100,7 @@
                               </td>
                               <td style="padding-top:15px;padding-bottom:15px;">
                                 {% if paper.full_text_link %}
-                                  {% if paper.static_content %}
+                                  {% if paper.full_static_content %}
                                     <a target="_blank" href="{% static paper.full_text_link %}"><b>{{paper.title}}</b></a>
                                   {% else %}
                                     <a target="_blank" href="{{ paper.full_text_link }}"><b>{{paper.title}}</b></a>
@@ -118,7 +118,11 @@
                                   [<a target="_blank" href="{{ paper.journal_link }}">Journal Article</a>]
                                 {% endif %}
                                 {% if paper.abstract_link %}
-                                  [<a target="_blank" href="{{ paper.abstract_link }}">Abstract</a>]
+                                  {% if paper.abstract_static_content %}
+                                    [<a target="_blank" href="{% static paper.abstract_link %}">Abstract</a>]
+                                  {% else %}
+                                    [<a target="_blank" href="{{ paper.abstract_link }}">Abstract</a>]
+                                  {% endif %}
                                 {% endif %}
                                 {% if paper.ADS_link %}
                                   [<a target="_blank" href="{{ paper.ADS_link }}">ADS</a>]
