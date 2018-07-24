@@ -24,10 +24,10 @@ def papers(request):
                     paper.full_static_content = True
                 else:
                     paper.full_static_content = False
-                if (paper.abstract_text_link and
-                    (paper.abstract_text_link.find('rfrench.org') != -1 or
-                     not paper.abstract_text_link.startswith('http'))):
-                    paper.abstract_text_link = (paper.abstract_text_link.
+                if (paper.abstract_link and
+                    (paper.abstract_link.find('rfrench.org') != -1 or
+                     not paper.abstract_link.startswith('http'))):
+                    paper.abstract_link = (paper.abstract_link.
                             replace('http://rfrench.org/papers', '/papers'))
                     paper.abstract_static_content = True
                 else:
