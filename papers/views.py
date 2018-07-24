@@ -17,12 +17,21 @@ def papers(request):
             paper_list = list(papers)
             for paper in paper_list:
                 if (paper.full_text_link and
-                    paper.full_text_link.find('rfrench.org') != -1):
+                    (paper.full_text_link.find('rfrench.org') != -1 or
+                     not paper.full_text_link.startswith('http'))):
                     paper.full_text_link = (paper.full_text_link.
                             replace('http://rfrench.org/papers', '/papers'))
-                    paper.static_content = True
+                    paper.full_static_content = True
                 else:
-                    paper.static_content = False
+                    paper.full_static_content = False
+                if (paper.abstract_text_link and
+                    (paper.abstract_text_link.find('rfrench.org') != -1 or
+                     not paper.abstract_text_link.startswith('http'))):
+                    paper.abstract_text_link = (paper.abstract_text_link.
+                            replace('http://rfrench.org/papers', '/papers'))
+                    paper.abstract_static_content = True
+                else:
+                    paper.abstract_static_content = False
             if len(paper_list) > 0:
                 sub_category_dict[category.name].append(sub_category)
                 category_used = True
