@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
-from secrets import DEBUG, SECRET_KEY
+from rfrench_secrets import DEBUG, SECRET_KEY, ALLOWED_HOSTS
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,12 +20,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
-
-ALLOWED_HOSTS = ['127.0.0.1',
-		 'rfrench.org', 'www.rfrench.org',
-		 'robertfrench.org', 'www.robertfrench.org',
-                 'robert-french.org', 'www.robert-french.org',
-		 '45.63.93.214']
 
 
 # Application definition
