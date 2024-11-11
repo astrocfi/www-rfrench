@@ -1,6 +1,6 @@
 *.pyc
 __pycache__
-secrets.py
+rfrench_secrets.py
 /static
 venv
 
